@@ -1,0 +1,39 @@
+.works {
+    padding-bottom: 40px;
+    &-heading {
+        margin-bottom: 70px;
+    }
+    &-card {
+        margin-bottom: 50px;
+        &__thumbnail {
+            max-width: 100%;
+            height: 700px;
+            margin-bottom: 15px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__info {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #000000;
+            a {
+                color: $mainBlack;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 33px;
+            }
+            small {
+                display: block;
+                color: $mainBlack;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                opacity: .7;
+            }
+        }
+    }
+}

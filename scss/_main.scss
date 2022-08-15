@@ -1,0 +1,12 @@
+.main {
+    padding: 160px 0 180px 0;
+    &-heading {
+        margin-bottom: 60px;
+    }
+    img.big-image {
+        max-width: 100%;
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+}

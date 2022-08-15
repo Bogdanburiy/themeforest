@@ -1,0 +1,39 @@
+.clients {
+    padding: 90px 0;
+    &-heading {
+        margin-bottom: 70px;
+    }
+    &-logo {
+        height: 100%;
+    }
+    &-list {
+        &__item {
+            padding: 20px 0;
+            border-bottom: 1px solid $mainBlack;
+            transition: all .3s ease-out;
+            .strong {
+                color: $mainBlack;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 33px;
+                transition: all .3s ease-out;
+            }
+            .location {
+                color: $mainBlack;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33px;
+                transition: all .3s ease-out;
+            }
+            &:hover {
+                border-bottom: 1px solid $mainRed;
+                .strong,
+                .location {
+                    color: $mainRed;
+                }
+            }
+        }
+    }
+}

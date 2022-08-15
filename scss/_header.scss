@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #000000;
+    &.sticky-active {
+        backdrop-filter: blur(20px);
+        background-color: rgba(255,255,255,.6);
+        z-index: 1;
+    }
+    &-menu {
+        nav {
+            ul {
+                display: flex;
+                li {
+                    margin-right: 30px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        color: $mainBlack;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        transition: all .3s ease-out;
+                        &:hover {
+                            color: $mainRed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

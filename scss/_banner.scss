@@ -1,0 +1,22 @@
+.banner {
+    padding: 90px 0;
+    &-content {
+        padding: 140px 0;
+        background-color: $mainRed;
+    }
+    h2.normal-title {
+        max-width: 992px;
+        width: 100%;
+        margin: 0 auto 40px;
+        color: #fff;
+        text-align: center;
+    }
+    small {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
