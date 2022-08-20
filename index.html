@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <div class="noise">
+    <div data-scroll-container class="noise page-container">
 
         <header class="header">
             <div class="container d-flex justify-content-between">
@@ -45,15 +45,19 @@
         </header>
         <!-- /.header -->
 
-        <section class="main">
+        <section class="main" data-scroll data-scroll-speed="2">
             <div class="container">
                 <div class="main-heading d-flex justify-content-between align-items-end">
-                    <h1 class="big-tittle">Your personal <br> website portfolio</h1>
+                    <h1 class="big-tittle">
+                        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">Your personal</p>
+                        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">website portfolio</p>
+                    </h1>
                     <!-- /.big-tittle -->
-                    <a class="free-consultation mouse-zoom" href="#">Get free consultation</a>
+                    <a data-scroll data-scroll-direction="vertical" data-scroll-speed="3" class="free-consultation mouse-zoom" href="#">Get free consultation</a>
                 </div>
                 <!-- /.main-heading -->
-                <img class="big-image" src="img/main-image.jpeg" alt="Image">
+                <div class="big-image"></div>
+                <!-- /.big-image -->
             </div>
             <!-- /.container -->
         </section>
@@ -61,10 +65,14 @@
 
         <section class="works">
             <div class="container">
-                <div class="works-heading d-flex justify-content-between align-items-start">
-                    <div class="section-slug">Latest works</div>
+                <div class="works-heading d-flex justify-content-between align-items-start" id="section-pin">
+                    <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-pin">
+                        Latest works
+                    </div>
                     <!-- /.section-slug -->
-                    <h2 class="normal-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor</h2>
+                    <h2 class="normal-title">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor
+                    </h2>
                     <!-- /.normal-title -->
                 </div>
                 <!-- /.works-heading -->
@@ -174,19 +182,19 @@
                 </div>
                 <!-- /.works-heading -->
                 <div class="benefits-list d-flex justify-content-center">
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll-speed="2">
                         <div class="strong">4</div>
                         <!-- /.strong -->
                         <p>years on the market</p>
                     </div>
                     <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll-speed="4">
                         <div class="strong">293</div>
                         <!-- /.strong -->
                         <p>satisfied famous clients</p>
                     </div>
                     <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll-speed="6">
                         <div class="strong">35+</div>
                         <!-- /.strong -->
                         <p>working hours of practice</p>
@@ -403,7 +411,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="clients-logo d-flex align-items-center justify-content-center">
-                            <img src="img/clients-logo1.png" alt="Inter">
+                            <img src="img/clients-logo2.svg" alt="Inter">
                         </div>
                         <!-- /.clients-logo -->
                     </div>
@@ -411,35 +419,35 @@
                     <div class="col-md-6">
                         <div class="clients-list">
                             <div class="clients-list__item d-flex justify-content-between align-items-center">
-                                <div class="strong">Microsoft</div>
+                                <div class="strong" data-src="img/clients-logo1.svg">Microsoft</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
                             <div class="clients-list__item d-flex justify-content-between align-items-center">
-                                <div class="strong">Nike</div>
+                                <div class="strong" data-src="img/clients-logo2.svg">Nike</div>
                                 <!-- /.strong -->
                                 <div class="location">USA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
                             <div class="clients-list__item d-flex justify-content-between align-items-center">
-                                <div class="strong">Inter</div>
+                                <div class="strong" data-src="img/clients-logo3.svg">Intel</div>
                                 <!-- /.strong -->
                                 <div class="location">CA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
                             <div class="clients-list__item d-flex justify-content-between align-items-center">
-                                <div class="strong">Netflix</div>
+                                <div class="strong" data-src="img/clients-logo4.svg">Netflix</div>
                                 <!-- /.strong -->
                                 <div class="location">CX</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
                             <div class="clients-list__item d-flex justify-content-between align-items-center">
-                                <div class="strong">Airbnb</div>
+                                <div class="strong" data-src="img/clients-logo5.svg">Airbnb</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
                                 <!-- /.location -->
@@ -456,12 +464,185 @@
         </section>
         <!-- /.clients -->
 
+        <section class="blog">
+            <div class="container">
+                <div class="blog-heading d-flex justify-content-between align-items-start">
+                    <div class="section-slug">Blog</div>
+                    <!-- /.section-slug -->
+                    <h2 class="normal-title">Find some useful information here. Ultrices senectus nec rhoncus facilisis.</h2>
+                    <!-- /.normal-title -->
+                </div>
+                <!-- /.blog-heading -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#">
+                                    <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
+                                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                <i class="icon">
+                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                </i>
+                                <!-- /.icon -->
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#">
+                                    <img src="img/blog-thumbnail-2.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
+                                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                <i class="icon">
+                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                </i>
+                                <!-- /.icon -->
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#">
+                                    <img src="img/blog-thumbnail-3.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
+                                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                <i class="icon">
+                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                </i>
+                                <!-- /.icon -->
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.blog -->
+
+        <section class="discussion">
+            <div class="container">
+                <div class="discussion-heading d-flex justify-content-between align-items-start">
+                    <div class="section-slug">Let’s work together</div>
+                    <!-- /.section-slug -->
+                    <h2 class="normal-title">Fill out the form and we will contact you to discuss our best project together!</h2>
+                    <!-- /.normal-title -->
+                </div>
+                <!-- /.discussion-heading -->
+                <div class="row">
+                    <div class="offset-md-6 col-md-6">
+                        <div class="discussion-form">
+                            <form action="#" method="post">
+                                <div class="discussion-form__item">
+                                    <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                                    <span class="input-focus"></span>
+                                    <!-- /.input-focus -->
+                                </div>
+                                <!-- /.discussion-form__item -->
+                                <div class="discussion-form__item">
+                                    <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                                    <span class="input-focus"></span>
+                                    <!-- /.input-focus -->
+                                </div>
+                                <!-- /.discussion-form__item -->
+                                <div class="discussion-form__item">
+                                    <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                                    <span class="input-focus"></span>
+                                    <!-- /.input-focus -->
+                                </div>
+                                <!-- /.discussion-form__item -->
+                                <div class="discussion-form__item">
+                                    <button class="submit-btn" type="submit">get free consultation</button>
+                                </div>
+                                <!-- /.discussion-form__item -->
+                            </form>
+                        </div>
+                        <!-- /.discussion-form -->
+                    </div>
+                    <!-- /.offset-md-6 .col-md-6 -->
+                </div>
+                <!-- /.row -->
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="#">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.social-links -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.discussion -->
+
+        <footer class="footer">
+            
+        </footer>
+        <!-- /.footer -->
+
         <div class="cursor"></div>
         <!-- /.cursor -->
 
     </div>
     <!-- /.noise -->
-    
+
+    <!-- Locomotive scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
 
