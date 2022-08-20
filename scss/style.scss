@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+:focus {
+    outline: none;
+}
+
 .noise {
     position: relative;
     &::after {
@@ -83,6 +87,9 @@ a {
     font-size: 124px;
     line-height: 126px;
     letter-spacing: -0.02em;
+    p {
+        margin: 0;
+    }
 }
 
 .normal-title {
@@ -142,6 +149,63 @@ a {
         background-image: url(../img/arrow-red-angle.svg);
         background-position: center;
         background-repeat: no-repeat
+    }
+}
+
+.submit-btn {
+    padding: 0;
+    padding-bottom: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $mainBlack;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $mainBlack;
+    transition: all .3s ease-out;
+    &:hover {
+        color: $mainRed;
+        border-bottom: 1px solid $mainRed;
+    }
+}
+
+.social-links {
+    margin-top: 90px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            &:not(:nth-of-type(1)) {
+                margin-left: -50px;
+            }
+            &:nth-child(2n) {
+                a {
+                    color: $mainWarm;
+                    background-color: $mainRed;
+                    border: 1px solid $mainRed;
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 360px;
+                height: 360px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 100%;
+                letter-spacing: -0.02em;
+                color: $mainBlack;
+                background-color: $mainWarm;
+                border: 1px solid $mainBlack;
+                border-radius: 50%;
+
+            }
+        }
     }
 }
 
@@ -211,3 +275,9 @@ a {
 
 // Our clients
 @import "clients";
+
+// Blog
+@import "blog";
+
+// Let’s work together
+@import "discussion";
