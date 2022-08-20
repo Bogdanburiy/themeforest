@@ -30,9 +30,16 @@ if (anchorLength > 0) {
 
 // 1.3 Interective cursor
 const cursor = document.querySelector('.cursor');
+let footer = document.querySelector('.footer');
 
 document.addEventListener('mousemove', function(e) {
-    cursor.setAttribute("style","top:" + (e.pageY - 10) + "px; left:" + (e.pageX - 10) + "px;")
+    cursor.setAttribute("style","top:" + (e.pageY - 10) + "px; left:" + (e.pageX - 10) + "px;");
+    footer.addEventListener('mouseover', function() {
+        cursor.classList.add('white-cursor');
+    });
+    footer.addEventListener('mouseout', function() {
+        cursor.classList.remove('white-cursor');
+    });
 });
 
 document.addEventListener('click', function(e) {
@@ -63,7 +70,9 @@ for ( let item of imageGet ) {
 // 1.5 Parallax srolling items
 // const scroller = new LocomotiveScroll({
 //     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true
+//     smooth: true,
+//     tablet: { smooth: true },
+//     smartphone: { smooth: true }
 // });
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -96,6 +105,6 @@ for ( let item of imageGet ) {
 //     scrub: 2,
 // });
 
-// ScrollTrigger.addEventListener('refresh', () => scroller.update())
+// ScrollTrigger.addEventListener('refresh', () => scroller.update());
 
-// ScrollTrigger.refresh()
+// ScrollTrigger.refresh();

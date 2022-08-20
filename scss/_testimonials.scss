@@ -1,0 +1,91 @@
+.testimonials {
+    padding: 90px 0;
+    &-heading {
+        margin-bottom: 50px;
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &-carousel__nav {
+        ul {
+            display: flex;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 46px;
+                height: 46px;
+                background-color: $mainRed;
+                border-radius: 50%;
+                margin-right: 15px;
+                transition: all .3s ease-out;
+                &:hover {
+                    background-color: $mainBlack;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &-carousel {
+        &.slick-slider {
+            .slick-list {
+                margin-left: -15px;
+                margin-right: -15px;
+                padding: 20px 0;
+                .slick-slide {
+                    &:nth-child(2n+1) {
+                        transform: rotate(3deg);
+                    }
+                    &:nth-child(2n) {
+                        transform: rotate(-3deg);
+                    }
+                }
+            }
+        }
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 500px;
+            margin: 0 15px;
+            padding: 30px;
+            background-color: rgba(243,239,235,.2);
+            backdrop-filter: blur(3px);
+            border: 1px solid $mainRed;
+            &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .surname {
+                    color: $mainBlack;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+                .status {
+                    color: $mainBlack;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
+                    opacity: 0.7;
+                }
+            }
+            &-bottom {
+                .strong {
+                    margin-bottom: 15px;
+                    color: $mainBlack;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
