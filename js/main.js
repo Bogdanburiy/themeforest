@@ -29,23 +29,23 @@ if (anchorLength > 0) {
 }
 
 // 1.3 Interective cursor
-const cursor = document.querySelector('.cursor');
-let footer = document.querySelector('.footer');
+// const cursor = document.querySelector('.cursor');
+// let footer = document.querySelector('.footer');
 
-document.addEventListener('mousemove', function(e) {
-    cursor.setAttribute("style","top:" + (e.pageY - 10) + "px; left:" + (e.pageX - 10) + "px;");
-    footer.addEventListener('mouseover', function() {
-        cursor.classList.add('white-cursor');
-    });
-    footer.addEventListener('mouseout', function() {
-        cursor.classList.remove('white-cursor');
-    });
-});
+// document.addEventListener('mousemove', function(e) {
+//     cursor.setAttribute("style","top:" + (e.pageY - 10) + "px; left:" + (e.pageX - 10) + "px;");
+//     footer.addEventListener('mouseover', function() {
+//         cursor.classList.add('white-cursor');
+//     });
+//     footer.addEventListener('mouseout', function() {
+//         cursor.classList.remove('white-cursor');
+//     });
+// });
 
-document.addEventListener('click', function(e) {
-   cursor.classList.add('mclick');
-   setTimeout(function() { cursor.classList.remove('mclick'); },500) 
-});
+// document.addEventListener('click', function(e) {
+//    cursor.classList.add('mclick');
+//    setTimeout(function() { cursor.classList.remove('mclick'); },500) 
+// });
 
 // 1.4 Accordion
 let accordion = document.getElementsByClassName('offer-collapse__item-head');
@@ -68,43 +68,43 @@ for ( let item of imageGet ) {
 }
 
 // 1.5 Parallax srolling items
-// const scroller = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true,
-//     tablet: { smooth: true },
-//     smartphone: { smooth: true }
-// });
+const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true }
+});
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// scroller.on('scroll', ScrollTrigger.update);
+scroller.on('scroll', ScrollTrigger.update);
 
-// ScrollTrigger.scrollerProxy(
-//     '.page-container', {
-//         scrollTop(value) {
-//             return arguments.length ?
-//             scroller.scrollTo(value, 0, 0) :
-//             scroller.scroll.instance.scroll.y
-//         },
-//         getBoundingClientRect() {
-//             return {
-//                 left: 0, top: 0, 
-//                 width: window.innerWidth,
-//                 height: window.innerHeight
-//             }
-//         }
-//     }
-// );
+ScrollTrigger.scrollerProxy(
+    '.page-container', {
+        scrollTop(value) {
+            return arguments.length ?
+            scroller.scrollTo(value, 0, 0) :
+            scroller.scroll.instance.scroll.y
+        },
+        getBoundingClientRect() {
+            return {
+                left: 0, top: 0, 
+                width: window.innerWidth,
+                height: window.innerHeight
+            }
+        }
+    }
+);
 
-// ScrollTrigger.create({
-//     trigger: '.big-image',
-//     scroller: '.page-container',
-//     start: 'top+=5% 50%',
-//     end: 'bottom-=40% 50%',
-//     animation: gsap.to('.big-image', {backgroundSize: '120%'}),
-//     scrub: 2,
-// });
+ScrollTrigger.create({
+    trigger: '.big-image',
+    scroller: '.page-container',
+    start: 'top+=5% 50%',
+    end: 'bottom-=40% 50%',
+    animation: gsap.to('.big-image', {backgroundSize: '120%'}),
+    scrub: 2,
+});
 
-// ScrollTrigger.addEventListener('refresh', () => scroller.update());
+ScrollTrigger.addEventListener('refresh', () => scroller.update());
 
-// ScrollTrigger.refresh();
+ScrollTrigger.refresh();
