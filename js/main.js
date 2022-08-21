@@ -105,6 +105,35 @@ ScrollTrigger.create({
     scrub: 2,
 });
 
+var y = {
+    el: document,
+    name: "scroll",
+    offset: [0, 0],
+    repeat: !1,
+    smooth: !1,
+    initPosition: { x: 0, y: 0 },
+    direction: "vertical",
+    gestureDirection: "vertical",
+    reloadOnContextChange: !1,
+    lerp: 0.1,
+    class: "is-inview",
+    scrollbarContainer: !1,
+    scrollbarClass: "c-scrollbar",
+    scrollingClass: "has-scroll-scrolling",
+    draggingClass: "has-scroll-dragging",
+    smoothClass: "has-scroll-smooth",
+    initClass: "has-scroll-init",
+    getSpeed: !1,
+    getDirection: !1,
+    scrollFromAnywhere: !1,
+    multiplier: 1,
+    firefoxMultiplier: 50,
+    touchMultiplier: 2,
+    resetNativeScroll: !0,
+    tablet: { smooth: !1, direction: "vertical", gestureDirection: "vertical", breakpoint: 1024 },
+    smartphone: { smooth: !1, direction: "vertical", gestureDirection: "vertical" },
+}
+
 ScrollTrigger.addEventListener('refresh', () => scroller.update());
 
 ScrollTrigger.refresh();
