@@ -134,4 +134,27 @@ ScrollTrigger.addEventListener('refresh', () => scroller.update());
 
 ScrollTrigger.refresh();
 
-// 1.6 Add smooth scroll
+// 1.6 Preloader page
+const LANDING = {};
+LANDING.intro = document.querySelector(".preloader-page");
+LANDING.path = LANDING.intro.querySelector("path");
+
+const svgAnimation = () => {
+  console.log("Animation");
+
+  anime({
+    targets: LANDING.intro,
+    duration: 2000,
+    easing: "easeInOutSine",
+    translateY: "-200vh",
+  });
+
+  anime({
+    targets: LANDING.path,
+    duration: 1500,
+    easing: "easeInOutSine",
+    d: LANDING.path.getAttribute("pathdata:id"),
+  });
+};
+
+document.querySelector(".preloader-page").addEventListener("click", svgAnimation);
