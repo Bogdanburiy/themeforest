@@ -63,7 +63,7 @@ window.addEventListener('load', function() {
     document.documentElement.classList.add("is-ready");
 });
 
-// 1.6 Parallax srolling items
+// 1.7 Parallax srolling items
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
@@ -133,3 +133,5 @@ var y = {
 ScrollTrigger.addEventListener('refresh', () => scroller.update());
 
 ScrollTrigger.refresh();
+
+// 1.6 Add smooth scroll

@@ -95,21 +95,28 @@
             }
             h3 {
                 a {
+                    display: flex;
+                    align-items: center;
                     color: $mainBlack;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 30px;
                     transition: all .3s ease-out;
+                    i.icon {
+                        transition: all .3s ease-out;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
                     &:hover {
                         color: $mainRed;
+                        i.icon {
+                            transform: rotate(45deg);
+                            transition: all .3s ease-out;
+                        }
                     }
-                }
-            }
-            i.icon {
-                img {
-                    width: 30px;
-                    height: 30px;
                 }
             }
         }

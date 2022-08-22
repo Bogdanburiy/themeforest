@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -463,6 +467,14 @@ a {
   transform: translateY(60px);
   transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-delay: 0.1s;
+}
+.works-card__info a i.icon {
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-out;
+}
+.works-card__info a:hover i.icon {
+  transform: rotate(0deg);
+  transition: all 0.3s ease-out;
 }
 .works-card__info small {
   display: block;
@@ -969,6 +981,8 @@ a {
   transform: scaleX(1);
 }
 .blog-card__title h3 a {
+  display: flex;
+  align-items: center;
   color: #131313;
   font-style: normal;
   font-weight: 500;
@@ -976,12 +990,19 @@ a {
   line-height: 30px;
   transition: all 0.3s ease-out;
 }
+.blog-card__title h3 a i.icon {
+  transition: all 0.3s ease-out;
+}
+.blog-card__title h3 a i.icon img {
+  width: 30px;
+  height: 30px;
+}
 .blog-card__title h3 a:hover {
   color: #FC4005;
 }
-.blog-card__title i.icon img {
-  width: 30px;
-  height: 30px;
+.blog-card__title h3 a:hover i.icon {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-out;
 }
 
 .discussion {

@@ -49,6 +49,16 @@
                 transform: translateY(60px);
                 transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
                 transition-delay: .1s;
+                i.icon {
+                    transform: rotate(-45deg);
+                    transition: all .3s ease-out;
+                }
+                &:hover {
+                    i.icon {
+                        transform: rotate(0deg);
+                        transition: all .3s ease-out;
+                    }
+                }
             }
             small {
                 display: block;
