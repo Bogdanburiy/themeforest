@@ -47,15 +47,6 @@ if (anchorLength > 0) {
 //    setTimeout(function() { cursor.classList.remove('mclick'); },500) 
 // });
 
-// 1.4 Accordion
-let accordion = document.getElementsByClassName('offer-collapse__item-head');
-
-for ( let item of accordion) {
-    item.addEventListener('click', function() {
-        this.parentElement.classList.toggle('active');
-    });
-}
-
 // 1.4 Change logo on hover block "Our clients"
 let imageGet = Array.from(document.querySelectorAll('.clients-list__item .strong'));
 let imageSet = document.querySelector('.clients-logo img');
@@ -67,7 +58,12 @@ for ( let item of imageGet ) {
     });
 }
 
-// 1.5 Parallax srolling items
+// 1.5 Add class after load web document
+window.addEventListener('load', function() {
+    document.documentElement.classList.add("is-ready");
+});
+
+// 1.6 Parallax srolling items
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,

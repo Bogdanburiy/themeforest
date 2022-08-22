@@ -3,6 +3,16 @@
     &-content {
         padding: 140px 0;
         background-color: $mainRed;
+        &.is-inview {
+            h2.normal-title {
+                opacity: 1;
+                transform: none;
+            }
+            small {
+                opacity: 1;
+                transform: none;
+            }
+        }
     }
     h2.normal-title {
         max-width: 992px;
@@ -18,5 +28,9 @@
         font-size: 16px;
         text-align: center;
         color: #FFFFFF;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
+        transition-delay: .6s;
     }
 }
