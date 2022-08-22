@@ -53,12 +53,16 @@
         <section class="main" data-scroll data-scroll-speed="2">
             <div class="container">
                 <div class="main-heading d-flex justify-content-between align-items-end">
-                    <h1 class="big-tittle">
-                        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-4">Your personal</div>
-                        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">website portfolio</div>
+                    <h1 class="big-tittle" data-scroll>
+                        <span class="big-tittle__line">
+                            <span data-scroll data-scroll-speed="3" data-scroll-position="top">Your personal</span>
+                        </span>
+                        <span class="big-tittle__line">
+                            <span data-scroll data-scroll-speed="2" data-scroll-position="top">website portfolio</span>
+                        </span>
                     </h1>
                     <!-- /.big-tittle -->
-                    <a class="free-consultation mouse-zoom" href="#">Get free consultation</a>
+                    <a data-scroll class="free-consultation mouse-zoom" href="#">Get free consultation</a>
                 </div>
                 <!-- /.main-heading -->
                 <div class="big-image"></div>
@@ -71,7 +75,7 @@
         <section class="works">
             <div class="container">
                 <div class="section-heading d-flex justify-content-between align-items-start" id="section-1-pin" data-scroll>
-                    <div class="section-slug" data-scroll-sticky data-scroll-target="#section-1-pin">
+                    <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-1-pin">
                         Latest works
                     </div>
                     <!-- /.section-slug -->
@@ -173,7 +177,7 @@
 
         <section class="benefits">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start" id="section-2-pin">
+                <div class="section-heading d-flex justify-content-between align-items-start" id="section-2-pin" data-scroll>
                     <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-2-pin">About us</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor</h2>
@@ -208,7 +212,7 @@
 
         <section class="steps">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start" id="section-3-pin">
+                <div class="section-heading d-flex justify-content-between align-items-start" id="section-3-pin" data-scroll>
                     <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-3-pin">How we works</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor</h2>
@@ -216,35 +220,35 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="steps-list">
-                    <div class="steps-list__item d-flex justify-content-between align-items-start">
+                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-scroll>
                         <span>Step 1</span>
                         <div class="strong">Interview</div>
                         <!-- /.strong -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh. Rhoncus nunc, et neque blandit dictum pellentesque enim, eget.</p>
                     </div>
                     <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start">
+                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-scroll>
                         <span>Step 2</span>
                         <div class="strong">Design</div>
                         <!-- /.strong -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh. Rhoncus nunc, et neque blandit dictum pellentesque enim, eget.</p>
                     </div>
                     <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start">
+                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-scroll>
                         <span>Step 3</span>
                         <div class="strong">Development</div>
                         <!-- /.strong -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh. Rhoncus nunc, et neque blandit dictum pellentesque enim, eget.</p>
                     </div>
                     <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start">
+                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-scroll>
                         <span>Step 4</span>
                         <div class="strong">Presentation</div>
                         <!-- /.strong -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh. Rhoncus nunc, et neque blandit dictum pellentesque enim, eget.</p>
                     </div>
                     <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start">
+                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-scroll>
                         <span>Step 5</span>
                         <div class="strong">Testing</div>
                         <!-- /.strong -->
@@ -259,7 +263,7 @@
         <!-- /.steps -->
 
         <section class="banner">
-            <div class="banner-content">
+            <div class="banner-content" data-scroll data-scroll-offset="60%">
                 <div class="container">
                     <h2 class="normal-title">Non ac vulputate nisi libero, in sem sodales senectus nec. Nunc dui magnis lorem blandit ornare sit scelerisque elit. Placerat odio donec diam nullam tellus ut. Nam dictum molestie ac elementum consectetur nec enim vestibulum.</h2>
                     <!-- /.normal-title -->
@@ -271,9 +275,9 @@
         </section>
         <!-- /.banner -->
 
-        <section class="offer" id="offer">
+        <section class="offer">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start" id="section-5-pin">
+                <div class="section-heading d-flex justify-content-between align-items-start" id="section-5-pin" data-scroll>
                     <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-5-pin">What we offer</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor</h2>
@@ -282,109 +286,130 @@
                 <!-- /.section-heading -->
                 <div class="row">
                     <div class="offset-md-6 col-md-6">
-                        <div class="offer-collapse">
-                            <div class="offer-collapse__item" data-scroll>
-                                <div class="offer-collapse__item-head d-flex">
-                                    <div class="count">01</div>
-                                    <!-- /.count -->
-                                    <div class="strong d-flex justify-content-between align-items-center">
-                                        Research
-                                        <i class="icon">
-                                            <img src="img/arrow-red.svg" alt="Red arrow">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </div>
-                                    <!-- /.strong -->
+                        <div class="offer-collapse accordion">
+                            <div class="offer-collapse__item accordion-item" data-scroll>
+                                <div class="offer-collapse__item-head d-flex accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__01" aria-expanded="true">
+                                        <div class="count">01</div>
+                                        <!-- /.count -->
+                                        <div class="strong d-flex justify-content-between align-items-center">
+                                            Research
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Red arrow">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </div>
+                                        <!-- /.strong -->
+                                    </button>
                                 </div>
                                 <!-- /.head -->
-                                <div class="offer-collapse__item-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                <div id="accordion-item__01" class="accordion-collapse collapse">
+                                    <div class="offer-collapse__item-body accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                    </div>
+                                    <!-- /.body -->
                                 </div>
-                                <!-- /.body -->
                             </div>
                             <!-- /.offer-collapse__item -->
-                            <div class="offer-collapse__item" data-scroll>
-                                <div class="offer-collapse__item-head d-flex">
-                                    <div class="count">02</div>
-                                    <!-- /.count -->
-                                    <div class="strong d-flex justify-content-between align-items-center">
-                                        UX Design
-                                        <i class="icon">
-                                            <img src="img/arrow-red.svg" alt="Red arrow">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </div>
-                                    <!-- /.strong -->
+                            <div class="offer-collapse__item accordion-item" data-scroll>
+                                <div class="offer-collapse__item-head d-flex accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__02" aria-expanded="true">
+                                        <div class="count">02</div>
+                                        <!-- /.count -->
+                                        <div class="strong d-flex justify-content-between align-items-center">
+                                            UX Design
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Red arrow">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </div>
+                                        <!-- /.strong -->
+                                    </button>
                                 </div>
                                 <!-- /.head -->
-                                <div class="offer-collapse__item-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                <div id="accordion-item__02" class="accordion-collapse collapse">
+                                    <div class="offer-collapse__item-body accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                    </div>
+                                    <!-- /.body -->
                                 </div>
-                                <!-- /.body -->
                             </div>
                             <!-- /.offer-collapse__item -->
-                            <div class="offer-collapse__item" data-scroll>
-                                <div class="offer-collapse__item-head d-flex">
-                                    <div class="count">03</div>
-                                    <!-- /.count -->
-                                    <div class="strong d-flex justify-content-between align-items-center">
-                                        UI Design
-                                        <i class="icon">
-                                            <img src="img/arrow-red.svg" alt="Red arrow">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </div>
-                                    <!-- /.strong -->
+                            <div class="offer-collapse__item accordion-item" data-scroll>
+                                <div class="offer-collapse__item-head d-flex accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__03" aria-expanded="true">
+                                        <div class="count">03</div>
+                                        <!-- /.count -->
+                                        <div class="strong d-flex justify-content-between align-items-center">
+                                            UI Design
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Red arrow">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </div>
+                                        <!-- /.strong -->
+                                    </button>
                                 </div>
                                 <!-- /.head -->
-                                <div class="offer-collapse__item-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                <div id="accordion-item__03" class="accordion-collapse collapse">
+                                    <div class="offer-collapse__item-body accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                    </div>
+                                    <!-- /.body -->
                                 </div>
-                                <!-- /.body -->
                             </div>
                             <!-- /.offer-collapse__item -->
-                            <div class="offer-collapse__item" data-scroll>
-                                <div class="offer-collapse__item-head d-flex">
-                                    <div class="count">04</div>
-                                    <!-- /.count -->
-                                    <div class="strong d-flex justify-content-between align-items-center">
-                                        Website development
-                                        <i class="icon">
-                                            <img src="img/arrow-red.svg" alt="Red arrow">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </div>
-                                    <!-- /.strong -->
+                            <div class="offer-collapse__item accordion-item" data-scroll>
+                                <div class="offer-collapse__item-head d-flex accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__04" aria-expanded="true">
+                                        <div class="count">04</div>
+                                        <!-- /.count -->
+                                        <div class="strong d-flex justify-content-between align-items-center">
+                                            Website development
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Red arrow">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </div>
+                                        <!-- /.strong -->
+                                    </button>
                                 </div>
                                 <!-- /.head -->
-                                <div class="offer-collapse__item-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                <div id="accordion-item__04" class="accordion-collapse collapse">
+                                    <div class="offer-collapse__item-body accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                    </div>
+                                    <!-- /.body -->
                                 </div>
-                                <!-- /.body -->
                             </div>
                             <!-- /.offer-collapse__item -->
-                            <div class="offer-collapse__item" data-scroll>
-                                <div class="offer-collapse__item-head d-flex">
-                                    <div class="count">05</div>
-                                    <!-- /.count -->
-                                    <div class="strong d-flex justify-content-between align-items-center">
-                                        Analytics
-                                        <i class="icon">
-                                            <img src="img/arrow-red.svg" alt="Red arrow">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </div>
-                                    <!-- /.strong -->
+                            <div class="offer-collapse__item accordion-item" data-scroll>
+                                <div class="offer-collapse__item-head d-flex accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__05" aria-expanded="true">
+                                        <div class="count">05</div>
+                                        <!-- /.count -->
+                                        <div class="strong d-flex justify-content-between align-items-center">
+                                            Analytics
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Red arrow">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </div>
+                                        <!-- /.strong -->
+                                    </button>
                                 </div>
                                 <!-- /.head -->
-                                <div class="offer-collapse__item-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                <div id="accordion-item__05" class="accordion-collapse collapse">
+                                    <div class="offer-collapse__item-body accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                                    </div>
+                                    <!-- /.body -->
                                 </div>
-                                <!-- /.body -->
                             </div>
                             <!-- /.offer-collapse__item -->
                         </div>
@@ -400,7 +425,7 @@
 
         <section class="testimonials">
             <div class="container">
-                <div class="section-heading testimonials-heading d-flex justify-content-between">
+                <div class="section-heading testimonials-heading d-flex justify-content-between" data-scroll>
                     <div class="testimonials-heading__block">
                         <div class="section-slug">Love from our clients</div>
                         <!-- /.section-slug -->
@@ -505,7 +530,7 @@
 
         <section class="clients">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start">
+                <div class="section-heading d-flex justify-content-between align-items-start" data-scroll>
                     <div class="section-slug">Our clients</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor</h2>
@@ -514,43 +539,43 @@
                 <!-- /.section-heading -->
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="clients-logo d-flex align-items-center justify-content-center">
-                            <img src="img/clients-logo2.svg" alt="Inter">
+                        <div class="clients-logo d-flex align-items-center justify-content-center" data-scroll>
+                            <img src="img/clients-logo1.svg" alt="Inter">
                         </div>
                         <!-- /.clients-logo -->
                     </div>
                     <!-- /.col-md-6 -->
                     <div class="col-md-6">
                         <div class="clients-list">
-                            <div class="clients-list__item d-flex justify-content-between align-items-center">
+                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
                                 <div class="strong" data-src="img/clients-logo1.svg">Microsoft</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center">
+                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
                                 <div class="strong" data-src="img/clients-logo2.svg">Nike</div>
                                 <!-- /.strong -->
                                 <div class="location">USA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center">
+                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
                                 <div class="strong" data-src="img/clients-logo3.svg">Intel</div>
                                 <!-- /.strong -->
                                 <div class="location">CA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center">
+                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
                                 <div class="strong" data-src="img/clients-logo4.svg">Netflix</div>
                                 <!-- /.strong -->
                                 <div class="location">CX</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center">
+                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
                                 <div class="strong" data-src="img/clients-logo5.svg">Airbnb</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
@@ -570,7 +595,7 @@
 
         <section class="blog">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start">
+                <div class="section-heading d-flex justify-content-between align-items-start" data-scroll>
                     <div class="section-slug">Blog</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Find some useful information here. Ultrices senectus nec rhoncus facilisis.</h2>
@@ -580,20 +605,20 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail">
-                                <a href="#">
+                            <div class="blog-card__thumbnail" data-scroll>
+                                <a href="#" data-scrol>
                                     <img src="img/blog-thumbnail-1.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
+                            <div class="blog-card__info" data-scroll>
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
+                            <div class="blog-card__title" data-scroll>
                                 <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
                                 <i class="icon">
                                     <img src="img/arrow-red-angle.svg" alt="Icon">
@@ -607,20 +632,20 @@
                     <!-- /.col-md-4 -->
                     <div class="col-md-4">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail">
+                            <div class="blog-card__thumbnail" data-scroll>
                                 <a href="#">
                                     <img src="img/blog-thumbnail-2.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
+                            <div class="blog-card__info" data-scroll>
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
+                            <div class="blog-card__title" data-scroll>
                                 <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
                                 <i class="icon">
                                     <img src="img/arrow-red-angle.svg" alt="Icon">
@@ -634,20 +659,20 @@
                     <!-- /.col-md-4 -->
                     <div class="col-md-4">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail">
+                            <div class="blog-card__thumbnail" data-scroll>
                                 <a href="#">
                                     <img src="img/blog-thumbnail-3.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
+                            <div class="blog-card__info" data-scroll>
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
+                            <div class="blog-card__title" data-scroll>
                                 <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
                                 <i class="icon">
                                     <img src="img/arrow-red-angle.svg" alt="Icon">
@@ -668,8 +693,8 @@
 
         <section class="discussion">
             <div class="container">
-                <div class="section-heading d-flex justify-content-between align-items-start">
-                    <div class="section-slug">Let’s work together</div>
+                <div class="section-heading d-flex justify-content-between align-items-start" id="section-9-pin" data-scroll>
+                    <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#section-9-pin">Let’s work together</div>
                     <!-- /.section-slug -->
                     <h2 class="normal-title">Fill out the form and we will contact you to discuss our best project together!</h2>
                     <!-- /.normal-title -->
@@ -679,25 +704,25 @@
                     <div class="offset-md-6 col-md-6">
                         <div class="discussion-form">
                             <form action="#" method="post">
-                                <div class="discussion-form__item">
+                                <div class="discussion-form__item" data-scroll>
                                     <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
                                     <span class="input-focus"></span>
                                     <!-- /.input-focus -->
                                 </div>
                                 <!-- /.discussion-form__item -->
-                                <div class="discussion-form__item">
+                                <div class="discussion-form__item" data-scroll>
                                     <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
                                     <span class="input-focus"></span>
                                     <!-- /.input-focus -->
                                 </div>
                                 <!-- /.discussion-form__item -->
-                                <div class="discussion-form__item">
+                                <div class="discussion-form__item" data-scroll>
                                     <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
                                     <span class="input-focus"></span>
                                     <!-- /.input-focus -->
                                 </div>
                                 <!-- /.discussion-form__item -->
-                                <div class="discussion-form__item">
+                                <div class="discussion-form__item" data-scroll>
                                     <button class="submit-btn" type="submit">get free consultation</button>
                                 </div>
                                 <!-- /.discussion-form__item -->
@@ -710,16 +735,16 @@
                 <!-- /.row -->
                 <div class="social-links">
                     <ul>
-                        <li>
+                        <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
                             <a href="#"><span>Linkedin</span></a>
                         </li>
-                        <li>
+                        <li data-scroll data-scroll-direction="vertical" data-scroll-speed="1">
                             <a href="#"><span>Youtube</span></a>
                         </li>
-                        <li>
+                        <li data-scroll data-scroll-direction="vertical" data-scroll-speed="-1">
                             <a href="#"><span>Facebook</span></a>
                         </li>
-                        <li>
+                        <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
                             <a href="#"><span>Instagram</span></a>
                         </li>
                     </ul>
@@ -794,6 +819,8 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- Locomotive scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <!-- Gsap -->
