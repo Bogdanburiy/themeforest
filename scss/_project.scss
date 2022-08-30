@@ -1,0 +1,55 @@
+.project {
+    padding: 90px 0;
+    &-heading {
+        &__info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            ul {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                li {
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: block;
+                        width: fit-content;
+                        padding: 10px 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $mainBlack;
+                        letter-spacing: -0.02em;
+                        text-transform: uppercase;
+                        border: 1px solid #000000;
+                        border-radius: 60px;
+                    }
+                }
+            }
+            small {
+                font-style: normal;
+                font-weight: 400;
+                color: $mainBlack;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &-thumbnail {
+        max-width: 100%;
+        width: 100%;
+        height: 700px;
+        margin-bottom: 80px;
+        background: url(../img/main-image.jpeg);
+        background-size: cover;
+        background-position-x: 50%;
+        background-position-y: 90%;
+        background-size: 100%;
+    }
+}

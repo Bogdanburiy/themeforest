@@ -22,7 +22,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-@import 'variables';
+// Variables
+$mainBlack: #131313;
+$mainRed: #FC4005;
+$mainWarm: #F3EFEB;
+$mainGray: #6D6D6D;
+
+// Variables section padding 
+$pt: 90px;
+$pb: 90px;
 
 ul {
     margin: 0;
@@ -118,17 +126,16 @@ a {
 }
 
 .normal-title {
-    max-width: 50%;
-    width: 100%;
+    display: inline-block;
     margin: 0;
     color: $mainBlack;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 50px;
-    opacity: 0;
-    transform: translateY(160px);
-    transition: transform 2s cubic-bezier(.215,.61,.355,1);
+    // opacity: 0;
+    // transform: translateY(160px);
+    // transition: transform 2s cubic-bezier(.215,.61,.355,1);
 }
 
 .section-slug {
@@ -142,6 +149,11 @@ a {
     text-transform: uppercase;
     border: 1px solid #000000;
     border-radius: 60px;
+}
+
+.section-p {
+    padding-top: $pt;
+    padding-bottom: $pb;
 }
 
 .free-consultation {
@@ -224,11 +236,28 @@ a {
             &:not(:nth-of-type(1)) {
                 margin-left: -50px;
             }
+            &:nth-child(2n + 1) {
+                a {
+                    color: $mainBlack;
+                    background-color: $mainWarm;
+                    border: 1px solid $mainBlack;
+                    span {
+                        &::after {
+                            background-color: $mainBlack;
+                        }
+                    }
+                }
+            }
             &:nth-child(2n) {
                 a {
                     color: $mainWarm;
                     background-color: $mainRed;
                     border: 1px solid $mainRed;
+                    span {
+                        &::after {
+                            background-color: $mainWarm;
+                        }
+                    }
                 }
             }
             a {
@@ -248,11 +277,28 @@ a {
                 border-radius: 50%;
                 transition: all .3s ease-out;
                 span {
+                    position: relative;
                     transition: all .3s ease-out;
+                    &::after {
+                        bottom: -25px;
+                        content: "";
+                        width: 100px;
+                        height: 2px;
+                        margin: 0 auto;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        transform: scaleX(0);
+                        transform-origin: center center;
+                        transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+                    }
                 }
                 &:hover {
                     span {
                         margin-bottom: 50px;
+                        &::after {
+                            transform: scaleX(1);
+                        }
                     }
                 }
             }
@@ -262,13 +308,30 @@ a {
 
 .section-heading {
     margin-bottom: 70px;
-    .normal-title {
-        flex: 0 0 auto;
-        padding-left: 12px;
-        padding-right: 12px;
+    &__content {
+        opacity: 0;
+        transform: translateY(160px);
+        transition: transform 2s cubic-bezier(.215,.61,.355,1);
+        .normal-title {
+            margin-bottom: 30px;
+        }
+        .block-image {
+            margin: 30px 0;
+            img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &.only-heading {
+            .normal-title {
+                margin-bottom: 0;
+            }
+        }
     }
     &.is-inview {
-        .normal-title {
+        .section-heading__content {
             opacity: 1;
             transform: none;
         }
@@ -428,6 +491,12 @@ a {
 
 // Let’s work together
 @import "discussion";
+
+// Single project page
+@import "project";
+
+// Single portfolio page
+@import "portfolio";
 
 // Footer
 @import "footer";
