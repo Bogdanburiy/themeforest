@@ -29,8 +29,86 @@ $mainWarm: #F3EFEB;
 $mainGray: #6D6D6D;
 
 // Variables section padding 
-$pt: 90px;
-$pb: 90px;
+$marginSizes: 10;
+$paddingSizes: 10;
+
+@mixin margin-classes {
+    @for $i from 1 through $marginSizes {
+        $margin: $i * 10px;
+
+        /* margin #{$margin} */
+        .m#{$i} {
+            margin: $margin;
+        }
+
+        .ml#{$i} {
+            margin-left: $margin;
+        }
+
+        .mr#{$i} {
+            margin-right: $margin;
+        }
+
+        .mt#{$i} {
+            margin-top: $margin;
+        }
+
+        .mb#{$i} {
+            margin-bottom: $margin;
+        }
+
+        .mx#{$i} {
+            margin-left: $margin;
+            margin-right: $margin;
+        }
+
+        .my#{$i} {
+            margin-top: $margin;
+            margin-bottom: $margin;
+        }
+    }
+}
+
+@include margin-classes;
+
+@mixin padding-classes {
+    @for $i from 1 through $paddingSizes {
+        $padding: $i * 10px;
+
+        /* padding #{$padding} */
+        .p#{$i} {
+            padding: $padding;
+        }
+
+        .pl#{$i} {
+            padding-left: $padding;
+        }
+
+        .pr#{$i} {
+            padding-right: $padding;
+        }
+
+        .pt#{$i} {
+            padding-top: $padding;
+        }
+
+        .pb#{$i} {
+            padding-bottom: $padding;
+        }
+
+        .px#{$i} {
+            padding-left: $padding;
+            padding-right: $padding;
+        }
+
+        .py#{$i} {
+            padding-top: $padding;
+            padding-bottom: $padding;
+        }
+    }
+}
+
+@include padding-classes;
 
 ul {
     margin: 0;
@@ -122,6 +200,9 @@ a {
         &:nth-of-type(2) {
             transition-delay: .2s;
         }
+        &:nth-of-type(3) {
+            transition-delay: .3s;
+        }
     }
 }
 
@@ -133,6 +214,21 @@ a {
     font-weight: 500;
     font-size: 36px;
     line-height: 50px;
+    &.location-mark {
+        display: flex;
+        align-items: baseline;
+        &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            background-image: url(../img/map-pin.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
     // opacity: 0;
     // transform: translateY(160px);
     // transition: transform 2s cubic-bezier(.215,.61,.355,1);
@@ -151,9 +247,8 @@ a {
     border-radius: 60px;
 }
 
-.section-p {
-    padding-top: $pt;
-    padding-bottom: $pb;
+.mb7 {
+    margin-bottom: 70px;
 }
 
 .free-consultation {
@@ -307,7 +402,6 @@ a {
 }
 
 .section-heading {
-    margin-bottom: 70px;
     &__content {
         opacity: 0;
         transform: translateY(160px);
@@ -497,6 +591,15 @@ a {
 
 // Single portfolio page
 @import "portfolio";
+
+// Contact page
+@import "contact";
+
+// About us Page
+@import "about";
+
+// 404 Page
+@import "error";
 
 // Footer
 @import "footer";
