@@ -636,6 +636,10 @@ body {
   padding-bottom: 100px;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -661,6 +665,8 @@ a {
   width: 500%;
   height: 500%;
   background: url(../img/noise.png);
+  -webkit-animation: noise 7s steps(10) infinite;
+          animation: noise 7s steps(10) infinite;
   z-index: -1;
 }
 
@@ -768,7 +774,6 @@ a {
 
 .normal-title, .portfolio-scrolling__left h2 {
   display: inline-block;
-  margin: 0;
   color: #131313;
   font-style: normal;
   font-weight: 500;
@@ -804,10 +809,6 @@ a {
   text-transform: uppercase;
   border: 1px solid #000000;
   border-radius: 60px;
-}
-
-.mb7 {
-  margin-bottom: 70px;
 }
 
 .free-consultation {
@@ -955,12 +956,6 @@ a {
   transform: translateY(160px);
   transition: transform 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.section-heading__content .normal-title, .section-heading__content .portfolio-scrolling__left h2, .portfolio-scrolling__left .section-heading__content h2 {
-  margin-bottom: 30px;
-}
-.section-heading__content .block-image {
-  margin: 30px 0;
-}
 .section-heading__content .block-image img {
   width: 100%;
   height: 350px;
@@ -968,9 +963,6 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-.section-heading__content.only-heading .normal-title, .section-heading__content.only-heading .portfolio-scrolling__left h2, .portfolio-scrolling__left .section-heading__content.only-heading h2 {
-  margin-bottom: 0;
 }
 .section-heading.is-inview .section-heading__content {
   opacity: 1;
@@ -1163,12 +1155,8 @@ a {
   color: #FC4005;
 }
 
-.main {
-  padding: 70px 0 90px 0;
-}
 .main-heading {
   position: relative;
-  margin-bottom: 60px;
 }
 .main .big-image {
   max-width: 100%;
@@ -1757,6 +1745,73 @@ a {
   transition: all 0.3s ease-out;
 }
 
+.article-heading__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.article-heading__info ul {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.article-heading__info ul li {
+  margin-right: 15px;
+}
+.article-heading__info ul li:last-child {
+  margin-right: 0;
+}
+.article-heading__info ul li a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #131313;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  border-radius: 60px;
+}
+.article-heading__info small {
+  font-style: normal;
+  font-weight: 400;
+  color: #131313;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.article-thumbnail {
+  max-width: 100%;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 80px;
+  background: url(../img/main-image.jpeg);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 90%;
+  background-size: 100%;
+}
+
+.article-description .block-image__group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.article-description .block-image__group img {
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .discussion-form {
   margin-top: 50px;
 }
@@ -2050,7 +2105,7 @@ a {
 }
 .team-list__card-thumbnail img {
   width: 100%;
-  height: 400px;
+  height: 480px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2203,6 +2258,25 @@ a {
 }
 .notfound h1 span {
   display: inline-block;
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.notfound h1 span:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+.notfound h1 span:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+.notfound h1 span:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+.notfound h1.is-inview span {
+  opacity: 1;
+  transform: none;
+  transition-duration: 0.8s;
 }
 .notfound .free-consultation {
   margin: 0 auto;
@@ -2222,7 +2296,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 68px;
-  line-height: 102px;
+  line-height: 60px;
 }
 .footer-info__email a::after {
   position: absolute;
