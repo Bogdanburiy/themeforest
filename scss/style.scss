@@ -29,14 +29,13 @@ $mainWarm: #F3EFEB;
 $mainGray: #6D6D6D;
 
 // Variables section padding 
-$marginSizes: 10;
-$paddingSizes: 10;
+$marginSizes: 200;
+$paddingSizes: 200;
 
 @mixin margin-classes {
     @for $i from 1 through $marginSizes {
         $margin: $i * 10px;
 
-        /* margin #{$margin} */
         .m#{$i} {
             margin: $margin;
         }
@@ -68,14 +67,12 @@ $paddingSizes: 10;
         }
     }
 }
-
 @include margin-classes;
 
 @mixin padding-classes {
     @for $i from 1 through $paddingSizes {
         $padding: $i * 10px;
 
-        /* padding #{$padding} */
         .p#{$i} {
             padding: $padding;
         }
@@ -107,7 +104,6 @@ $paddingSizes: 10;
         }
     }
 }
-
 @include padding-classes;
 
 p {
@@ -419,6 +415,87 @@ a {
             opacity: 1;
             transform: none;
         }
+    }
+}
+
+.smooth-image {
+    &__wrap {
+        max-width: 100%;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0;
+            transform: scale(1.3);
+            transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        &.is-inview {
+            img {
+                opacity: 1;
+                transform: scale(1);
+                transition-delay: 0.6s;
+            }
+        }
+    }
+}
+
+.parallax-images {
+    &__item {
+        height: 700px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transform: scale(1.3);
+            transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        &.is-inview {
+            img {
+                opacity: 1;
+                transform: scale(1);
+                transition-delay: 0.6s;
+            }
+        }
+    }
+}
+
+.scroll-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 123px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #131313;
+    position: fixed;
+    top: calc(5% + 0%);
+    left: 140px;
+    transform: rotate(90deg);
+    i.icon {
+        img {
+            width: 123px;
+            height: 8px;
+            // animation: animateScrolldown 2s ease-out infinite;
+        }
+    }
+}
+
+@keyframes animateScrolldown {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
     }
 }
 
