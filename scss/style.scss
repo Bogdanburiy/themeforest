@@ -124,6 +124,17 @@ a {
     outline: none;
 }
 
+.page-container {
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.5s ease-out;
+    &.show {
+        visibility: visible;
+        opacity: 1; 
+        transition:all 0.5s ease-out;
+    }
+}
+
 .noise {
     position: relative;
     &::after {
@@ -134,7 +145,7 @@ a {
         width: 500%;
         height: 500%;
         background: url(../img/noise.png);
-        animation: noise 7s steps(10) infinite;
+        // animation: noise 7s steps(10) infinite;
         z-index: -1;
     }
 }
@@ -477,7 +488,7 @@ a {
     line-height: 21px;
     color: #131313;
     position: fixed;
-    top: calc(5% + 0%);
+    top: 650px;
     left: 140px;
     transform: rotate(90deg);
     i.icon {
@@ -499,30 +510,6 @@ a {
     }
 }
 
-.cursor {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    border: 1px solid $mainBlack;
-    pointer-events: none;
-    border-radius: 50%;
-    background: transparent;
-    animation: moveCursor1 .5s infinite alternate;
-    transition: all .2s ease-out;
-    z-index: 999;
-    &.white-cursor {
-        border: 1px solid $mainWarm;
-    }
-    &.mclick {
-        background: transparent;
-        animation: moveCursor2 .5s forwards;
-    }
-}
-
 .preloader-page {
     position: fixed;
     top: 0;
@@ -530,70 +517,54 @@ a {
     width: 100%;
     height: 100vh;
     z-index: 1100;
-    background-color: $mainBlack;
-    cursor: pointer;
-    .loader__wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background-color: $mainWarm;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.5s ease-out;
+    cursor: none;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition:all 0.5s ease-out;
     }
-    .loader__text {
+    &__letters {
+        color: $mainRed;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 250px;
+        line-height: 86%;
+    }
+    &__counter {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: calc(70% + 0.1vw);
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-weight: 700;
-        color: $mainWarm;
-        margin: 0;
-    }
-    .loader__circle {
-        display: block;
-        position: absolute;
-        border-radius: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        height: 250px;
-        animation-name: SpinAround;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-        animation-timing-function: linear;
-        box-shadow: 0px 0px 1px rgba($mainWarm, 1);
-        &:nth-of-type(1) {
-            animation-direction: reverse;
-            transform-origin: 49.6% 49.8%;
+        right: 50px;
+        bottom: 50px;
+        &-line {
+            position: relative;
+            width: 270px;
+            margin-right: 15px;
+            &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $mainBlack;
+                opacity: 0.3;
+            }
+            span {
+                display: block;
+                height: 1px;
+                background-color: $mainBlack;
+            }
         }
-        &:nth-of-type(2) {
-            transform-origin: 49.5% 48.8%;
-        }
-    }
-    .loader__shape {
-        width: 100%;
-        margin: -0.5rem 0 0 0;
-        position: relative;
-    }
-
-    .shape {
-        height: 100vh;
-        width: 100%;
-        display: block;
-        fill: $mainBlack;
-    }
-    @keyframes SpinAround {
-        0% {
-            transform: translate(-50%, -50%) rotate(0);
-        }
-
-        100% {
-            transform: translate(-50%, -50%) rotate(-360deg);
+        &-number {
+            min-width: 65px;
+            color: $mainBlack;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 40px;
+            opacity: 0.7;
         }
     }
 }

@@ -135,26 +135,31 @@ ScrollTrigger.addEventListener('refresh', () => scroller.update());
 ScrollTrigger.refresh();
 
 // 1.6 Preloader page
-// const LANDING = {};
-// LANDING.intro = document.querySelector(".preloader-page");
-// LANDING.path = LANDING.intro.querySelector("path");
+preloader();
 
-// const svgAnimation = () => {
-//   console.log("Animation");
+function preloader (done) {
+    let preObj = document.querySelector('.preloader-page');
+    let preCount = document.querySelector('.preloader-page__counter-number');
+    let pageContent = document.querySelector('.page-container');
+    let preLine = document.querySelector('.preloader-page__counter-line span');
 
-//   anime({
-//     targets: LANDING.intro,
-//     duration: 2000,
-//     easing: "easeInOutSine",
-//     translateY: "-200vh",
-//   });
+    preObj.classList.add('show');
+    pageContent.classList.remove('show');
 
-//   anime({
-//     targets: LANDING.path,
-//     duration: 1500,
-//     easing: "easeInOutSine",
-//     d: LANDING.path.getAttribute("pathdata:id"),
-//   });
-// };
+    let width = 0;
+    let time = setInterval(function() {
+        width = width + 1;
+        preCount.textContent = width + '%';
+        preLine.style.width = width + '%';
+        if (width === 100) {
+            preObj.classList.remove('show');
+            pageContent.classList.add('show');
+            clearInterval(time);
+            width = 0;
+            if (done) {
+                return done();
+            }
+        }
+    }, 20)
+}
 
-// document.querySelector(".preloader-page").addEventListener("click", svgAnimation);

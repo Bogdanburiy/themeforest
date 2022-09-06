@@ -12034,6 +12034,17 @@ a {
   outline: none;
 }
 
+.page-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.page-container.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
 .noise {
   position: relative;
 }
@@ -12045,8 +12056,6 @@ a {
   width: 500%;
   height: 500%;
   background: url(../img/noise.png);
-  -webkit-animation: noise 7s steps(10) infinite;
-          animation: noise 7s steps(10) infinite;
   z-index: -1;
 }
 
@@ -12403,7 +12412,7 @@ a {
   line-height: 21px;
   color: #131313;
   position: fixed;
-  top: 5%;
+  top: 650px;
   left: 140px;
   transform: rotate(90deg);
 }
@@ -12433,32 +12442,6 @@ a {
             clip-path: inset(0 0 0 0);
   }
 }
-.cursor {
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  border: 1px solid #131313;
-  pointer-events: none;
-  border-radius: 50%;
-  background: transparent;
-  -webkit-animation: moveCursor1 0.5s infinite alternate;
-          animation: moveCursor1 0.5s infinite alternate;
-  transition: all 0.2s ease-out;
-  z-index: 999;
-}
-.cursor.white-cursor {
-  border: 1px solid #F3EFEB;
-}
-.cursor.mclick {
-  background: transparent;
-  -webkit-animation: moveCursor2 0.5s forwards;
-          animation: moveCursor2 0.5s forwards;
-}
-
 .preloader-page {
   position: fixed;
   top: 0;
@@ -12466,83 +12449,56 @@ a {
   width: 100%;
   height: 100vh;
   z-index: 1100;
+  background-color: #F3EFEB;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  cursor: none;
+}
+.preloader-page.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.preloader-page__letters {
+  color: #FC4005;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 250px;
+  line-height: 86%;
+}
+.preloader-page__counter {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.preloader-page__counter-line {
+  position: relative;
+  width: 270px;
+  margin-right: 15px;
+}
+.preloader-page__counter-line::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
   background-color: #131313;
-  cursor: pointer;
+  opacity: 0.3;
 }
-.preloader-page .loader__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.preloader-page .loader__text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: calc(70% + 0.1vw);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 700;
-  color: #F3EFEB;
-  margin: 0;
-}
-.preloader-page .loader__circle {
+.preloader-page__counter-line span {
   display: block;
-  position: absolute;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  -webkit-animation-name: SpinAround;
-          animation-name: SpinAround;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  box-shadow: 0px 0px 1px #f3efeb;
+  height: 1px;
+  background-color: #131313;
 }
-.preloader-page .loader__circle:nth-of-type(1) {
-  animation-direction: reverse;
-  transform-origin: 49.6% 49.8%;
-}
-.preloader-page .loader__circle:nth-of-type(2) {
-  transform-origin: 49.5% 48.8%;
-}
-.preloader-page .loader__shape {
-  width: 100%;
-  margin: -0.5rem 0 0 0;
-  position: relative;
-}
-.preloader-page .shape {
-  height: 100vh;
-  width: 100%;
-  display: block;
-  fill: #131313;
-}
-@-webkit-keyframes SpinAround {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-@keyframes SpinAround {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
+.preloader-page__counter-number {
+  min-width: 65px;
+  color: #131313;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  opacity: 0.7;
 }
 
 @-webkit-keyframes moveCursor1 {
