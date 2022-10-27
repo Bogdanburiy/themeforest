@@ -40,8 +40,10 @@
                     </nav>
                 </div>
                 <!-- /.header-menu -->
-                <div class="header-mobile">
-                    <a href="#"><img src="img/hamburger-menu.svg" alt="Mobile menu"></a>
+                <div class="header-mobile menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <!-- /.header-mobile -->
             </div>
@@ -49,9 +51,29 @@
         </header>
         <!-- /.header -->
 
+        <div class="overlay-container">
+            <nav class="overlay-menu">
+                <div class="overlay-menu__item item-1">
+                    <a href="index.html" class="menu__item-link">Home</a>
+                </div>
+                <div class="overlay-menu__item item-2">
+                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
+                </div>
+                <div class="overlay-menu__item item-3">
+                    <a href="about-us.html" class="menu__item-link">About</a>
+                </div>
+                <div class="overlay-menu__item item-4">
+                    <a href="news.html" class="menu__item-link">Blog</a>
+                </div>
+                <div class="overlay-menu__item item-5">
+                    <a href="contact.html" class="menu__item-link">Contacts</a>
+                </div>
+            </nav>
+        </div>
+
         <section class="main mt8 mb16">
             <div class="container">
-                <div class="main-heading d-flex justify-content-between align-items-end">
+                <div class="main-heading d-flex">
                     <h1 class="big-tittle" data-scroll>
                         <span class="big-tittle__line">
                             <span data-scroll data-scroll-speed="3" data-scroll-position="top">News and</span>
@@ -71,267 +93,396 @@
         <section class="blog news mb16" id="news">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="2" data-scroll-target="#news" data-scroll-delay="0.05">
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#" data-scrol>
-                                    <img src="img/blog-thumbnail-1.jpeg" alt="Image">
-                                </a>
+                    <div class="col-md-12 col-lg-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="-0.5" data-scroll-target="#news" data-scroll-delay="0.05">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-2.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-3.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__title -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
+                            </div>
+                            <!-- /.col-md-6 col-lg-12 -->
                         </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-2.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-3.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
+                        <!-- /.row -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="1" data-scroll-target="#news" data-scroll-delay="0.05">
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#" data-scrol>
-                                    <img src="img/blog-thumbnail-4.jpeg" alt="Image">
-                                </a>
+                    <!-- /.col-md-12 col-lg-4 -->
+                    <div class="col-md-12 col-lg-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="1" data-scroll-target="#news" data-scroll-delay="0.05">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-4.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-5.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-6.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__title -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-4.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
+                            </div>
+                            <!-- /.col-md-6 col-lg-12 -->
                         </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-5.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-6.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
+                        <!-- /.row -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="-1" data-scroll-target="#news" data-scroll-delay="0.05">
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#" data-scrol>
-                                    <img src="img/blog-thumbnail-8.jpeg" alt="Image">
-                                </a>
+                    <!-- /.col-md-12 col-lg-4 -->
+                    <div class="col-md-12 col-lg-4" data-scroll data-scroll-direction="vertical" data-scroll-speed="-1" data-scroll-target="#news" data-scroll-delay="0.05">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-8.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-8.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#">
+                                            <img src="img/blog-thumbnail-9.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
                             </div>
-                            <!-- /.blog-card__title -->
+                            <!-- /.col-md-6 col-lg-12 -->
+                            <div class="col-md-6 col-lg-12">
+                                <div class="blog-card mb3">
+                                    <div class="blog-card__thumbnail" data-scroll>
+                                        <a href="#" data-scrol>
+                                            <img src="img/blog-thumbnail-8.jpeg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <!-- /.blog-card__thumbnail -->
+                                    <div class="blog-card__info" data-scroll>
+                                        <div class="blog-card__info-date">05/06/2022</div>
+                                        <!-- /.blog-card__info-date -->
+                                        <div class="blog-card__info-cat">development</div>
+                                        <!-- /.blog-card__info-cat -->
+                                    </div>
+                                    <!-- /.blog-card__info -->
+                                    <div class="blog-card__title" data-scroll>
+                                        <h3>
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                <i class="icon">
+                                                    <img src="img/arrow-red-angle.svg" alt="Icon">
+                                                </i>
+                                                <!-- /.icon -->
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- /.blog-card__title -->
+                                </div>
+                                <!-- /.blog-card -->
+                            </div>
+                            <!-- /.col-md-6 col-lg-12 -->
                         </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-8.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                        <div class="blog-card mb3">
-                            <div class="blog-card__thumbnail" data-scroll>
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-9.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">development</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
-                                <h3>
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
+                        <!-- /.row -->
                     </div>
-                    <!-- /.col-md-4 -->
+                    <!-- /.col-md-12 col-lg-4 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -388,20 +539,58 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="social-links">
-                    <ul>
-                        <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.5">
-                            <a href="#"><span>Linkedin</span></a>
-                        </li>
-                        <li data-scroll data-scroll-direction="vertical" data-scroll-speed="0.5">
-                            <a href="#"><span>Youtube</span></a>
-                        </li>
-                        <li data-scroll data-scroll-direction="vertical" data-scroll-speed="-0.5">
-                            <a href="#"><span>Facebook</span></a>
-                        </li>
-                        <li data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.5">
-                            <a href="#"><span>Instagram</span></a>
-                        </li>
-                    </ul>
+                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.5">
+                        <div class="social-links__item-inner">
+                            <div class="social-links__item-wrapper">
+                                <a href="#" class="social-links__item-content">
+                                    <span>Linkedin</span>
+                                </a>
+                                <!-- /.social-links__item-content -->
+                            </div>
+                            <!-- /.social-links__item-wrapper -->
+                        </div>
+                        <!-- /.social-links__item-inner -->
+                    </div>
+                    <!-- /.social-links__item -->
+                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="0.5">
+                        <div class="social-links__item-inner">
+                            <div class="social-links__item-wrapper">
+                                <a href="#" class="social-links__item-content">
+                                    <span>Youtube</span>
+                                </a>
+                                <!-- /.social-links__item-content -->
+                            </div>
+                            <!-- /.social-links__item-wrapper -->
+                        </div>
+                        <!-- /.social-links__item-inner -->
+                    </div>
+                    <!-- /.social-links__item -->
+                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="-0.5">
+                        <div class="social-links__item-inner">
+                            <div class="social-links__item-wrapper">
+                                <a href="#" class="social-links__item-content">
+                                    <span>Facebook</span>
+                                </a>
+                                <!-- /.social-links__item-content -->
+                            </div>
+                            <!-- /.social-links__item-wrapper -->
+                        </div>
+                        <!-- /.social-links__item-inner -->
+                    </div>
+                    <!-- /.social-links__item -->
+                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.5">
+                        <div class="social-links__item-inner">
+                            <div class="social-links__item-wrapper">
+                                <a href="#" class="social-links__item-content">
+                                    <span>Instagram</span>
+                                </a>
+                                <!-- /.social-links__item-content -->
+                            </div>
+                            <!-- /.social-links__item-wrapper -->
+                        </div>
+                        <!-- /.social-links__item-inner -->
+                    </div>
+                    <!-- /.social-links__item -->
                 </div>
                 <!-- /.social-links -->
             </div>

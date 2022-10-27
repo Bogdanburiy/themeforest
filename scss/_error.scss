@@ -1,4 +1,7 @@
 .notfound {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 85px);
     h1 {
         margin-bottom: 50px;
         color: $mainRed;

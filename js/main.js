@@ -29,23 +29,7 @@ if (anchorLength > 0) {
 }
 
 // 1.3 Interective cursor
-// const cursor = document.querySelector('.cursor');
-// let footer = document.querySelector('.footer');
 
-// document.addEventListener('mousemove', function(e) {
-//     cursor.setAttribute("style","top:" + (e.pageY - 10) + "px; left:" + (e.pageX - 10) + "px;");
-//     footer.addEventListener('mouseover', function() {
-//         cursor.classList.add('white-cursor');
-//     });
-//     footer.addEventListener('mouseout', function() {
-//         cursor.classList.remove('white-cursor');
-//     });
-// });
-
-// document.addEventListener('click', function(e) {
-//    cursor.classList.add('mclick');
-//    setTimeout(function() { cursor.classList.remove('mclick'); },500) 
-// });
 
 // 1.4 Change logo on hover block "Our clients"
 let imageGet = Array.from(document.querySelectorAll('.clients-list__item .strong'));
@@ -67,8 +51,6 @@ window.addEventListener('load', function() {
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    tablet: { smooth: true },
-    smartphone: { smooth: true }
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -126,7 +108,7 @@ var y = {
     firefoxMultiplier: 50,
     touchMultiplier: 2,
     resetNativeScroll: !0,
-    tablet: { smooth: !1, direction: "vertical", gestureDirection: "vertical", breakpoint: 1024 },
+    tablet: { smooth: !1, direction: "vertical", gestureDirection: "vertical", breakpoint: 992 },
     smartphone: { smooth: !1, direction: "vertical", gestureDirection: "vertical" },
 }
 
@@ -135,31 +117,56 @@ ScrollTrigger.addEventListener('refresh', () => scroller.update());
 ScrollTrigger.refresh();
 
 // 1.6 Preloader page
-preloader();
+// preloader();
 
-function preloader (done) {
-    let preObj = document.querySelector('.preloader-page');
-    let preCount = document.querySelector('.preloader-page__counter-number');
-    let pageContent = document.querySelector('.page-container');
-    let preLine = document.querySelector('.preloader-page__counter-line span');
+// function preloader (done) {
+//     let preObj = document.querySelector('.preloader-page');
+//     let preCount = document.querySelector('.preloader-page__counter-number');
+//     let pageContent = document.querySelector('.page-container');
+//     let preLine = document.querySelector('.preloader-page__counter-line span');
 
-    preObj.classList.add('show');
-    pageContent.classList.remove('show');
+//     preObj.classList.add('show');
+//     pageContent.classList.remove('show');
 
-    let width = 0;
-    let time = setInterval(function() {
-        width = width + 1;
-        preCount.textContent = width + '%';
-        preLine.style.width = width + '%';
-        if (width === 100) {
-            preObj.classList.remove('show');
-            pageContent.classList.add('show');
-            clearInterval(time);
-            width = 0;
-            if (done) {
-                return done();
-            }
-        }
-    }, 20)
-}
+//     let width = 0;
+//     let time = setInterval(function() {
+//         width = width + 1;
+//         preCount.textContent = width + '%';
+//         preLine.style.width = width + '%';
+//         if (width === 100) {
+//             preObj.classList.remove('show');
+//             pageContent.classList.add('show');
+//             clearInterval(time);
+//             width = 0;
+//             if (done) {
+//                 return done();
+//             }
+//         }
+//     }, 20)
+// }
 
+// 1.7 Mobile menu
+let tl = new TimelineMax({ paused: true });
+
+tl.to(".overlay-container", 1, {
+    left: 0,
+    ease: Expo.easeInOut,
+});
+
+tl.staggerFrom(
+    ".overlay-menu > div",
+    0.8,
+    { y: 100, opacity: 0, ease: Expo.easeOut },
+    "0.1",
+    "-=0.4"
+);
+
+tl.reverse();
+$(document).on("click", ".menu-open", function () {
+    $(this).toggleClass( "open" );
+    $('html').toggleClass( "hidden" );
+    tl.reversed(!tl.reversed());
+});
+$(document).on("click", ".menu-close", function () {
+    tl.reversed(!tl.reversed());
+});

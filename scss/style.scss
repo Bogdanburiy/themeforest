@@ -7,6 +7,10 @@
 
 html {
     box-sizing: border-box;
+    &.hidden {
+        height: 100vh;
+        overflow-y: hidden;
+    }
     &.is-ready {
         .big-tittle {
             &__line {
@@ -29,8 +33,8 @@ $mainWarm: #F3EFEB;
 $mainGray: #6D6D6D;
 
 // Variables section padding 
-$marginSizes: 200;
-$paddingSizes: 200;
+$marginSizes: 16;
+$paddingSizes: 16;
 
 @mixin margin-classes {
     @for $i from 1 through $marginSizes {
@@ -53,16 +57,6 @@ $paddingSizes: 200;
         }
 
         .mb#{$i} {
-            margin-bottom: $margin;
-        }
-
-        .mx#{$i} {
-            margin-left: $margin;
-            margin-right: $margin;
-        }
-
-        .my#{$i} {
-            margin-top: $margin;
             margin-bottom: $margin;
         }
     }
@@ -92,16 +86,6 @@ $paddingSizes: 200;
         .pb#{$i} {
             padding-bottom: $padding;
         }
-
-        .px#{$i} {
-            padding-left: $padding;
-            padding-right: $padding;
-        }
-
-        .py#{$i} {
-            padding-top: $padding;
-            padding-bottom: $padding;
-        }
     }
 }
 @include padding-classes;
@@ -124,16 +108,16 @@ a {
     outline: none;
 }
 
-.page-container {
-    visibility: hidden;
-    opacity: 0;
-    transition:all 0.5s ease-out;
-    &.show {
-        visibility: visible;
-        opacity: 1; 
-        transition:all 0.5s ease-out;
-    }
-}
+// .page-container {
+//     visibility: hidden;
+//     opacity: 0;
+//     transition:all 0.5s ease-out;
+//     &.show {
+//         visibility: visible;
+//         opacity: 1; 
+//         transition:all 0.5s ease-out;
+//     }
+// }
 
 .noise {
     position: relative;
@@ -328,80 +312,64 @@ a {
 }
 
 .social-links {
+    position: relative;
+    display: flex;
     margin-top: 90px;
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li {
-            &:not(:nth-of-type(1)) {
-                margin-left: -50px;
+    &__item {
+        position: relative;
+        max-width: 440px;
+        width: 100%;
+        border: 1px solid $mainBlack;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+        &:not(:nth-of-type(1)) {
+            margin-left: -50px;
+        }
+        &:nth-child(2n) {
+            border: 1px solid $mainRed; 
+            &::after {
+                background-color: $mainRed;
+                border: 1px solid $mainRed;
             }
-            &:nth-child(2n + 1) {
-                a {
-                    color: $mainBlack;
-                    background-color: $mainWarm;
-                    border: 1px solid $mainBlack;
-                    span {
-                        &::after {
-                            background-color: $mainBlack;
-                        }
-                    }
-                }
-            }
-            &:nth-child(2n) {
-                a {
+            .social-links__item-content {
+                span {
                     color: $mainWarm;
-                    background-color: $mainRed;
-                    border: 1px solid $mainRed;
-                    span {
-                        &::after {
-                            background-color: $mainWarm;
-                        }
-                    }
                 }
             }
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 360px;
-                height: 360px;
+        }
+        &::after {
+            display: block;
+            padding-bottom: 100%;
+            width: 100%;
+            height: 0;
+            border-radius: 50%;
+            background-color: $mainWarm;
+            content: "";
+        }
+        &-inner {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &-wrapper {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        &-content {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            span {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 48px;
                 line-height: 100%;
                 letter-spacing: -0.02em;
                 color: $mainBlack;
-                background-color: $mainWarm;
-                border: 1px solid $mainBlack;
-                border-radius: 50%;
-                transition: all .3s ease-out;
-                span {
-                    position: relative;
-                    transition: all .3s ease-out;
-                    &::after {
-                        bottom: -25px;
-                        content: "";
-                        width: 100px;
-                        height: 2px;
-                        margin: 0 auto;
-                        left: 0;
-                        position: absolute;
-                        right: 0;
-                        transform: scaleX(0);
-                        transform-origin: center center;
-                        transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-                    }
-                }
-                &:hover {
-                    span {
-                        margin-bottom: 50px;
-                        &::after {
-                            transform: scaleX(1);
-                        }
-                    }
-                }
             }
         }
     }
@@ -569,25 +537,37 @@ a {
     }
 }
 
-@keyframes moveCursor1 {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(.8);
-    }
-}
-
-@keyframes moveCursor2 {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0;
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: $mainWarm;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+    .overlay-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        &__item {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                display: inline-block;
+                color: $mainBlack;  
+                font-size: 36px;
+                line-height: 50px;
+                transition: opacity 0.1s;
+                text-decoration: none;
+                cursor: pointer; 
+            }  
+        }
     }
 }
 
@@ -644,3 +624,6 @@ a {
 
 // Footer
 @import "footer";
+
+// Layouts
+@import "layouts";
