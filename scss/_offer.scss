@@ -86,9 +86,11 @@
                 }
             }
             &-body {
-                padding-left: 95px;
+                padding: 0;
+                padding-bottom: 30px;
                 transition: all .5s ease-out;
                 p {
+                    margin-bottom: 15px;
                     color: $mainGray;
                     font-style: normal;
                     font-weight: 400;

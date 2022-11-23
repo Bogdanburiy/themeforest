@@ -1590,10 +1590,12 @@ a {
   transition: all 0.3s ease-out;
 }
 .offer-collapse__item-body {
-  padding-left: 95px;
+  padding: 0;
+  padding-bottom: 30px;
   transition: all 0.5s ease-out;
 }
 .offer-collapse__item-body p {
+  margin-bottom: 15px;
   color: #6D6D6D;
   font-style: normal;
   font-weight: 400;
@@ -2386,13 +2388,13 @@ a {
 
 .footer {
   margin-top: 90px;
-  padding: 100px 0 140px 0;
+  padding: 100px 0 84px 0;
   background-color: #131313;
 }
-.footer-info__email {
+.footer-email {
   margin-bottom: 50px;
 }
-.footer-info__email a {
+.footer-email a {
   position: relative;
   color: #FC4005;
   font-style: normal;
@@ -2400,7 +2402,7 @@ a {
   font-size: 68px;
   line-height: 50px;
 }
-.footer-info__email a::after {
+.footer-email a::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -2441,6 +2443,7 @@ a {
   color: #FC4005;
 }
 .footer-info__additional ul li address {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2553,6 +2556,26 @@ a {
   }
   .social-links__item:not(:nth-of-type(1)) {
     margin-left: 15px;
+  }
+  .social-links__item:nth-child(2n) {
+    border: 1px solid #131313;
+  }
+  .social-links__item:nth-child(2n)::after {
+    background-color: #F3EFEB;
+    border: 1px solid #F3EFEB;
+  }
+  .social-links__item:nth-child(2n) .social-links__item-content span {
+    color: #131313;
+  }
+  .social-links__item:nth-child(1), .social-links__item:nth-child(4) {
+    border: 1px solid #FC4005;
+  }
+  .social-links__item:nth-child(1)::after, .social-links__item:nth-child(4)::after {
+    background-color: #FC4005;
+    border: 1px solid #FC4005;
+  }
+  .social-links__item:nth-child(1) .social-links__item-content span, .social-links__item:nth-child(4) .social-links__item-content span {
+    color: #F3EFEB;
   }
   .social-links__item-content span {
     font-size: 36px;
@@ -2693,18 +2716,69 @@ a {
     width: 100%;
     height: 240px;
   }
+  .team-list__card-thumbnail img {
+    height: 400px;
+  }
   .footer {
     padding: 50px 0;
   }
-  .footer-info__email {
+  .footer-email {
     margin-bottom: 50px;
   }
-  .footer-info__email a {
-    font-size: 48px;
-    line-height: 40px;
+  .footer-email a {
+    font-size: 77px;
+    line-height: 65px;
   }
-  .footer-info__email a::after {
-    height: 2px;
+  .footer-email a::after {
+    height: 4px;
+    bottom: 15px;
+  }
+  .footer-info__additional ul {
+    display: flex;
+    flex-direction: column;
+    -moz-column-count: auto;
+         column-count: auto;
+  }
+  .footer-info__additional ul li {
+    margin-bottom: 0;
+  }
+  .footer-info__additional ul li:nth-child(1) {
+    order: 4;
+  }
+  .footer-info__additional ul li:nth-child(2) {
+    order: 3;
+    margin-bottom: 24px;
+  }
+  .footer-info__additional ul li:nth-child(3) {
+    margin-bottom: 10px;
+    order: 0;
+  }
+  .footer-info__additional ul li:nth-child(4) {
+    margin-bottom: 24px;
+  }
+  .footer-info__additional ul li.footer-info__additional-link a {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline;
+  }
+  .footer-info__additional ul li.footer-info__additional-phone a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .footer-info__additional ul li address {
+    max-width: 220px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer-nav ul li {
+    margin-bottom: 24px;
+  }
+  .footer-nav ul li a {
+    font-size: 14px;
+    line-height: 20px;
   }
   .notfound h1 {
     font-size: 130px;
@@ -3068,18 +3142,36 @@ a {
     width: 100%;
     height: 240px;
   }
+  .clients-list__item:hover {
+    border-bottom: 1px solid #131313;
+  }
+  .clients-list__item:hover .strong,
+.clients-list__item:hover .location {
+    color: #131313;
+  }
   .footer {
     padding: 50px 0;
   }
-  .footer-info__email {
+  .footer .container .row {
+    flex-direction: column-reverse;
+  }
+  .footer-email {
     margin-bottom: 50px;
   }
-  .footer-info__email a {
-    font-size: 48px;
-    line-height: 40px;
+  .footer-email a {
+    font-size: 56px;
+    line-height: 45px;
   }
-  .footer-info__email a::after {
-    height: 2px;
+  .footer-email a::after {
+    height: 3px;
+    bottom: 10px;
+  }
+  .footer-nav {
+    margin-bottom: 50px;
+  }
+  .footer-nav ul li a {
+    font-size: 16px;
+    line-height: 24px;
   }
   .notfound h1 {
     font-size: 100px;
@@ -3350,12 +3442,12 @@ a {
   }
   .big-tittle {
     margin-bottom: 30px;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 36px;
+    line-height: 50px;
   }
   .normal-title, .portfolio-scrolling__left h2 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 33px;
   }
   .section-slug {
     margin-bottom: 30px;
@@ -3411,12 +3503,13 @@ a {
     padding: 70px 0;
   }
   .offer-collapse__item-head .accordion-button .count {
-    font-size: 21px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 26px;
   }
   .offer-collapse__item-head .accordion-button .strong {
-    font-size: 21px;
-    line-height: 29px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 26px;
   }
   .offer-collapse__item-head .accordion-button .strong i.icon img {
     width: 30px;
@@ -3436,8 +3529,13 @@ a {
     transform: rotate(0);
   }
   .testimonials-carousel__card {
-    min-height: 400px;
+    min-height: 350px;
     margin: 0 15px;
+    padding: 25px;
+  }
+  .testimonials-carousel__card-bottom .strong {
+    font-size: 18px;
+    line-height: 26px;
   }
   .blog-card {
     margin-bottom: 30px;
@@ -3448,18 +3546,27 @@ a {
   .clients-logo img {
     width: 100%;
   }
+  .clients-list__item .strong {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .clients-list__item .location {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .footer {
     padding: 50px 0;
   }
-  .footer-info__email {
+  .footer-email {
     margin-bottom: 50px;
   }
-  .footer-info__email a {
-    font-size: 28px;
-    line-height: 40px;
+  .footer-email a {
+    font-size: 10.5vw;
+    line-height: 1;
   }
-  .footer-info__email a::after {
+  .footer-email a::after {
     height: 2px;
+    bottom: 8px;
   }
   .team-list {
     margin-top: 30px;
@@ -3489,6 +3596,17 @@ a {
   .location-map {
     height: 400px;
   }
+  .video-wrapper {
+    height: 400px;
+  }
+  .steps-list__item .strong {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .blog-card__title h3 a {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 @media (max-width: 400px) {
   .social-links {
@@ -3512,6 +3630,6 @@ a {
   .main-about .main-heading h1 {
     margin-bottom: 30px;
     font-size: 28px;
-    line-height: 35px;
+    line-height: 34px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,28 +1,28 @@
 .footer {
     margin-top: 90px;
-    padding: 100px 0 140px 0;
+    padding: 100px 0 84px 0;
     background-color: $mainBlack;
-    &-info {
-        &__email {
-            margin-bottom: 50px;
-            a {
-                position: relative;
-                color: $mainRed;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 68px;
-                line-height: 50px;
-                &::after {
-                    position: absolute;
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 5px;
-                    background-color: $mainRed;
-                }
+    &-email {
+        margin-bottom: 50px;
+        a {
+            position: relative;
+            color: $mainRed;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 68px;
+            line-height: 50px;
+            &::after {
+                position: absolute;
+                bottom: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: $mainRed;
             }
         }
+    }
+    &-info {
         &__additional {
             ul {
                 column-count: 2;
@@ -53,6 +53,7 @@
                         }
                     }
                     address {
+                        margin: 0;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;

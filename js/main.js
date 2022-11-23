@@ -170,3 +170,5 @@ $(document).on("click", ".menu-open", function () {
 $(document).on("click", ".menu-close", function () {
     tl.reversed(!tl.reversed());
 });
+
+// 1.8 Set attribute to news cards
