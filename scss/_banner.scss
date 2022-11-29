@@ -9,10 +9,6 @@
             margin: 0 auto 40px;
             color: #fff;
             text-align: center;
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .4s cubic-bezier(.215,.61,.355,1),transform .4s cubic-bezier(.215,.61,.355,1);
-            transition-delay: .1s;
         }
         small {
             display: block;
@@ -21,20 +17,7 @@
             font-size: 16px;
             text-align: center;
             color: #FFFFFF;
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .4s cubic-bezier(.215,.61,.355,1),transform .4s cubic-bezier(.215,.61,.355,1);
             transition-delay: .4s;
-        }
-        &.is-inview {
-            h2.normal-title {
-                opacity: 1;
-                transform: none;
-            }
-            small {
-                opacity: 1;
-                transform: none;
-            }
         }
     }
 }

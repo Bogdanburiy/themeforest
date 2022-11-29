@@ -1,17 +1,9 @@
 .discussion {
     &-form {
-        margin-top: 50px;
         &__item {
             position: relative;
             margin-bottom: 35px;
             line-height: 0;
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-            &.is-inview {
-                opacity: 1;
-                transform: none;
-            }
             &:nth-of-type(1) {
                 transition-delay: .1s;
             }

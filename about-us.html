@@ -10,10 +10,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <!-- Locomotive Scroll -->
-    <link rel="stylesheet" href="css/locomotive-scroll.min.css">
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <!-- Spaces -->
+    <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="scss/style.css">
 
@@ -22,7 +20,7 @@
 </head>
 <body>
 
-    <div data-scroll-container class="noise page-container">
+    <div class="noise">
 
         <header class="header">
             <div class="container d-flex justify-content-between">
@@ -42,8 +40,10 @@
                     </nav>
                 </div>
                 <!-- /.header-menu -->
-                <div class="header-mobile">
-                    <a href="#"><img src="img/hamburger-menu.svg" alt="Mobile menu"></a>
+                <div class="header-mobile menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <!-- /.header-mobile -->
             </div>
@@ -51,22 +51,35 @@
         </header>
         <!-- /.header -->
 
-        <section class="main main-about mt8 mb8">
+        <div class="overlay-container">
+            <nav class="overlay-menu">
+                <div class="overlay-menu__item item-1">
+                    <a href="index.html" class="menu__item-link">Home</a>
+                </div>
+                <div class="overlay-menu__item item-2">
+                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
+                </div>
+                <div class="overlay-menu__item item-3">
+                    <a href="about-us.html" class="menu__item-link">About</a>
+                </div>
+                <div class="overlay-menu__item item-4">
+                    <a href="news.html" class="menu__item-link">Blog</a>
+                </div>
+                <div class="overlay-menu__item item-5">
+                    <a href="contact.html" class="menu__item-link">Contacts</a>
+                </div>
+            </nav>
+        </div>
+        <!-- /.overlay-container -->
+
+        <section class="main main-about mt-exsmall-4 mt-medium-6 mt8 mb-exsmall-6 mb-medium-6 mb6">
             <div class="container">
-                <div class="main-heading mb6">
-                    <h1 class="big-tittle" data-scroll>
-                        <span class="big-tittle__line">
-                            <span data-scroll data-scroll-speed="3" data-scroll-position="top">Hello! We are a great</span>
-                        </span>
-                        <span class="big-tittle__line">
-                            <span data-scroll data-scroll-speed="2" data-scroll-position="top">team made to help</span>
-                        </span>
-                        <span class="big-tittle__line">
-                            <span data-scroll data-scroll-speed="1" data-scroll-position="top">your business</span>
-                        </span>
+                <div class="main-heading mb-exsmall-3 mb-medium-3 mb6">
+                    <h1 class="big-tittle">
+                        A few words about us and our company
                     </h1>
                     <!-- /.big-tittle -->
-                    <a data-scroll class="free-consultation" href="#">Get free consultation</a>
+                    <a class="free-consultation" href="#">Get free consultation</a>
                 </div>
                 <!-- /.main-heading mb6 -->
             </div>
@@ -74,16 +87,20 @@
         </section>
         <!-- /.main -->
 
-        <section class="about-description mb8">
+        <section class="about-description mb-exsmall-6 mb-medium-6 mb6">
             <div class="container">
-                <div class="section-heading" data-scroll data-scroll-offset="20%">
+                <div class="section-heading">
                     <div class="row">
                         <div class="offset-lg-6 col-lg-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title mb3">Development</h2>
+                                <h2 class="normal-title mb-exsmall-3 mb-medium-3 mb3">Development</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit, lobortis est. Rutrum turpis amet vel turpis turpis non. </p>
-                                <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam.</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit, lobortis est. Rutrum turpis amet vel turpis turpis non.
+                                </p>
+                                <p>
+                                    Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam.
+                                </p>
                             </div>
                             <!-- /.section-heading__content -->
                         </div>
@@ -97,9 +114,9 @@
         </section>
         <!-- /.about-description -->
 
-        <div class="smooth-image mb16">
+        <div class="smooth-image mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="smooth-image__wrap" data-scroll>
+                <div class="smooth-image__wrap">
                     <img src="img/images-ex-2.jpeg" alt="Image">
                 </div>
                 <!-- /.smooth-image__wrap -->
@@ -108,12 +125,12 @@
         </div>
         <!-- /.smooth-image -->
 
-        <section class="benefits mb16">
+        <section class="benefits mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading mb7" id="benefits-pin" data-scroll>
+                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#benefits-pin">
+                            <div class="section-slug">
                                 About us
                             </div>
                             <!-- /.section-slug -->
@@ -133,8 +150,8 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.section-heading -->
-                <div class="benefits-list d-flex justify-content-center" data-scroll data-scroll-offset="30%">
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
+                <div class="benefits-list d-flex justify-content-center">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
                         <div class="benefits-list__item-inner">
                             <div class="benefits-list__item-wrapper">
                                 <div class="benefits-list__item-content">
@@ -149,7 +166,7 @@
                         <!-- /.benefits-list__item-inner -->
                     </div>
                     <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll data-scroll-direction="vertical" data-scroll-speed="1">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
                         <div class="benefits-list__item-inner">
                             <div class="benefits-list__item-wrapper">
                                 <div class="benefits-list__item-content">
@@ -164,7 +181,7 @@
                         <!-- /.benefits-list__item-inner -->
                     </div>
                     <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
+                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column">
                         <div class="benefits-list__item-inner">
                             <div class="benefits-list__item-wrapper">
                                 <div class="benefits-list__item-content">
@@ -186,14 +203,12 @@
         </section>
         <!-- /.benefits -->
 
-        <section class="team mb16" id="team">
+        <section class="team mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading" id="team-pin" data-scroll>
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-lg-4">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#team-pin">
-                                Our team
-                            </div>
+                            <div class="section-slug">Our team</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-lg-4 -->
@@ -205,13 +220,13 @@
                                 <!-- /.normal-title -->
                                 <div class="team-list">
                                     <div class="row">
-                                        <div class="col-sm-6" data-scroll data-scroll-direction="vertical" data-scroll-speed="1" data-scroll-target="#team" data-scroll-delay="0.05">
-                                            <div class="team-list__card mb3">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
+                                            <div class="team-list__card">
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team01.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Jane Johnson
                                                         <a href="#">
@@ -228,12 +243,15 @@
                                                 <!-- /.team-list__card-info -->
                                             </div>
                                             <!-- /.team-list__card -->
-                                            <div class="team-list__card mb3">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                        </div>
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
+                                            <div class="team-list__card">
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team03.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Fabian Baker
                                                         <a href="#">
@@ -250,12 +268,15 @@
                                                 <!-- /.team-list__card-info -->
                                             </div>
                                             <!-- /.team-list__card -->
-                                            <div class="team-list__card mb3">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                        </div>
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
+                                            <div class="team-list__card">
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team05.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Amanda Stokes
                                                         <a href="#">
@@ -273,14 +294,14 @@
                                             </div>
                                             <!-- /.team-list__card -->
                                         </div>
-                                        <!-- /.col-sm-6 -->
-                                        <div class="col-sm-6">
-                                            <div class="team-list__card mb3">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
+                                            <div class="team-list__card">
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team02.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Mike Suinton
                                                         <a href="#">
@@ -297,12 +318,15 @@
                                                 <!-- /.team-list__card-info -->
                                             </div>
                                             <!-- /.team-list__card -->
-                                            <div class="team-list__card mb3">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                        </div>
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
+                                            <div class="team-list__card">
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team04.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Marc Lamb
                                                         <a href="#">
@@ -319,12 +343,15 @@
                                                 <!-- /.team-list__card-info -->
                                             </div>
                                             <!-- /.team-list__card -->
+                                        </div>
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
+                                        <div class="col-sm-6 mb-exsmall-3 mb-medium-3 mb5">
                                             <div class="team-list__card">
-                                                <div class="team-list__card-thumbnail" data-scroll>
+                                                <div class="team-list__card-thumbnail">
                                                     <img src="img/team06.png" alt="Image">
                                                 </div>
                                                 <!-- /.team-list__card-thumbnail -->
-                                                <div class="team-list__card-info" data-scroll data-scroll-offset="5%">
+                                                <div class="team-list__card-info">
                                                     <div class="strong d-flex justify-content-between">
                                                         Margaret Dittman
                                                         <a href="#">
@@ -342,7 +369,7 @@
                                             </div>
                                             <!-- /.team-list__card -->
                                         </div>
-                                        <!-- /.col-sm-6 -->
+                                        <!-- /.col-sm-6 mb-exsmall-3 mb-medium-3 mb5 -->
                                     </div>
                                     <!-- /.row -->
                                 </div>
@@ -360,7 +387,7 @@
         </section>
         <!-- /.team -->
 
-        <div class="video mb16">
+        <div class="video mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
                 <div class="video-wrapper">
                     <a class="d-flex justify-content-center align-items-center" data-fancybox href="https://youtu.be/qRTVg8HHzUo">
@@ -376,12 +403,12 @@
         </div>
         <!-- /.video -->
 
-        <section class="offer mb16">
+        <section class="offer mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading" id="offer-pin" data-scroll>
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#offer-pin">
+                            <div class="section-slug">
                                 Our services
                             </div>
                             <!-- /.section-slug -->
@@ -394,7 +421,7 @@
                                 </h2>
                                 <!-- /.normal-title -->
                                 <div class="offer-collapse accordion">
-                                    <div class="offer-collapse__item accordion-item" data-scroll>
+                                    <div class="offer-collapse__item accordion-item">
                                         <div class="offer-collapse__item-head d-flex accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__01" aria-expanded="true">
                                                 <div class="count">01</div>
@@ -419,7 +446,7 @@
                                         </div>
                                     </div>
                                     <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-scroll>
+                                    <div class="offer-collapse__item accordion-item">
                                         <div class="offer-collapse__item-head d-flex accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__02" aria-expanded="true">
                                                 <div class="count">02</div>
@@ -444,7 +471,7 @@
                                         </div>
                                     </div>
                                     <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-scroll>
+                                    <div class="offer-collapse__item accordion-item">
                                         <div class="offer-collapse__item-head d-flex accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__03" aria-expanded="true">
                                                 <div class="count">03</div>
@@ -469,7 +496,7 @@
                                         </div>
                                     </div>
                                     <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-scroll>
+                                    <div class="offer-collapse__item accordion-item">
                                         <div class="offer-collapse__item-head d-flex accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__04" aria-expanded="true">
                                                 <div class="count">04</div>
@@ -494,7 +521,7 @@
                                         </div>
                                     </div>
                                     <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-scroll>
+                                    <div class="offer-collapse__item accordion-item">
                                         <div class="offer-collapse__item-head d-flex accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__05" aria-expanded="true">
                                                 <div class="count">05</div>
@@ -534,15 +561,15 @@
         </section>
         <!-- /.offer -->
 
-        <section class="testimonials mb16">
-            <div class="container">
-                <div class="section-heading mb7" data-scroll>
+        <section class="testimonials mb-exsmall-6 mb-medium-8 mb16">
+            <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="testimonials-heading__block">
-                                <div class="section-slug" data-scroll>Love from our clients</div>
+                                <div class="section-slug">Love from our clients</div>
                                 <!-- /.section-slug -->
-                                <div class="testimonials-carousel__nav" data-scroll>
+                                <div class="testimonials-carousel__nav">
                                     <ul>
                                         <li class="prev">
                                             <i class="icon"><img src="img/arrow-prev.svg" alt="Arrow previous icon"></i>
@@ -572,93 +599,93 @@
                     </div>
                     <!-- /.row -->
                 </div>
-                <!-- /.section-heading -->
-                <div class="testimonials-carousel">
-                    <div>
-                        <div class="testimonials-carousel__card">
-                            <div class="testimonials-carousel__card-top">
-                                <div class="surname">Fill Petrovski</div>
-                                <!-- /.surname -->
-                                <div class="status">AR Company</div>
-                                <!-- /.status -->
-                            </div>
-                            <!-- /.testimonials-carousel__card-top -->
-                            <div class="testimonials-carousel__card-bottom">
-                                <div class="strong">Great work!</div>
-                                <!-- /.strong -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                            </div>
-                            <!-- /.testimonials-carousel__card-bottom -->
-                        </div>
-                        <!-- /.testimonials-carousel__card -->
-                    </div>
-                    <div>
-                        <div class="testimonials-carousel__card">
-                            <div class="testimonials-carousel__card-top">
-                                <div class="surname">Fill Petrovski</div>
-                                <!-- /.surname -->
-                                <div class="status">AR Company</div>
-                                <!-- /.status -->
-                            </div>
-                            <!-- /.testimonials-carousel__card-top -->
-                            <div class="testimonials-carousel__card-bottom">
-                                <div class="strong">Great work!</div>
-                                <!-- /.strong -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                            </div>
-                            <!-- /.testimonials-carousel__card-bottom -->
-                        </div>
-                        <!-- /.testimonials-carousel__card -->
-                    </div>
-                    <div>
-                        <div class="testimonials-carousel__card">
-                            <div class="testimonials-carousel__card-top">
-                                <div class="surname">Fill Petrovski</div>
-                                <!-- /.surname -->
-                                <div class="status">AR Company</div>
-                                <!-- /.status -->
-                            </div>
-                            <!-- /.testimonials-carousel__card-top -->
-                            <div class="testimonials-carousel__card-bottom">
-                                <div class="strong">Great work!</div>
-                                <!-- /.strong -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                            </div>
-                            <!-- /.testimonials-carousel__card-bottom -->
-                        </div>
-                        <!-- /.testimonials-carousel__card -->
-                    </div>
-                    <div>
-                        <div class="testimonials-carousel__card">
-                            <div class="testimonials-carousel__card-top">
-                                <div class="surname">Fill Petrovski</div>
-                                <!-- /.surname -->
-                                <div class="status">AR Company</div>
-                                <!-- /.status -->
-                            </div>
-                            <!-- /.testimonials-carousel__card-top -->
-                            <div class="testimonials-carousel__card-bottom">
-                                <div class="strong">Great work!</div>
-                                <!-- /.strong -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
-                            </div>
-                            <!-- /.testimonials-carousel__card-bottom -->
-                        </div>
-                        <!-- /.testimonials-carousel__card -->
-                    </div>
-                </div>
-                <!-- /.testimonials-carousel -->
+                <!-- /.container -->
             </div>
-            <!-- /.container -->
+            <!-- /.section-heading -->
+            <div class="testimonials-carousel">
+                <div>
+                    <div class="testimonials-carousel__card">
+                        <div class="testimonials-carousel__card-top">
+                            <div class="surname">Fill Petrovski</div>
+                            <!-- /.surname -->
+                            <div class="status">AR Company</div>
+                            <!-- /.status -->
+                        </div>
+                        <!-- /.testimonials-carousel__card-top -->
+                        <div class="testimonials-carousel__card-bottom">
+                            <div class="strong">Great work!</div>
+                            <!-- /.strong -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                        </div>
+                        <!-- /.testimonials-carousel__card-bottom -->
+                    </div>
+                    <!-- /.testimonials-carousel__card -->
+                </div>
+                <div>
+                    <div class="testimonials-carousel__card">
+                        <div class="testimonials-carousel__card-top">
+                            <div class="surname">Fill Petrovski</div>
+                            <!-- /.surname -->
+                            <div class="status">AR Company</div>
+                            <!-- /.status -->
+                        </div>
+                        <!-- /.testimonials-carousel__card-top -->
+                        <div class="testimonials-carousel__card-bottom">
+                            <div class="strong">Great work!</div>
+                            <!-- /.strong -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                        </div>
+                        <!-- /.testimonials-carousel__card-bottom -->
+                    </div>
+                    <!-- /.testimonials-carousel__card -->
+                </div>
+                <div>
+                    <div class="testimonials-carousel__card">
+                        <div class="testimonials-carousel__card-top">
+                            <div class="surname">Fill Petrovski</div>
+                            <!-- /.surname -->
+                            <div class="status">AR Company</div>
+                            <!-- /.status -->
+                        </div>
+                        <!-- /.testimonials-carousel__card-top -->
+                        <div class="testimonials-carousel__card-bottom">
+                            <div class="strong">Great work!</div>
+                            <!-- /.strong -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                        </div>
+                        <!-- /.testimonials-carousel__card-bottom -->
+                    </div>
+                    <!-- /.testimonials-carousel__card -->
+                </div>
+                <div>
+                    <div class="testimonials-carousel__card">
+                        <div class="testimonials-carousel__card-top">
+                            <div class="surname">Fill Petrovski</div>
+                            <!-- /.surname -->
+                            <div class="status">AR Company</div>
+                            <!-- /.status -->
+                        </div>
+                        <!-- /.testimonials-carousel__card-top -->
+                        <div class="testimonials-carousel__card-bottom">
+                            <div class="strong">Great work!</div>
+                            <!-- /.strong -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium elit egestas odio proin viverra tellus lectus nisi. Eget sed sed tortor, velit pellentesque. Et nunc volutpat enim id nunc, nibh.</p>
+                        </div>
+                        <!-- /.testimonials-carousel__card-bottom -->
+                    </div>
+                    <!-- /.testimonials-carousel__card -->
+                </div>
+            </div>
+            <!-- /.testimonials-carousel -->
         </section>
         <!-- /.testimonials -->
 
-        <section class="clients mb16">
+        <section class="clients mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading mb7" id="clients-pin" data-scroll>
+                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#clients-pin">
+                            <div class="section-slug">
                                 Our clients
                             </div>
                             <!-- /.section-slug -->
@@ -680,7 +707,7 @@
                 <!-- /.section-heading -->
                 <div class="row">
                     <div class="d-none d-md-block col-md-4">
-                        <div class="clients-logo d-flex align-items-center justify-content-center" data-scroll>
+                        <div class="clients-logo d-flex align-items-center justify-content-center">
                             <img src="img/clients-logo1.svg" alt="Inter">
                         </div>
                         <!-- /.clients-logo -->
@@ -688,35 +715,35 @@
                     <!-- /.d-none d-md-block col-md-4 -->
                     <div class="col-md-8">
                         <div class="clients-list">
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
+                            <div class="clients-list__item d-flex justify-content-between align-items-center">
                                 <div class="strong" data-src="img/clients-logo1.svg">Microsoft</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
+                            <div class="clients-list__item d-flex justify-content-between align-items-center">
                                 <div class="strong" data-src="img/clients-logo2.svg">Nike</div>
                                 <!-- /.strong -->
                                 <div class="location">USA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
+                            <div class="clients-list__item d-flex justify-content-between align-items-center">
                                 <div class="strong" data-src="img/clients-logo3.svg">Intel</div>
                                 <!-- /.strong -->
                                 <div class="location">CA</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
+                            <div class="clients-list__item d-flex justify-content-between align-items-center">
                                 <div class="strong" data-src="img/clients-logo4.svg">Netflix</div>
                                 <!-- /.strong -->
                                 <div class="location">CX</div>
                                 <!-- /.location -->
                             </div>
                             <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-scroll>
+                            <div class="clients-list__item d-flex justify-content-between align-items-center">
                                 <div class="strong" data-src="img/clients-logo5.svg">Airbnb</div>
                                 <!-- /.strong -->
                                 <div class="location">LA</div>
@@ -734,12 +761,12 @@
         </section>
         <!-- /.clients -->
 
-        <section class="works mb16" id="works">
+        <section class="works mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading mb7" id="works-pin" data-scroll>
+                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#works-pin">
+                            <div class="section-slug">
                                 Latest works
                             </div>
                             <!-- /.section-slug -->
@@ -748,7 +775,7 @@
                         <div class="col-md-6">
                             <div class="section-heading__content only-heading">
                                 <h2 class="normal-title">
-                                    Discover more works dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam tortor
                                 </h2>
                                 <!-- /.normal-title -->
                             </div>
@@ -760,13 +787,13 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="row">
-                    <div class="col-md-6" data-scroll data-scroll-direction="vertical" data-scroll-speed="-1" data-scroll-target="#works" data-scroll-delay="0.05">
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="works-card">
-                            <div class="works-card__thumbnail" data-scroll>
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image1.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info" data-scroll data-scroll-offset="15%">
+                            <div class="works-card__info">
                                 <a class="d-flex justify-content-between align-items-center" href="#">
                                     Plane on the sky
                                     <i class="icon">
@@ -779,12 +806,15 @@
                             <!-- /.works-card__info -->
                         </div>
                         <!-- /.works-card -->
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="works-card">
-                            <div class="works-card__thumbnail" data-scroll>
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image2.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info" data-scroll data-scroll-offset="15%">
+                            <div class="works-card__info">
                                 <a class="d-flex justify-content-between align-items-center" href="#">
                                     Green plant
                                     <i class="icon">
@@ -799,13 +829,13 @@
                         <!-- /.works-card -->
                     </div>
                     <!-- /.col-md-6 -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="works-card">
-                            <div class="works-card__thumbnail" data-scroll>
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image3.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info" data-scroll data-scroll-offset="15%">
+                            <div class="works-card__info">
                                 <a class="d-flex justify-content-between align-items-center" href="#">
                                     Coffe shop
                                     <i class="icon">
@@ -818,12 +848,15 @@
                             <!-- /.works-card__info -->
                         </div>
                         <!-- /.works-card -->
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="works-card">
-                            <div class="works-card__thumbnail" data-scroll>
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image4.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info" data-scroll data-scroll-offset="15%">
+                            <div class="works-card__info">
                                 <a class="d-flex justify-content-between align-items-center" href="#">
                                     Horizon
                                     <i class="icon">
@@ -839,7 +872,7 @@
                     </div>
                     <!-- /.col-md-6 -->
                     <div class="offset-md-6 col-md-6">
-                        <a data-scroll data-scroll-offset="50%" class="free-consultation" href="#">Get free consultation</a>
+                        <a class="free-consultation" href="#">Get free consultation</a>
                     </div>
                     <!-- /.offset-md-6 col-md-6 -->
                 </div>
@@ -849,12 +882,12 @@
         </section>
         <!-- /.works -->
 
-        <section class="discussion mb16">
+        <section class="discussion mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading" id="discussion-pin" data-scroll>
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#discussion-pin">Let’s work together</div>
+                            <div class="section-slug">Let’s work together</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-lg-6 -->
@@ -862,30 +895,27 @@
                             <div class="section-heading__content">
                                 <h2 class="normal-title">Find some useful information here. Ultrices senectus nec rhoncus facilisis.</h2>
                                 <!-- /.normal-title -->
-                                <div class="discussion-form">
+                                <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
                                     <form action="#" method="post">
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
-                                            <button class="submit-btn" type="submit">get free consultation</button>
-                                        </div>
-                                        <!-- /.discussion-form__item -->
+                                        <button class="submit-btn" type="submit">get free consultation</button>
                                     </form>
                                 </div>
                                 <!-- /.discussion-form -->
@@ -897,8 +927,8 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.section-heading -->
-                <div class="social-links">
-                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.5">
+                <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -911,7 +941,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -924,7 +954,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="-0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -937,7 +967,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -1014,7 +1044,7 @@
         <!-- /.footer -->
 
     </div>
-    <!-- /.noise page-container -->
+    <!-- /.noise -->
 
     <div class="preloader-page">
         <div class="preloader-page__letters p5">
@@ -1038,18 +1068,10 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- AnimeJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <!-- Locomotive scroll -->
-    <script src="js/locomotive-scroll.min.js"></script>
-    <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
-    <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
 
@@ -1061,6 +1083,7 @@
             dots: false,
             prevArrow: $('.prev'),
             nextArrow: $('.next'),
+            centerMode: true,
             responsive: [
                 {
                     breakpoint: 992,

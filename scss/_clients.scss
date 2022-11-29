@@ -1,31 +1,12 @@
 .clients {
     &-logo {
         height: 100%;
-        img {
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-            transition-delay: .4s;
-        }
-        &.is-inview {
-            img {
-                opacity: 1;
-                transform: none;
-            }
-        }
     }
     &-list {
         &__item {
             padding: 20px 0;
             border-bottom: 1px solid $mainBlack;
             transition: all .3s ease-out;
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-            &.is-inview {
-                opacity: 1;
-                transform: none;
-            }
             &:first-child {
                 border-top: 1px solid $mainBlack;
             }
@@ -62,6 +43,7 @@
             }
             &:hover {
                 border-bottom: 1px solid $mainRed;
+                cursor: pointer;
                 .strong,
                 .location {
                     color: $mainRed;

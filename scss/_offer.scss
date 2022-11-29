@@ -1,18 +1,11 @@
 .offer {
     &-collapse {
-        margin-top: 50px;
+        margin-top: 70px;
         &__item {
             position: relative;
             border: 0;
             border-bottom: 1px solid $mainBlack;
             background: transparent;
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-            &.is-inview {
-                opacity: 1;
-                transform: none;
-            }
             &:first-child {
                 border-top: 1px solid $mainBlack;
                 border-top-left-radius: 0;

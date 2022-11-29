@@ -10,8 +10,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <!-- Locomotive Scroll -->
-    <link rel="stylesheet" href="css/locomotive-scroll.min.css">
+    <!-- Spaces -->
+    <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="scss/style.css">
 
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <div data-scroll-container class="noise page-container">
+    <div class="noise">
 
         <header class="header">
             <div class="container d-flex justify-content-between">
@@ -40,8 +40,10 @@
                     </nav>
                 </div>
                 <!-- /.header-menu -->
-                <div class="header-mobile">
-                    <a href="#"><img src="img/hamburger-menu.svg" alt="Mobile menu"></a>
+                <div class="header-mobile menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <!-- /.header-mobile -->
             </div>
@@ -49,28 +51,49 @@
         </header>
         <!-- /.header -->
 
-        <section class="article mt8 mb8">
+        <div class="overlay-container">
+            <nav class="overlay-menu">
+                <div class="overlay-menu__item item-1">
+                    <a href="index.html" class="menu__item-link">Home</a>
+                </div>
+                <div class="overlay-menu__item item-2">
+                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
+                </div>
+                <div class="overlay-menu__item item-3">
+                    <a href="about-us.html" class="menu__item-link">About</a>
+                </div>
+                <div class="overlay-menu__item item-4">
+                    <a href="news.html" class="menu__item-link">Blog</a>
+                </div>
+                <div class="overlay-menu__item item-5">
+                    <a href="contact.html" class="menu__item-link">Contacts</a>
+                </div>
+            </nav>
+        </div>
+        <!-- /.overlay-container -->
+
+        <section class="article mb-exsmall-4 mb-medium-6 mb8 mt-exsmall-4 mt-medium-6 mt8">
             <div class="container">
-                <div class="article-heading main-heading mb6" data-scroll>
+                <div class="article-heading main-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="article-heading__info">
-                        <ul data-scroll data-scroll-speed="3" data-scroll-position="top">
+                        <ul>
                             <li><a href="#">Freelance</a></li>
                             <li><a href="#">Behance</a></li>
                         </ul>
-                        <small data-scroll data-scroll-speed="2" data-scroll-position="top">05/04/2022</small>
+                        <small>05/04/2022</small>
                     </div>
                     <!-- /.article-heading__info -->
-                    <h1 class="big-tittle" data-scroll>
+                    <h1 class="big-tittle">
                         <span class="big-tittle__line">
-                            <span data-scroll data-scroll-speed="3" data-scroll-position="top">Your article</span>
+                            <span>Your article</span>
                         </span>
                         <span class="big-tittle__line">
-                            <span data-scroll data-scroll-speed="2" data-scroll-position="top">main heading</span>
+                            <span>main heading</span>
                         </span>
                     </h1>
                     <!-- /.big-tittle -->
                 </div>
-                <!-- /.main-heading mb6 -->
+                <!-- /.main-heading -->
                 <div class="article-thumbnail big-image"></div>
                 <!-- /.article-thumbnail -->
             </div>
@@ -78,31 +101,31 @@
         </section>
         <!-- /.article -->
 
-        <section class="article-description mb8">
+        <section class="article-description mb-exsmall-4 mb-medium-6 mb8">
             <div class="container">
-                <div class="section-heading" id="description-1-pin" data-scroll data-scroll-offset="20%">
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#description-1-pin">Post description</div>
+                            <div class="section-slug">Post description</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-md-4 -->
                         <div class="col-md-8">
                             <div class="section-heading__content">
-                                <h2 class="normal-title mb3">Frelance</h2>
+                                <h2 class="normal-title">Frelance</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
-                                <p class="mb3">Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
-                                <p class="mb3">Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
-                                <div class="block-image mt8 mb8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
+                                <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
+                                <div class="block-image mb-exsmall-4 mb-medium-6 mb8 mt-exsmall-4 mt-medium-6 mt8">
                                     <img src="img/project-image01.jpeg" alt="Image">
                                 </div>
                                 <!-- /.block-image -->
-                                <h2 class="normal-title mb3">Fill out the form and we will contact you!</h2>
+                                <h2 class="normal-title">Fill out the form and we will contact you!</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
-                                <h2 class="normal-title mb3">Fill out the form and </h2>
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <h2 class="normal-title">Fill out the form and </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
                                 <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
                             </div>
                             <!-- /.section-heading__content -->
@@ -117,8 +140,8 @@
         </section>
         <!-- /.article-description -->
 
-        <section class="banner mb8">
-            <div class="banner-content" data-scroll data-scroll-offset="30%">
+        <section class="banner mb-exsmall-4 mb-medium-6 mb8">
+            <div class="banner-content">
                 <div class="container">
                     <h2 class="normal-title">Non ac vulputate nisi libero, in sem sodales senectus nec. Nunc dui magnis lorem blandit ornare sit scelerisque elit. Placerat odio donec diam nullam tellus ut. Nam dictum molestie ac elementum consectetur nec enim vestibulum.</h2>
                     <!-- /.normal-title -->
@@ -130,32 +153,32 @@
         </section>
         <!-- /.banner -->
 
-        <section class="article-description mb16">
+        <section class="article-description mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading" id="description-2-pin" data-scroll data-scroll-offset="20%">
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#description-2-pin">Post description</div>
+                            <div class="section-slug">Post description</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-md-4 -->
                         <div class="col-md-8">
                             <div class="section-heading__content">
-                                <h2 class="normal-title mb3">Behance</h2>
+                                <h2 class="normal-title">Behance</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
-                                <p class="mb3">Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
-                                <p class="mb3">Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
-                                <div class="block-image block-image__group mt8 mb8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
+                                <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
+                                <div class="block-image block-image__group mb-exsmall-4 mb-medium-6 mb8 mt-exsmall-4 mt-medium-6 mt8">
                                     <img src="img/images-ex-1.jpeg" alt="Image">
                                     <img src="img/images-ex-2.jpeg" alt="Image">
                                 </div>
                                 <!-- /.block-image -->
-                                <h2 class="normal-title mb3">Fill out the form and we will contact you!</h2>
+                                <h2 class="normal-title">Fill out the form and we will contact you!</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
-                                <h2 class="normal-title mb3">Fill out the form and </h2>
-                                <p class="mb3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
+                                <h2 class="normal-title">Fill out the form and </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget blandit amet viverra mollis sit risus. Est ac condimentum risus curabitur venenatis tortor et. Velit diam ut diam, congue fringilla mauris, malesuada in cras. Urna enim risus rhoncus pellentesque libero. Porttitor elit vestibulum ultrices rhoncus. Mi nisl sit habitant dictum nisi elit</p>
                                 <p>Nibh maecenas libero, laoreet non. Facilisi ut elit malesuada velit faucibus faucibus. Ac neque molestie condimentum sed dui netus. Mauris eros, lorem at sit felis, at orci congue ac. Aliquam id nunc nulla lectus quis ultricies erat quam. Duis sed pulvinar diam enim blandit vulputate tristique quam. Dapibus nibh pellentesque</p>
                             </div>
                             <!-- /.section-heading__content -->
@@ -170,21 +193,25 @@
         </section>
         <!-- /.article-description -->
 
-        <section class="blog mb16">
+        <section class="blog mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading mb7" id="blog-pin" data-scroll>
+                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#blog-pin">Blog</div>
+                            <div class="section-slug">
+                                Blog
+                            </div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-md-6 -->
                         <div class="col-md-6">
                             <div class="section-heading__content only-heading">
-                                <h2 class="normal-title">Find some useful information here. Ultrices senectus nec rhoncus facilisis.</h2>
+                                <h2 class="normal-title">
+                                    Find some useful information here. Ultrices senectus nec rhoncus facilisis.
+                                </h2>
                                 <!-- /.normal-title -->
                             </div>
-                            <!-- /.section-heading__content -->
+                            <!-- /.section-heading__content only-heading -->
                         </div>
                         <!-- /.col-md-6 -->
                     </div>
@@ -192,22 +219,22 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail" data-scroll>
+                            <div class="blog-card__thumbnail">
                                 <a href="#" data-scrol>
                                     <img src="img/blog-thumbnail-1.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
+                            <div class="blog-card__info">
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
+                            <div class="blog-card__title">
                                 <h3>
                                     <a href="#">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -222,23 +249,23 @@
                         </div>
                         <!-- /.blog-card -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4">
+                    <!-- /.col-md-6 col-lg-4 -->
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail" data-scroll>
+                            <div class="blog-card__thumbnail">
                                 <a href="#">
                                     <img src="img/blog-thumbnail-2.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
+                            <div class="blog-card__info">
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
+                            <div class="blog-card__title">
                                 <h3>
                                     <a href="#">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -253,23 +280,116 @@
                         </div>
                         <!-- /.blog-card -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4">
+                    <!-- /.col-md-6 col-lg-4 -->
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
                         <div class="blog-card">
-                            <div class="blog-card__thumbnail" data-scroll>
+                            <div class="blog-card__thumbnail">
                                 <a href="#">
                                     <img src="img/blog-thumbnail-3.jpeg" alt="Image">
                                 </a>
                             </div>
                             <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info" data-scroll>
+                            <div class="blog-card__info">
                                 <div class="blog-card__info-date">05/06/2022</div>
                                 <!-- /.blog-card__info-date -->
                                 <div class="blog-card__info-cat">development</div>
                                 <!-- /.blog-card__info-cat -->
                             </div>
                             <!-- /.blog-card__info -->
-                            <div class="blog-card__title" data-scroll>
+                            <div class="blog-card__title">
+                                <h3>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        <i class="icon">
+                                            <img src="img/arrow-red-angle.svg" alt="Icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                </h3>
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-6 col-lg-4 -->
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#" data-scrol>
+                                    <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
+                                <h3>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        <i class="icon">
+                                            <img src="img/arrow-red-angle.svg" alt="Icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                </h3>
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-6 col-lg-4 -->
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#">
+                                    <img src="img/blog-thumbnail-2.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
+                                <h3>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        <i class="icon">
+                                            <img src="img/arrow-red-angle.svg" alt="Icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                </h3>
+                            </div>
+                            <!-- /.blog-card__title -->
+                        </div>
+                        <!-- /.blog-card -->
+                    </div>
+                    <!-- /.col-md-6 col-lg-4 -->
+                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="blog-card">
+                            <div class="blog-card__thumbnail">
+                                <a href="#">
+                                    <img src="img/blog-thumbnail-3.jpeg" alt="Image">
+                                </a>
+                            </div>
+                            <!-- /.blog-card__thumbnail -->
+                            <div class="blog-card__info">
+                                <div class="blog-card__info-date">05/06/2022</div>
+                                <!-- /.blog-card__info-date -->
+                                <div class="blog-card__info-cat">development</div>
+                                <!-- /.blog-card__info-cat -->
+                            </div>
+                            <!-- /.blog-card__info -->
+                            <div class="blog-card__title">
                                 <h3>
                                     <a href="#">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -292,12 +412,12 @@
         </section>
         <!-- /.blog -->
 
-        <section class="discussion mb16">
+        <section class="discussion mb-exsmall-6 mb-medium-8 mb16">
             <div class="container">
-                <div class="section-heading" id="discussion-pin" data-scroll>
+                <div class="section-heading">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="section-slug" data-scroll data-scroll-sticky data-scroll-target="#discussion-pin">Let’s work together</div>
+                            <div class="section-slug">Let’s work together</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-lg-6 -->
@@ -305,30 +425,27 @@
                             <div class="section-heading__content">
                                 <h2 class="normal-title">Find some useful information here. Ultrices senectus nec rhoncus facilisis.</h2>
                                 <!-- /.normal-title -->
-                                <div class="discussion-form">
+                                <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
                                     <form action="#" method="post">
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
+                                        <div class="discussion-form__item">
                                             <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-scroll>
-                                            <button class="submit-btn" type="submit">get free consultation</button>
-                                        </div>
-                                        <!-- /.discussion-form__item -->
+                                        <button class="submit-btn" type="submit">get free consultation</button>
                                     </form>
                                 </div>
                                 <!-- /.discussion-form -->
@@ -340,8 +457,8 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.section-heading -->
-                <div class="social-links">
-                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.5">
+                <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -354,7 +471,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -367,7 +484,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="vertical" data-scroll-speed="-0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -380,7 +497,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.5">
+                    <div class="social-links__item">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -481,14 +598,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- AnimeJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <!-- Locomotive scroll -->
-    <script src="js/locomotive-scroll.min.js"></script>
-    <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
     <!-- Link all JS sripts -->

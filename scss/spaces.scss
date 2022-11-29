@@ -1,0 +1,148 @@
+// Variables section large display spaces
+$marginSizes: 16;
+$paddingSizes: 16;
+
+@mixin padding-classes {
+    @for $i from 1 through $paddingSizes {
+        $padding: $i * 10px;
+
+        .p#{$i} {
+            padding: $padding;
+        }
+
+        .pl#{$i} {
+            padding-left: $padding;
+        }
+
+        .pr#{$i} {
+            padding-right: $padding;
+        }
+
+        .pt#{$i} {
+            padding-top: $padding;
+        }
+
+        .pb#{$i} {
+            padding-bottom: $padding;
+        }
+    }
+}
+@include padding-classes;
+
+// Responsive spaces
+@media (min-width: 320px) {
+    // Exstra Small display
+    @mixin margin-classes {
+        @for $i from 1 through $marginSizes {
+            $margin: $i * 10px;
+    
+            .m-exsmall-#{$i} {
+                margin: $margin;
+            }
+    
+            .ml-exsmall-#{$i} {
+                margin-left: $margin;
+            }
+    
+            .mr-exsmall-#{$i} {
+                margin-right: $margin;
+            }
+    
+            .mt-exsmall-#{$i} {
+                margin-top: $margin;
+            }
+    
+            .mb-exsmall-#{$i} {
+                margin-bottom: $margin;
+            }
+        }
+    }
+    @include margin-classes;
+}
+@media (min-width: 576px) {
+    // Small display
+    @mixin margin-classes {
+        @for $i from 1 through $marginSizes {
+            $margin: $i * 10px;
+    
+            .m-small-#{$i} {
+                margin: $margin;
+            }
+    
+            .ml-small-#{$i} {
+                margin-left: $margin;
+            }
+    
+            .mr-small-#{$i} {
+                margin-right: $margin;
+            }
+    
+            .mt-small-#{$i} {
+                margin-top: $margin;
+            }
+    
+            .mb-small-#{$i} {
+                margin-bottom: $margin;
+            }
+        }
+    }
+    @include margin-classes;
+}
+@media (min-width: 768px) {
+    // Medium display
+    @mixin margin-classes {
+        @for $i from 1 through $marginSizes {
+            $margin: $i * 10px;
+    
+            .m-medium-#{$i} {
+                margin: $margin;
+            }
+    
+            .ml-medium-#{$i} {
+                margin-left: $margin;
+            }
+    
+            .mr-medium-#{$i} {
+                margin-right: $margin;
+            }
+    
+            .mt-medium-#{$i} {
+                margin-top: $margin;
+            }
+    
+            .mb-medium-#{$i} {
+                margin-bottom: $margin;
+            }
+        }
+    }
+    @include margin-classes;
+}
+@media (min-width: 992px) {
+    // Lagge display
+    @mixin margin-classes {
+        @for $i from 1 through $marginSizes {
+            $margin: $i * 10px;
+    
+            .m#{$i} {
+                margin: $margin;
+            }
+    
+            .ml#{$i} {
+                margin-left: $margin;
+            }
+    
+            .mr#{$i} {
+                margin-right: $margin;
+            }
+    
+            .mt#{$i} {
+                margin-top: $margin;
+            }
+    
+            .mb#{$i} {
+                margin-bottom: $margin;
+            }
+        }
+    }
+    @include margin-classes;
+}

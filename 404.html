@@ -10,8 +10,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <!-- Locomotive Scroll -->
-    <link rel="stylesheet" href="css/locomotive-scroll.min.css">
+    <!-- Spaces -->
+    <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="scss/style.css">
 
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <div data-scroll-container class="noise page-container">
+    <div class="noise">
 
         <header class="header">
             <div class="container d-flex justify-content-between">
@@ -40,8 +40,10 @@
                     </nav>
                 </div>
                 <!-- /.header-menu -->
-                <div class="header-mobile">
-                    <a href="#"><img src="img/hamburger-menu.svg" alt="Mobile menu"></a>
+                <div class="header-mobile menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <!-- /.header-mobile -->
             </div>
@@ -49,21 +51,42 @@
         </header>
         <!-- /.header -->
 
+        <div class="overlay-container">
+            <nav class="overlay-menu">
+                <div class="overlay-menu__item item-1">
+                    <a href="index.html" class="menu__item-link">Home</a>
+                </div>
+                <div class="overlay-menu__item item-2">
+                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
+                </div>
+                <div class="overlay-menu__item item-3">
+                    <a href="about-us.html" class="menu__item-link">About</a>
+                </div>
+                <div class="overlay-menu__item item-4">
+                    <a href="news.html" class="menu__item-link">Blog</a>
+                </div>
+                <div class="overlay-menu__item item-5">
+                    <a href="contact.html" class="menu__item-link">Contacts</a>
+                </div>
+            </nav>
+        </div>
+        <!-- /.overlay-container -->
+
         <section class="notfound">
             <div class="container">
-                <h1 data-scroll>
+                <h1>
                     <span>Page</span>
                     <span>not</span>
                     <span>found</span>
                 </h1>
-                <a data-scroll class="free-consultation" href="/index.html">Back to homepage</a>
+                <a class="free-consultation" href="/index.html">Back to homepage</a>
             </div>
             <!-- /.container -->
         </section>
         <!-- /.notfound -->
 
     </div>
-    <!-- /.noise page-container -->
+    <!-- /.noise -->
 
     <div class="preloader-page">
         <div class="preloader-page__letters p5">
@@ -87,14 +110,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- AnimeJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <!-- Locomotive scroll -->
-    <script src="js/locomotive-scroll.min.js"></script>
-    <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
     <!-- Link all JS sripts -->

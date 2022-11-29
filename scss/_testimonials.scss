@@ -1,4 +1,5 @@
 .testimonials {
+    overflow: hidden;
     &-heading {
         margin-bottom: 50px;
         &__block {
@@ -31,21 +32,6 @@
         }
     }
     &-carousel {
-        &.slick-slider {
-            .slick-list {
-                margin-left: -15px;
-                margin-right: -15px;
-                padding: 20px 0;
-                .slick-slide {
-                    &:nth-child(2n+1) {
-                        transform: rotate(3deg);
-                    }
-                    &:nth-child(2n) {
-                        transform: rotate(-3deg);
-                    }
-                }
-            }
-        }
         &__card {
             display: flex;
             flex-direction: column;

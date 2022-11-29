@@ -1,18 +1,14 @@
 @media(max-width: 1440px) {
+    .big-tittle {
+        font-size: 80px;
+        line-height: 115%;
+    }
     .social-links {
         &__item {
             &-content {
                 span {
                     font-size: 36px;
                 }
-            }
-        }
-    }
-    .main-about {
-        .main-heading {
-            h1 {
-                font-size: 110px;
-                line-height: 110px;
             }
         }
     }
@@ -42,14 +38,6 @@
     .main {
         .big-image {
             height: 500px;
-        }
-    }
-    .main-about {
-        .main-heading {
-            h1 {
-                font-size: 85px;
-                line-height: 90px;
-            }
         }
     }
     .works {
@@ -83,16 +71,32 @@
             padding: 70px 0;
         }
     }
-    .blog {
-        &-card {
-            margin-bottom: 30px;
-        }
-    }
     .clients {
         &-logo {
             img {
                 width: 100%;
                 height: 240px;
+            }
+        }
+    }
+    .testimonials {
+        &-carousel {
+            &__card {
+                min-height: 450px;
+                &-top {
+                    .surname {
+                        font-size: 14px;
+                    }
+                    .status {
+                        font-size: 14px;
+                    }
+                }
+                &-bottom {
+                    .strong {
+                        font-size: 21px;
+                        line-height: 28px;
+                    }
+                }
             }
         }
     }
@@ -114,8 +118,45 @@
             line-height: 200px;
         }
     }
+    .parallax-images {
+        &__item {
+            height: 500px;
+        }
+    }
+    .portfolio {
+        &-thumbnail {
+            height: 500px;
+        }
+        &-scrolling {
+            &__left {
+                padding: 150px 0;
+            }
+            &__right {
+                &-item {
+                    height: 500px;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 992px) {
+    .big-tittle {
+        font-size: 80px;
+        line-height: 115%;
+    }
+    .main {
+        &-heading {
+            h1 {
+                max-width: 100%;
+            }
+            .free-consultation {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                margin-top: 30px;
+            }
+        }
+    }
     .social-links {
         flex-wrap: wrap;
         margin-left: -15px;
@@ -162,26 +203,9 @@
     .header {
         padding: 20px 0;
     }
-    .section-heading {
-        .section-slug {
-            opacity: 0;
-            transform: translateY(60px);
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-            transition-delay: .8s;
-            &.is-inview {
-                opacity: 1;
-                transform: none;
-            }
-        }
-    }
     .free-consultation {
         font-size: 16px;
         line-height: 24px;
-    }
-    .big-tittle {
-        margin-bottom: 30px;
-        font-size: 80px;
-        line-height: 90px;
     }
     .normal-title {
         font-size: 28px;
@@ -199,17 +223,6 @@
             height: 450px;
         }
     }
-    .main-about {
-        .main-heading {
-            h1 {
-                font-size: 60px;
-                line-height: 65px;
-            }
-        }
-        .free-consultation {
-            bottom: 10px;
-        }
-    }
     .works {
         &-card {
             &__thumbnail {
@@ -222,9 +235,6 @@
             flex-wrap: wrap;
             &__item {
                 max-width: 50%;
-                opacity: 0;
-                transform: translateY(60px);
-                transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
                 &:not(:nth-of-type(1)) {
                     margin-left: -30px;
                 }
@@ -244,12 +254,6 @@
                 .strong {
                     margin-bottom: 15px;
                     font-size: 70px;
-                }
-            }
-            &.is-inview {
-                .benefits-list__item {
-                    opacity: 1;
-                    transform: none;
                 }
             }
         }
@@ -302,8 +306,8 @@
         &-carousel {
             &.slick-slider {
                 .slick-list {
-                    margin-left: -15px;
-                    margin-right: -15px;
+                    margin-left: 0;
+                    margin-right: 0;
                     .slick-slide {
                         &:nth-child(2n) {
                             transform: rotate(0);
@@ -320,21 +324,6 @@
             }
         }
     }
-    .testimonials-carousel__nav {
-        opacity: 0;
-        transform: translateY(60px);
-        transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1);
-        transition-delay: 1s;
-        &.is-inview {
-            opacity: 1;
-            transform: none;
-        }
-    }
-    .blog {
-        &-card {
-            margin-bottom: 30px;
-        }
-    }
     .clients {
         &-logo {
             img {
@@ -345,6 +334,7 @@
     }
     .team {
         &-list {
+            margin-top: 50px;
             &__card {
                 &-thumbnail {
                     img {
@@ -440,36 +430,8 @@
     }
 }
 @media(max-width: 768px) {
-    @mixin margin-classes {
-        @for $i from 1 through $marginSizes {
-            $margin: $i * 10px;
-    
-            .m#{$i} {
-                margin: $margin / 2;
-            }
-    
-            .ml#{$i} {
-                margin-left: $margin / 2;
-            }
-    
-            .mr#{$i} {
-                margin-right: $margin / 2;
-            }
-    
-            .mt#{$i} {
-                margin-top: $margin / 2;
-            }
-    
-            .mb#{$i} {
-                margin-bottom: $margin / 2;
-            }
-        }
-    }
-    @include margin-classes;
     .big-tittle {
-        margin-bottom: 30px;
         font-size: 60px;
-        line-height: 70px;
     }
     .normal-title {
         font-size: 28px;
@@ -564,6 +526,7 @@
     }
     .offer {
         &-collapse {
+            margin-top: 30px;
             &__item {
                 &-head {
                     .accordion-button {
@@ -592,37 +555,18 @@
     .testimonials {
         &-heading {
             &__block {
-                flex-direction: column-reverse;
+                flex-direction: column;
             }
         }
+        &-carousel__nav {
+            margin-bottom: 30px;
+        }
         &-carousel {
-            &.slick-slider {
-                .slick-list {
-                    margin-left: -15px;
-                    margin-right: -15px;
-                    .slick-slide {
-                        &:nth-child(2n) {
-                            transform: rotate(0);
-                        }
-                        &:nth-child(2n+1) {
-                            transform: rotate(0);
-                        }
-                    }
-                }
-            }
             &__card {
                 min-height: 400px;
                 margin: 0 15px;
             }
         }
-    }
-    .blog {
-        &-card {
-            margin-bottom: 30px;
-        }
-    }
-    .testimonials-carousel__nav {
-        display: none;
     }
     .clients {
         &-logo {
@@ -684,7 +628,7 @@
     }
     .team {
         &-list {
-            margin-top: 50px;
+            margin-top: 30px;
             &__card {
                 &-thumbnail {
                     img {
@@ -710,42 +654,48 @@
             height: 500px;
         }
     }
-}
-@media(max-width: 576px) {
-    @mixin margin-classes {
-        @for $i from 1 through $marginSizes {
-            $margin: $i * 10px;
-    
-            .m#{$i} {
-                margin: $margin / 3;
-            }
-    
-            .ml#{$i} {
-                margin-left: $margin / 3;
-            }
-    
-            .mr#{$i} {
-                margin-right: $margin / 3;
-            }
-    
-            .mt#{$i} {
-                margin-top: $margin / 3;
-            }
-    
-            .mb#{$i} {
-                margin-bottom: $margin / 3;
+    .discussion {
+        &-form {
+            margin-top: 30px;
+        }
+    }
+    .article {
+        &-thumbnail {
+            height: 500px;
+        }
+    }
+    .parallax-images {
+        &__item {
+            height: 500px;
+            &:nth-of-type(1) {
+                margin-bottom: 30px;
             }
         }
     }
-    @include margin-classes;
+    .portfolio {
+        &-thumbnail {
+            height: 500px;
+        }
+        &-scrolling {
+            padding-bottom: 50px;
+            &__left {
+                padding: 80px 0 30px 0;
+            }
+            &__right {
+                &-item {
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 576px) {
     .big-tittle {
-        margin-bottom: 30px;
-        font-size: 36px;
-        line-height: 50px;
+        font-size: 50px;;
     }
     .normal-title {
-        font-size: 24px;
-        line-height: 33px;
+        font-size: 21px;
+        line-height: 28px;
     }
     .section-slug {
         margin-bottom: 30px;
@@ -850,26 +800,7 @@
         }
     }
     .testimonials {
-        &-heading {
-            &__block {
-                flex-direction: column-reverse;
-            }
-        }
         &-carousel {
-            &.slick-slider {
-                .slick-list {
-                    margin-left: -15px;
-                    margin-right: -15px;
-                    .slick-slide {
-                        &:nth-child(2n) {
-                            transform: rotate(0);
-                        }
-                        &:nth-child(2n+1) {
-                            transform: rotate(0);
-                        }
-                    }
-                }
-            }
             &__card {
                 min-height: 350px;
                 margin: 0 15px;
@@ -887,9 +818,6 @@
         &-card {
             margin-bottom: 30px;
         }
-    }
-    .testimonials-carousel__nav {
-        display: none;
     }
     .clients {
         &-logo {
@@ -993,8 +921,55 @@
             }
         }
     }
+    .article {
+        &-heading {
+            &__info {
+                ul {
+                    margin-right: 10px;
+                    li {
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a {
+                            padding: 10px;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                small {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &-thumbnail {
+            height: 400px;
+        }
+    }
+    .article-description {
+        .block-image__group {
+            flex-direction: column;
+            img {
+                width: 100%;
+                max-width: 100%;
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .portfolio {
+        &-thumbnail {
+            height: 400px;
+        }
+    }
 }
-@media(max-width: 400px) {
+@media(max-width: 430px) {
+    .big-tittle {
+        font-size: 36px;;
+    }
     .social-links {
         margin-left: -5px;
         margin-right: -5px;
@@ -1027,6 +1002,29 @@
                 margin-bottom: 30px;
                 font-size: 28px;
                 line-height: 34px;
+            }
+        }
+    }
+    .testimonials {
+        &-carousel {
+            &__card {
+                min-height: 450px;
+                margin: 0 10px;
+                padding: 20px;
+                &-top {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                &-bottom {
+                    .strong {
+                        margin-bottom: 15px;
+                        color: $mainBlack;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
             }
         }
     }
