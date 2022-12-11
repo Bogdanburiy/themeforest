@@ -474,6 +474,19 @@ a {
   cursor: pointer;
 }
 
+.progress-fill {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #F3EFEB;
+  border-radius: 50px;
+}
+.progress-fill__status {
+  background-color: #FC4005;
+}
+
 .header {
   width: 100%;
   padding: 30px 0;
@@ -1538,18 +1551,39 @@ a {
   padding: 100px 0 84px 0;
   background-color: #131313;
 }
-.footer-email {
-  margin-bottom: 50px;
+.footer-email__mob {
+  display: none;
+  line-height: 60px;
+  margin-bottom: 40px;
 }
-.footer-email a {
+.footer-email__mob a {
   position: relative;
   color: #FC4005;
   font-style: normal;
   font-weight: 400;
   font-size: 68px;
-  line-height: 50px;
 }
-.footer-email a::after {
+.footer-email__mob a::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FC4005;
+}
+.footer-info__email {
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.footer-info__email a {
+  position: relative;
+  color: #FC4005;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+}
+.footer-info__email a::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -1597,12 +1631,18 @@ a {
   line-height: 24px;
   color: #F3EFEB;
 }
-.footer-nav ul {
-  -moz-column-count: 2;
-       column-count: 2;
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
-.footer-nav ul li {
-  margin-bottom: 30px;
+.footer-nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 .footer-nav ul li:last-child {
   margin-bottom: 0;
@@ -1685,12 +1725,9 @@ a {
   .footer {
     padding: 50px 0;
   }
-  .footer-info__email {
-    margin-bottom: 50px;
-  }
   .footer-info__email a {
-    font-size: 48px;
-    line-height: 40px;
+    font-size: 56px;
+    line-height: 60px;
   }
   .notfound h1 {
     font-size: 200px;
@@ -1861,16 +1898,19 @@ a {
   .footer {
     padding: 50px 0;
   }
-  .footer-email {
-    margin-bottom: 50px;
+  .footer-email__mob {
+    display: block;
   }
-  .footer-email a {
+  .footer-email__mob a {
     font-size: 77px;
     line-height: 65px;
   }
-  .footer-email a::after {
+  .footer-email__mob a::after {
     height: 4px;
     bottom: 15px;
+  }
+  .footer-info__email {
+    display: none;
   }
   .footer-info__additional ul {
     display: flex;
@@ -1912,9 +1952,6 @@ a {
     font-size: 14px;
     line-height: 20px;
   }
-  .footer-nav ul li {
-    margin-bottom: 24px;
-  }
   .footer-nav ul li a {
     font-size: 14px;
     line-height: 20px;
@@ -1930,6 +1967,10 @@ a {
   .location .normal-title.location-mark, .location .portfolio-scrolling__left h2.location-mark, .portfolio-scrolling__left .location h2.location-mark {
     font-size: 24px;
     line-height: 33px;
+  }
+  .notfound {
+    height: calc(100vh - 65px);
+    padding: 80px 0;
   }
 }
 @media (max-width: 768px) {
@@ -2042,18 +2083,23 @@ a {
   .footer .container .row {
     flex-direction: column-reverse;
   }
-  .footer-email {
+  .footer-email__mob {
     margin-bottom: 50px;
   }
-  .footer-email a {
+  .footer-email__mob a {
     font-size: 56px;
     line-height: 45px;
   }
-  .footer-email a::after {
+  .footer-email__mob a::after {
     height: 3px;
     bottom: 10px;
   }
+  .footer-sdinfo__additional ul li p {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .footer-nav {
+    justify-content: flex-start;
     margin-bottom: 50px;
   }
   .footer-nav ul li a {
@@ -2087,6 +2133,29 @@ a {
   }
   .discussion-form {
     margin-top: 30px;
+  }
+  .article-heading__info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .article-heading__info ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .article-heading__info ul li {
+    margin-right: 0;
+    margin: 5px;
+  }
+  .article-heading__info ul li:last-child {
+    margin-right: 0;
+  }
+  .article-heading__info small {
+    margin-bottom: 15px;
   }
   .article-thumbnail {
     height: 500px;
@@ -2210,16 +2279,20 @@ a {
   .footer {
     padding: 50px 0;
   }
-  .footer-email {
-    margin-bottom: 50px;
+  .footer-email__mob {
+    margin-bottom: 30px;
   }
-  .footer-email a {
+  .footer-email__mob a {
     font-size: 10.5vw;
     line-height: 1;
   }
-  .footer-email a::after {
+  .footer-email__mob a::after {
     height: 2px;
     bottom: 8px;
+  }
+  .footer-nav ul {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
   .team-list {
     margin-top: 30px;
@@ -2270,7 +2343,7 @@ a {
     margin-right: 0;
   }
   .article-heading__info ul li a {
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 14px;
     line-height: 24px;
   }

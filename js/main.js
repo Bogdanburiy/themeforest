@@ -28,7 +28,7 @@ if (anchorLength > 0) {
     }
 }
 
-// 1.3 Interective cursor
+// 1.4 Interective fill page progress
 
 
 // 1.4 Change logo on hover block "Our clients"
