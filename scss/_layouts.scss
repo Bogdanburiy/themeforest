@@ -1,7 +1,7 @@
 @media(max-width: 1440px) {
     .big-tittle {
         font-size: 80px;
-        line-height: 115%;
+        line-height: 100%;
     }
     .social-links {
         &__item {
@@ -15,7 +15,7 @@
     .notfound {
         h1 {
             font-size: 220px;
-            line-height: 220px;
+            line-height: 100%;
         }
     }
 }

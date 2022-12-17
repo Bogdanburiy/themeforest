@@ -129,7 +129,7 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 124px;
-  line-height: 126px;
+  line-height: 110%;
   letter-spacing: -0.02em;
   perspective: 600px;
 }
@@ -1525,8 +1525,8 @@ a {
   color: #FC4005;
   font-style: normal;
   font-weight: 500;
-  font-size: 320px;
-  line-height: 306px;
+  font-size: 260px;
+  line-height: 100%;
   text-align: center;
   letter-spacing: -0.08em;
 }
@@ -1663,14 +1663,14 @@ a {
 @media (max-width: 1440px) {
   .big-tittle {
     font-size: 80px;
-    line-height: 115%;
+    line-height: 100%;
   }
   .social-links__item-content span {
     font-size: 36px;
   }
   .notfound h1 {
     font-size: 220px;
-    line-height: 220px;
+    line-height: 100%;
   }
 }
 @media (max-width: 1200px) {
