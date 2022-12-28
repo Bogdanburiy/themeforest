@@ -1,33 +1,5 @@
 // Variables section large display spaces
 $marginSizes: 16;
-$paddingSizes: 16;
-
-@mixin padding-classes {
-    @for $i from 1 through $paddingSizes {
-        $padding: $i * 10px;
-
-        .p#{$i} {
-            padding: $padding;
-        }
-
-        .pl#{$i} {
-            padding-left: $padding;
-        }
-
-        .pr#{$i} {
-            padding-right: $padding;
-        }
-
-        .pt#{$i} {
-            padding-top: $padding;
-        }
-
-        .pb#{$i} {
-            padding-bottom: $padding;
-        }
-    }
-}
-@include padding-classes;
 
 // Responsive spaces
 @media (min-width: 320px) {

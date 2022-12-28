@@ -1,0 +1,56 @@
+// Variables section large display spaces
+$customHeight: 7;
+
+// Responsive spaces
+@media (min-width: 320px) {
+    // Exstra Small display
+    @mixin height-classes {
+        @for $i from 1 through $customHeight {
+            $height: $i * 100px;
+    
+            .h-exsmall-#{$i} {
+                height: $height;
+            }
+        }
+    }
+    @include height-classes;
+}
+@media (min-width: 576px) {
+    // Small display
+    @mixin height-classes {
+        @for $i from 1 through $customHeight {
+            $height: $i * 100px;
+    
+            .h-small-#{$i} {
+                height: $height;
+            }
+        }
+    }
+    @include height-classes;
+}
+@media (min-width: 768px) {
+    // Medium display
+    @mixin height-classes {
+        @for $i from 1 through $customHeight {
+            $height: $i * 100px;
+    
+            .h-medium-#{$i} {
+                height: $height;
+            }
+        }
+    }
+    @include height-classes;
+}
+@media (min-width: 992px) {
+    // Lagge display
+    @mixin height-classes {
+        @for $i from 1 through $customHeight {
+            $height: $i * 100px;
+    
+            .h-large-#{$i} {
+                height: $height;
+            }
+        }
+    }
+    @include height-classes;
+}

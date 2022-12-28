@@ -49,6 +49,8 @@ a {
   width: 500%;
   height: 500%;
   background: url(../img/noise.png);
+  -webkit-animation: noise 7s steps(10) infinite;
+          animation: noise 7s steps(10) infinite;
   z-index: -1;
 }
 
@@ -173,7 +175,7 @@ a {
   border-radius: 60px;
 }
 
-.free-consultation {
+.underline-btn {
   position: relative;
   display: flex;
   width: -webkit-fit-content;
@@ -188,16 +190,16 @@ a {
   color: #131313;
   transition: all 0.3s ease-out;
 }
-.free-consultation:hover {
+.underline-btn:hover {
   color: #FC4005;
 }
-.free-consultation:hover::before {
+.underline-btn:hover::before {
   background-color: #FC4005;
 }
-.free-consultation:hover::after {
+.underline-btn:hover::after {
   transform: rotate(45deg);
 }
-.free-consultation::before {
+.underline-btn::before {
   position: absolute;
   bottom: 0;
   content: "";
@@ -206,7 +208,7 @@ a {
   height: 1px;
   background-color: #131313;
 }
-.free-consultation::after {
+.underline-btn::after {
   content: "";
   display: inline-block;
   width: 20px;
@@ -216,6 +218,11 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.3s ease-out;
+}
+
+.btn-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submit-btn {
@@ -580,7 +587,7 @@ a {
 .main-heading h1 {
   max-width: calc(100% - 280px);
 }
-.main-heading .free-consultation {
+.main-heading .underline-btn {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1081,6 +1088,7 @@ a {
   transition: all 0.3s ease-out;
 }
 .blog-card__title h3 a i.icon {
+  margin-left: 15px;
   transition: all 0.3s ease-out;
 }
 .blog-card__title h3 a i.icon img {
@@ -1542,7 +1550,7 @@ a {
 .notfound h1 span:nth-of-type(3) {
   transition-delay: 0.3s;
 }
-.notfound .free-consultation {
+.notfound .underline-btn {
   margin: 0 auto;
 }
 
@@ -1674,7 +1682,7 @@ a {
   }
 }
 @media (max-width: 1200px) {
-  .free-consultation {
+  .underline-btn {
     font-size: 18px;
     line-height: 26px;
   }
@@ -1754,7 +1762,7 @@ a {
   .main-heading h1 {
     max-width: 100%;
   }
-  .main-heading .free-consultation {
+  .main-heading .underline-btn {
     position: relative;
     right: 0;
     bottom: 0;
@@ -1798,7 +1806,7 @@ a {
   .header {
     padding: 20px 0;
   }
-  .free-consultation {
+  .underline-btn {
     font-size: 16px;
     line-height: 24px;
   }
@@ -1818,6 +1826,14 @@ a {
   }
   .works-card__thumbnail {
     height: 450px;
+  }
+  .works-card__info a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .works-card__info small {
+    font-size: 14px;
+    line-height: 20px;
   }
   .benefits-list {
     flex-wrap: wrap;
@@ -2005,12 +2021,20 @@ a {
     font-size: 50px;
     line-height: 55px;
   }
-  .main-about .free-consultation {
+  .main-about .underline-btn {
     position: relative;
     bottom: 0;
   }
   .works-card__thumbnail {
     height: 450px;
+  }
+  .works-card__info a {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .works-card__info small {
+    font-size: 16px;
+    line-height: 24px;
   }
   .benefits-list {
     flex-wrap: wrap;
@@ -2101,6 +2125,9 @@ a {
   .footer-nav {
     justify-content: flex-start;
     margin-bottom: 50px;
+  }
+  .footer-nav ul {
+    width: 100%;
   }
   .footer-nav ul li a {
     font-size: 16px;
@@ -2261,9 +2288,6 @@ a {
   .testimonials-carousel__card-bottom .strong {
     font-size: 18px;
     line-height: 26px;
-  }
-  .blog-card {
-    margin-bottom: 30px;
   }
   .clients-logo img {
     width: 100%;

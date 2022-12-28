@@ -20,7 +20,7 @@
     }
 }
 @media(max-width: 1200px) {
-    .free-consultation {
+    .underline-btn {
         font-size: 18px;
         line-height: 26px;
     }
@@ -148,7 +148,7 @@
             h1 {
                 max-width: 100%;
             }
-            .free-consultation {
+            .underline-btn {
                 position: relative;
                 right: 0;
                 bottom: 0;
@@ -202,7 +202,7 @@
     .header {
         padding: 20px 0;
     }
-    .free-consultation {
+    .underline-btn {
         font-size: 16px;
         line-height: 24px;
     }
@@ -226,6 +226,16 @@
         &-card {
             &__thumbnail {
                 height: 450px;
+            }
+            &__info {
+                a {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+                small {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
     }
@@ -433,6 +443,7 @@
         height: calc(100vh - 65px);
         padding: 80px 0;
     }
+
 }
 @media(max-width: 768px) {
     .big-tittle {
@@ -483,7 +494,7 @@
                 line-height: 55px;
             }
         }
-        .free-consultation {
+        .underline-btn {
             position: relative;
             bottom: 0;
         }
@@ -492,6 +503,16 @@
         &-card {
             &__thumbnail {
                 height: 450px;
+            }
+            &__info {
+                a {
+                    font-size: 21px;
+                    line-height: 28px;
+                }
+                small {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -626,6 +647,7 @@
             justify-content: flex-start;
             margin-bottom: 50px;
             ul {
+                width: 100%;
                 li {
                     a {
                         font-size: 16px;
@@ -731,6 +753,7 @@
             }
         }
     }
+
 }
 @media(max-width: 576px) {
     .big-tittle {
@@ -855,11 +878,6 @@
                     }
                 }
             }
-        }
-    }
-    .blog {
-        &-card {
-            margin-bottom: 30px;
         }
     }
     .clients {
