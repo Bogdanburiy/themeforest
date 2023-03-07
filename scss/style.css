@@ -49,45 +49,7 @@ a {
   width: 500%;
   height: 500%;
   background: url(../img/noise.png);
-  -webkit-animation: noise 7s steps(10) infinite;
-          animation: noise 7s steps(10) infinite;
   z-index: -1;
-}
-
-@-webkit-keyframes noise {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-3%, -6%);
-  }
-  20% {
-    transform: translate(9%, 3%);
-  }
-  30% {
-    transform: translate(12%, -9%);
-  }
-  40% {
-    transform: translate(-15%, 12%);
-  }
-  50% {
-    transform: translate(-3%, -6%);
-  }
-  60% {
-    transform: translate(12%, 0%);
-  }
-  70% {
-    transform: translate(0%, 12%);
-  }
-  80% {
-    transform: translate(4%, 4%);
-  }
-  90% {
-    transform: translate(15%, 15%);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
 }
 
 @keyframes noise {
@@ -141,7 +103,7 @@ a {
   color: #131313;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 50px;
 }
 .normal-title.location-mark, .portfolio-scrolling__left h2.location-mark {
@@ -161,7 +123,6 @@ a {
 }
 
 .section-slug {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 15px;
@@ -178,7 +139,6 @@ a {
 .underline-btn {
   position: relative;
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 5px;
@@ -365,17 +325,6 @@ a {
 .scroll-down i.icon img {
   width: 123px;
   height: 8px;
-}
-
-@-webkit-keyframes animateScrolldown {
-  from {
-    -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
-  }
-  to {
-    -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
-  }
 }
 
 @keyframes animateScrolldown {
@@ -1121,7 +1070,6 @@ a {
 }
 .article-heading__info ul li a {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 15px;
@@ -1224,13 +1172,6 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
-.discussion-form__item-input:-ms-input-placeholder {
-  color: rgba(19, 19, 19, 0.5);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
 .discussion-form__item-input::placeholder {
   color: rgba(19, 19, 19, 0.5);
   font-style: normal;
@@ -1257,7 +1198,6 @@ a {
 }
 .project-heading__info ul li a {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 15px;
@@ -1310,7 +1250,6 @@ a {
 }
 .portfolio-heading__info ul li a {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 15px;
@@ -1487,27 +1426,11 @@ a {
   z-index: 1;
   transition: all 0.3s ease-out;
   box-shadow: 0 0 0 0 rgba(243, 239, 235, 0.5);
-  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-          animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 .video-wrapper a:hover {
   opacity: 0.8;
-  -webkit-animation: none;
-          animation: none;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale(0.9);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 30px rgba(90, 153, 212, 0);
-  }
-  100% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
-  }
+  animation: none;
 }
 
 @keyframes pulse {
@@ -2098,7 +2021,7 @@ a {
     border-bottom: 1px solid #131313;
   }
   .clients-list__item:hover .strong,
-.clients-list__item:hover .location {
+  .clients-list__item:hover .location {
     color: #131313;
   }
   .footer {

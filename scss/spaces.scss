@@ -1,5 +1,6 @@
 // Variables section large display spaces
 $marginSizes: 16;
+$paddingSizes: 16;
 
 // Responsive spaces
 @media (min-width: 320px) {
@@ -30,6 +31,33 @@ $marginSizes: 16;
         }
     }
     @include margin-classes;
+
+    @mixin padding-classes {
+        @for $i from 1 through $paddingSizes {
+            $padding: $i * 10px;
+    
+            .p-exsmall-#{$i} {
+                padding: $padding;
+            }
+    
+            .pl-exsmall-#{$i} {
+                padding-left: $padding;
+            }
+    
+            .pr-exsmall-#{$i} {
+                padding-right: $padding;
+            }
+    
+            .pt-exsmall-#{$i} {
+                padding-top: $padding;
+            }
+    
+            .pb-exsmall-#{$i} {
+                padding-bottom: $padding;
+            }
+        }
+    }
+    @include padding-classes;
 }
 @media (min-width: 576px) {
     // Small display
@@ -59,6 +87,33 @@ $marginSizes: 16;
         }
     }
     @include margin-classes;
+
+    @mixin padding-classes {
+        @for $i from 1 through $paddingSizes {
+            $padding: $i * 10px;
+    
+            .p-small-#{$i} {
+                padding: $padding;
+            }
+    
+            .pl-small-#{$i} {
+                padding-left: $padding;
+            }
+    
+            .pr-small-#{$i} {
+                padding-right: $padding;
+            }
+    
+            .pt-small-#{$i} {
+                padding-top: $padding;
+            }
+    
+            .pb-small-#{$i} {
+                padding-bottom: $padding;
+            }
+        }
+    }
+    @include padding-classes;
 }
 @media (min-width: 768px) {
     // Medium display
@@ -88,6 +143,33 @@ $marginSizes: 16;
         }
     }
     @include margin-classes;
+
+    @mixin padding-classes {
+        @for $i from 1 through $paddingSizes {
+            $padding: $i * 10px;
+    
+            .p-medium-#{$i} {
+                padding: $padding;
+            }
+    
+            .pl-medium-#{$i} {
+                padding-left: $padding;
+            }
+    
+            .pr-medium-#{$i} {
+                padding-right: $padding;
+            }
+    
+            .pt-medium-#{$i} {
+                padding-top: $padding;
+            }
+    
+            .pb-medium-#{$i} {
+                padding-bottom: $padding;
+            }
+        }
+    }
+    @include padding-classes;
 }
 @media (min-width: 992px) {
     // Lagge display
@@ -117,4 +199,31 @@ $marginSizes: 16;
         }
     }
     @include margin-classes;
+
+    @mixin padding-classes {
+        @for $i from 1 through $paddingSizes {
+            $padding: $i * 10px;
+    
+            .p-#{$i} {
+                padding: $padding;
+            }
+    
+            .pl-#{$i} {
+                padding-left: $padding;
+            }
+    
+            .pr-#{$i} {
+                padding-right: $padding;
+            }
+    
+            .pt-#{$i} {
+                padding-top: $padding;
+            }
+    
+            .pb-#{$i} {
+                padding-bottom: $padding;
+            }
+        }
+    }
+    @include padding-classes;
 }

@@ -71,7 +71,7 @@ a {
         width: 500%;
         height: 500%;
         background: url(../img/noise.png);
-        animation: noise 7s steps(10) infinite;
+        // animation: noise 7s steps(10) infinite;
         z-index: -1;
     }
 }
@@ -128,7 +128,7 @@ a {
     color: $mainBlack;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 50px;
     &.location-mark {
         display: flex;
