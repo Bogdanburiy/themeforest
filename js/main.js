@@ -1,20 +1,20 @@
 "use strict";
 
 // 1.1 Sticky Header
-// let header = document.querySelector('.header');
+let header = document.querySelector('.header');
 
-// if (header) {
-//     function stickyHeader() {
-//         if (window.pageYOffset > 10) {
-//             header.classList.add('sticky-active');
-//         } else {
-//             header.classList.remove('sticky-active');
-//         }
-//     }
+if (header) {
+    function stickyHeader() {
+        if (window.pageYOffset > 20) {
+            header.classList.add('sticky-active');
+        } else {
+            header.classList.remove('sticky-active');
+        }
+    }
 
-//     window.addEventListener('load', stickyHeader);
-//     window.addEventListener('scroll', stickyHeader);
-// }
+    window.addEventListener('load', stickyHeader);
+    window.addEventListener('scroll', stickyHeader);
+}
 
 // 1.2 Anchor Prevent default
 let anchor = document.querySelectorAll('a[href="#"]');
@@ -27,9 +27,6 @@ if (anchorLength > 0) {
         });
     }
 }
-
-// 1.4 Interective fill page progress
-
 
 // 1.4 Change logo on hover block "Our clients"
 let imageGet = Array.from(document.querySelectorAll('.clients-list__item .strong'));
@@ -77,29 +74,29 @@ window.addEventListener('load', function() {
 // }
 
 // 1.7 Mobile menu
-let tl = new TimelineMax({ paused: true });
+// let tl = new TimelineMax({ paused: true });
 
-tl.to(".overlay-container", 1, {
-    left: 0,
-    ease: Expo.easeInOut,
-});
+// tl.to(".overlay-container", 1, {
+//     left: 0,
+//     ease: Expo.easeInOut,
+// });
 
-tl.staggerFrom(
-    ".overlay-menu > div",
-    0.8,
-    { y: 100, opacity: 0, ease: Expo.easeOut },
-    "0.1",
-    "-=0.4"
-);
+// tl.staggerFrom(
+//     ".overlay-menu > div",
+//     0.8,
+//     { y: 100, opacity: 0, ease: Expo.easeOut },
+//     "0.1",
+//     "-=0.4"
+// );
 
-tl.reverse();
-$(document).on("click", ".menu-open", function () {
-    $(this).toggleClass( "open" );
-    $('html').toggleClass( "hidden" );
-    tl.reversed(!tl.reversed());
-});
-$(document).on("click", ".menu-close", function () {
-    tl.reversed(!tl.reversed());
-});
+// tl.reverse();
+// $(document).on("click", ".menu-open", function () {
+//     $(this).toggleClass( "open" );
+//     $('html').toggleClass( "hidden" );
+//     tl.reversed(!tl.reversed());
+// });
+// $(document).on("click", ".menu-close", function () {
+//     tl.reversed(!tl.reversed());
+// });
 
-// 1.8 Set attribute to news cards
+// 1.8 Custom cursor

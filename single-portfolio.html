@@ -10,12 +10,12 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="scss/style.css">
-    <!-- Sizing -->
-    <link rel="stylesheet" href="scss/sizing.css">
 
     <title>Single portfolio page</title>
 
@@ -24,7 +24,7 @@
 
     <div class="noise">
 
-        <header class="header">
+        <header data-aos="fade-down" data-aos-duration="1000" class="header">
             <div class="container d-flex justify-content-between">
                 <div class="header-logo">
                     <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
@@ -77,7 +77,7 @@
         <section class="portfolio mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
             <div class="container">
                 <div class="portfolio-heading main-heading mb-exsmall-6 mb-medium-6 mb6">
-                    <div class="portfolio-heading__info">
+                    <div data-aos="fade-down" data-aos-duration="1000" class="portfolio-heading__info">
                         <ul>
                             <li><a href="#">UX/UI Design</a></li>
                             <li><a href="#">Development</a></li>
@@ -85,13 +85,13 @@
                         <small>05/04/2022</small>
                     </div>
                     <!-- /.portfolio-heading__info -->
-                    <h1 class="big-tittle">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" class="big-tittle">
                         Website Creation for Architectural Studio
                     </h1>
                     <!-- /.big-tittle -->
                 </div>
                 <!-- /.main-heading mb6 -->
-                <div class="portfolio-thumbnail big-image"></div>
+                <div data-aos="zoom-in" data-aos-duration="1500" class="portfolio-thumbnail big-image"></div>
                 <!-- /.portfolio-thumbnail -->
             </div>
             <!-- /.container -->
@@ -100,13 +100,13 @@
 
         <section class="text-block mb-exsmall-6 mb-medium-6 mb8">
             <div class="container">
-                <div class="section-heading" id="project-pin" data-scroll data-scroll-offset="20%">
+                <div class="section-heading">
                     <div class="row">
                         <div class="offset-md-6 col-md-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title mb3">The Project</h2>
+                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title mb3">The Project</h2>
                                 <!-- /.normal-title -->
-                                <p>ABC Architects is a leading architectural studio specializing in commercial and residential projects. The client approached us with the goal of creating a new website that would better showcase their work and services, improve their online presence, and generate more leads.</p>
+                                <p data-aos="fade-up" data-aos-duration="1000">ABC Architects is a leading architectural studio specializing in commercial and residential projects. The client approached us with the goal of creating a new website that would better showcase their work and services, improve their online presence, and generate more leads.</p>
                             </div>
                             <!-- /.section-heading__content -->
                         </div>
@@ -124,14 +124,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="parallax-images__item">
+                        <div class="parallax-images__item" data-aos="fade-right" data-aos-duration="1000">
                             <img src="img/images-ex-1.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
                     </div>
                     <!-- /.col-md-6 -->
                     <div class="col-md-6">
-                        <div class="parallax-images__item">
+                        <div class="parallax-images__item" data-aos="fade-left" data-aos-duration="1000">
                             <img src="img/images-ex-2.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
@@ -146,14 +146,14 @@
 
         <section class="text-block mb-exsmall-6 mb-medium-6 mb8">
             <div class="container">
-                <div class="section-heading" id="project-pin" data-scroll data-scroll-offset="20%">
+                <div class="section-heading">
                     <div class="row">
                         <div class="offset-md-6 col-md-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title mb3">Design and Development Process</h2>
+                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title mb3">Design and Development Process</h2>
                                 <!-- /.normal-title -->
-                                <p class="mb3">Our team of designers and developers worked collaboratively to create a visually stunning and user-friendly website design that aligns with ABC Architects' brand identity. We focused on creating an intuitive and engaging user experience that would allow visitors to easily navigate the site and discover the client's portfolio of work.</p>
-                                <p>The website was built using the latest technologies and best practices, ensuring that it is responsive and optimized for search engines. We also integrated social media and contact forms to make it easy for visitors to engage with ABC Architects and inquire about their services.</p>
+                                <p data-aos="fade-up" data-aos-duration="1000" class="mb3">Our team of designers and developers worked collaboratively to create a visually stunning and user-friendly website design that aligns with ABC Architects' brand identity. We focused on creating an intuitive and engaging user experience that would allow visitors to easily navigate the site and discover the client's portfolio of work.</p>
+                                <p data-aos="fade-up" data-aos-duration="1000">The website was built using the latest technologies and best practices, ensuring that it is responsive and optimized for search engines. We also integrated social media and contact forms to make it easy for visitors to engage with ABC Architects and inquire about their services.</p>
                             </div>
                             <!-- /.section-heading__content -->
                         </div>
@@ -169,8 +169,8 @@
 
         <div class="smooth-image mb-exsmall-8 mb-medium-8 mb16">
             <div class="container">
-                <div class="smooth-image__wrap" data-scroll>
-                    <img src="img/images-ex-3.jpeg" alt="Image">
+                <div class="smooth-image__wrap">
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="img/images-ex-3.jpeg" alt="Image">
                 </div>
                 <!-- /.smooth-image__wrap -->
             </div>
@@ -179,28 +179,28 @@
         <!-- /.smooth-image -->
 
         <section class="portfolio-scrolling">
-            <div class="container" id="showcase-carousel__direction">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="portfolio-scrolling__left" data-scroll data-scroll-sticky data-scroll-target="#showcase-carousel__direction">
-                            <h2 class="normal-title">Results</h2>
+                        <div class="portfolio-scrolling__left">
+                            <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Results</h2>
                             <!-- /.normal-title -->
-                            <p>The new website has transformed ABC Architects' online presence and helped them achieve their business objectives. The site has generated a significant increase in traffic and leads, with visitors spending more time on the site and engaging with the client's portfolio of work. The new website design and development has also helped improve the client's brand identity and reputation in the industry.</p>
+                            <p data-aos="fade-up" data-aos-duration="1000">The new website has transformed ABC Architects' online presence and helped them achieve their business objectives. The site has generated a significant increase in traffic and leads, with visitors spending more time on the site and engaging with the client's portfolio of work. The new website design and development has also helped improve the client's brand identity and reputation in the industry.</p>
                         </div>
                         <!-- /.portfolio-scrolling__left -->
                     </div>
                     <!-- /.col-md-4 -->
                     <div class="offset-md-2 col-md-6">
                         <div class="portfolio-scrolling__right">
-                            <div class="portfolio-scrolling__right-item" data-scroll data-scroll-direction="vertical" data-scroll-speed="3" data-scroll-target="#showcase-carousel__direction">
+                            <div class="portfolio-scrolling__right-item">
                                 <img src="img/images-ex-1.jpeg" alt="Image">
                             </div>
                             <!-- /.portfolio-scrolling__right-item -->
-                            <div class="portfolio-scrolling__right-item" data-scroll data-scroll-direction="vertical" data-scroll-speed="3" data-scroll-target="#showcase-carousel__direction">
+                            <div class="portfolio-scrolling__right-item">
                                 <img src="img/images-ex-2.jpeg" alt="Image">
                             </div>
                             <!-- /.portfolio-scrolling__right-item -->
-                            <div class="portfolio-scrolling__right-item" data-scroll data-scroll-direction="vertical" data-scroll-speed="3" data-scroll-target="#showcase-carousel__direction">
+                            <div class="portfolio-scrolling__right-item">
                                 <img src="img/images-ex-3.jpeg" alt="Image">
                             </div>
                             <!-- /.portfolio-scrolling__right-item -->
@@ -218,7 +218,7 @@
         <section class="banner pb12 mb-exsmall-6 mb-medium-6 mb12">
             <div class="banner-content" data-scroll data-scroll-offset="60%">
                 <div class="container">
-                    <h2 class="normal-title">We're committed to delivering high-quality digital solutions that help businesses achieve their goals. Our work with ABC Architects is a testament to our expertise in website design and development and our ability to create effective and visually stunning digital solutions. Contact us today to learn how we can help your business grow.</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">We're committed to delivering high-quality digital solutions that help businesses achieve their goals. Our work with ABC Architects is a testament to our expertise in website design and development and our ability to create effective and visually stunning digital solutions. Contact us today to learn how we can help your business grow.</h2>
                     <!-- /.normal-title -->
                 </div>
                 <!-- /.container -->
@@ -230,23 +230,23 @@
         <div class="parallax-images mb-exsmall-8 mb-medium-8 mb16">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6" data-scroll data-scroll-direction="vertical" data-scroll-speed="2" data-scroll-target="#parallax-images-2" data-scroll-delay="0.05">
-                        <div class="parallax-images__item mb3" data-scroll>
+                    <div class="col-md-6">
+                        <div data-aos="fade-right" data-aos-duration="1000" class="parallax-images__item mb3">
                             <img src="img/images-ex-1.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
-                        <div class="parallax-images__item" data-scroll>
+                        <div data-aos="fade-right" data-aos-duration="1000" class="parallax-images__item">
                             <img src="img/images-ex-3.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
                     </div>
                     <!-- /.col-md-6 -->
                     <div class="col-md-6">
-                        <div class="parallax-images__item mb3" data-scroll>
+                        <div data-aos="fade-left" data-aos-duration="1000" class="parallax-images__item mb3">
                             <img src="img/images-ex-2.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
-                        <div class="parallax-images__item" data-scroll>
+                        <div data-aos="fade-left" data-aos-duration="1000" class="parallax-images__item">
                             <img src="img/images-ex-4.jpeg" alt="Image">
                         </div>
                         <!-- /.parallax-images__item -->
@@ -264,19 +264,18 @@
                 <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="section-slug">
-                                More works
+                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
+                                Latest works
                             </div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-md-6 -->
                         <div class="col-md-6">
-                            <div class="section-heading__content only-heading">
-                                <h2 class="normal-title mb-exsmall-3 mb-medium-3 mb4">
-                                    Discover more works dolor sit amet, consectetur adipiscing elit. Ultrices senectus nec rhoncus facilisis. Platea aliquam
+                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2 class="normal-title">
+                                    Digital solutions we've created for our clients, from website design and development to branding and digital marketing.
                                 </h2>
                                 <!-- /.normal-title -->
-                                <a class="underline-btn" href="#">Get free consultation</a>
                             </div>
                             <!-- /.section-heading__content only-heading -->
                         </div>
@@ -286,9 +285,9 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="row">
-                    <div class="col-md-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card">
-                            <div class="works-card__thumbnail h-medium-3 h-large-5">
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="works-card" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image1.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
@@ -306,10 +305,10 @@
                         </div>
                         <!-- /.works-card -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card">
-                            <div class="works-card__thumbnail h-medium-3 h-large-5">
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="works-card" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image2.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
@@ -327,10 +326,10 @@
                         </div>
                         <!-- /.works-card -->
                     </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card">
-                            <div class="works-card__thumbnail h-medium-3 h-large-5">
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="works-card" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="works-card__thumbnail">
                                 <img src="img/works-image3.jpeg" alt="Image">
                             </div>
                             <!-- /.works-card__thumbnail -->
@@ -348,7 +347,32 @@
                         </div>
                         <!-- /.works-card -->
                     </div>
-                    <!-- /.col-md-4 -->
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                        <div class="works-card" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="works-card__thumbnail">
+                                <img src="img/works-image4.jpeg" alt="Image">
+                            </div>
+                            <!-- /.works-card__thumbnail -->
+                            <div class="works-card__info">
+                                <a class="d-flex justify-content-between align-items-center" href="#">
+                                    Horizon
+                                    <i class="icon">
+                                        <img src="img/arrow-red.svg" alt="Arrow icon">
+                                    </i>
+                                    <!-- /.icon -->
+                                </a>
+                                <small>UX/UI design</small>
+                            </div>
+                            <!-- /.works-card__info -->
+                        </div>
+                        <!-- /.works-card -->
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="offset-md-6 col-md-6">
+                        <a class="underline-btn" href="#" data-aos="fade-up" data-aos-duration="1500">Get free consultation</a>
+                    </div>
+                    <!-- /.offset-md-6 col-md-6 -->
                 </div>
                 <!-- /.row -->
             </div>
@@ -361,35 +385,35 @@
                 <div class="section-heading">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="section-slug">Let’s work together</div>
+                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">Let’s work together</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title">Fill out the form and we will contact you to discuss our best project together!</h2>
+                                <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">Fill out the form and we will contact you to discuss our best project together!</h2>
                                 <!-- /.normal-title -->
                                 <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
                                     <form action="#" method="post">
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <button class="submit-btn" type="submit">get free consultation</button>
+                                        <button class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1500">get free consultation</button>
                                     </form>
                                 </div>
                                 <!-- /.discussion-form -->
@@ -402,7 +426,7 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-right" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -415,7 +439,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-down" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -428,7 +452,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-up" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -441,7 +465,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-left" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -550,8 +574,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="js/aos.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- <script>
         $('.showcase-carousel').slick({

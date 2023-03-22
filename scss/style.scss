@@ -24,6 +24,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding-top: 85px;
 }
 
 // Variables
@@ -44,6 +45,10 @@ ul {
 
 a {
     text-decoration: none;
+    transition: all .3s ease-out;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 :focus {
@@ -63,6 +68,7 @@ a {
 
 .noise {
     position: relative;
+    overflow: hidden;
     &::after {
         content: "";
         position: fixed;
@@ -278,6 +284,7 @@ a {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
+            transition: all .3s ease-out;
             span {
                 font-style: normal;
                 font-weight: 400;
@@ -285,6 +292,12 @@ a {
                 line-height: 100%;
                 letter-spacing: -0.02em;
                 color: $mainBlack;
+                transition: all .3s ease-out;
+            }
+            &:hover {
+                span {
+                    font-size: 40px;
+                }
             }
         }
     }
@@ -333,40 +346,6 @@ a {
             height: 100%;
             object-fit: cover;
         }
-    }
-}
-
-.scroll-down {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 123px;
-    width: 100%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #131313;
-    position: fixed;
-    top: 650px;
-    left: 140px;
-    transform: rotate(90deg);
-    i.icon {
-        img {
-            width: 123px;
-            height: 8px;
-            // animation: animateScrolldown 2s ease-out infinite;
-        }
-    }
-}
-
-@keyframes animateScrolldown {
-    from {
-        clip-path: inset(0 100% 0 0);
-    }
-
-    to {
-        clip-path: inset(0 0 0 0);
     }
 }
 
@@ -460,19 +439,6 @@ a {
                 cursor: pointer; 
             }  
         }
-    }
-}
-
-.progress-fill {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: $mainWarm;
-    border-radius: 50px;
-    &__status {
-        background-color: $mainRed
     }
 }
 

@@ -18,6 +18,7 @@ html.is-ready .big-tittle__line {
 
 body {
   font-family: "Poppins", sans-serif;
+  padding-top: 85px;
 }
 
 p {
@@ -32,6 +33,10 @@ ul {
 
 a {
   text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  cursor: pointer;
 }
 
 :focus {
@@ -40,6 +45,7 @@ a {
 
 .noise {
   position: relative;
+  overflow: hidden;
 }
 .noise::after {
   content: "";
@@ -255,6 +261,7 @@ a {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 .social-links__item-content span {
   font-style: normal;
@@ -263,6 +270,10 @@ a {
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #131313;
+  transition: all 0.3s ease-out;
+}
+.social-links__item-content:hover span {
+  font-size: 40px;
 }
 
 .section-heading__content p {
@@ -306,37 +317,6 @@ a {
      object-fit: cover;
 }
 
-.scroll-down {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 123px;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #131313;
-  position: fixed;
-  top: 650px;
-  left: 140px;
-  transform: rotate(90deg);
-}
-.scroll-down i.icon img {
-  width: 123px;
-  height: 8px;
-}
-
-@keyframes animateScrolldown {
-  from {
-    -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
-  }
-  to {
-    -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
-  }
-}
 .preloader-page {
   position: fixed;
   top: 0;
@@ -430,28 +410,23 @@ a {
   cursor: pointer;
 }
 
-.progress-fill {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: #F3EFEB;
-  border-radius: 50px;
-}
-.progress-fill__status {
-  background-color: #FC4005;
-}
-
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+  height: 85px;
   padding: 30px 0;
   border-bottom: 1px solid #131313;
+  transition: all 0.3s ease-out;
 }
 .header.sticky-active {
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.6);
+  height: 65px;
+  padding: 20px 0;
+  background-color: rgba(242, 238, 234, 0.95);
+  border-bottom: 1px solid #c5c1bd;
+  transition: all 0.3s ease-out;
   z-index: 1;
 }
 .header-menu nav {
@@ -1142,7 +1117,7 @@ a {
   width: 100%;
   padding: 0;
   padding-bottom: 10px;
-  color: rgba(19, 19, 19, 0.5);
+  color: #131313;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1297,7 +1272,10 @@ a {
   background-color: #131313;
 }
 .portfolio-scrolling__left {
-  padding: 250px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding-top: 50px;
 }
 .portfolio-scrolling__left h2 {
   margin-bottom: 30px;
@@ -1312,11 +1290,15 @@ a {
   opacity: 0.7;
 }
 .portfolio-scrolling__right {
+  padding: 50px 0;
   overflow: hidden;
 }
 .portfolio-scrolling__right-item {
   height: 700px;
   margin-bottom: 30px;
+}
+.portfolio-scrolling__right-item:last-child {
+  margin-bottom: 0;
 }
 .portfolio-scrolling__right-item img {
   width: 100%;
@@ -1325,6 +1307,10 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.parallax-images {
+  overflow: hidden;
 }
 
 .location-map {
@@ -1404,6 +1390,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
 }
 .video-wrapper::after {
@@ -1493,15 +1480,17 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 68px;
+  transition: all 0.3s ease-out;
 }
 .footer-email__mob a::after {
   position: absolute;
   bottom: 0;
   content: "";
   display: block;
-  width: 100%;
+  width: 0%;
   height: 5px;
   background-color: #FC4005;
+  transition: all 0.3s ease-out;
 }
 .footer-info__email {
   line-height: 60px;
@@ -1513,15 +1502,20 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 68px;
+  transition: all 0.3s ease-out;
 }
 .footer-info__email a::after {
   position: absolute;
   bottom: 0;
   content: "";
   display: block;
-  width: 100%;
+  width: 0%;
   height: 5px;
   background-color: #FC4005;
+  transition: all 0.3s ease-out;
+}
+.footer-info__email a:hover::after {
+  width: 100%;
 }
 .footer-info__additional ul {
   -moz-column-count: 2;
@@ -1599,6 +1593,9 @@ a {
   .social-links__item-content span {
     font-size: 36px;
   }
+  .social-links__item-content:hover span {
+    font-size: 30px;
+  }
   .notfound h1 {
     font-size: 220px;
     line-height: 100%;
@@ -1670,9 +1667,6 @@ a {
   .portfolio-thumbnail {
     height: 500px;
   }
-  .portfolio-scrolling__left {
-    padding: 150px 0;
-  }
   .portfolio-scrolling__right-item {
     height: 500px;
   }
@@ -1725,6 +1719,9 @@ a {
   }
   .social-links__item-content span {
     font-size: 36px;
+  }
+  .social-links__item-content:hover span {
+    font-size: 30px;
   }
   .header {
     padding: 20px 0;
@@ -2122,9 +2119,6 @@ a {
   .portfolio-scrolling {
     padding-bottom: 50px;
   }
-  .portfolio-scrolling__left {
-    padding: 80px 0 30px 0;
-  }
   .portfolio-scrolling__right-item {
     height: 500px;
   }
@@ -2314,6 +2308,15 @@ a {
   .portfolio-thumbnail {
     height: 400px;
   }
+  .portfolio-scrolling {
+    background-color: #131313;
+  }
+  .portfolio-scrolling__left {
+    padding-top: 30px;
+  }
+  .portfolio-scrolling__right {
+    padding: 30px 0;
+  }
 }
 @media (max-width: 430px) {
   .big-tittle {
@@ -2332,6 +2335,9 @@ a {
   }
   .social-links__item-content span {
     font-size: 21px;
+  }
+  .social-links__item-content:hover span {
+    font-size: 16px;
   }
   .benefits-list__item .strong {
     margin-bottom: 15px;

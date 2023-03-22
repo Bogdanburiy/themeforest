@@ -9,6 +9,11 @@
                 span {
                     font-size: 36px;
                 }
+                &:hover {
+                    span {
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }
@@ -127,9 +132,6 @@
             height: 500px;
         }
         &-scrolling {
-            &__left {
-                padding: 150px 0;
-            }
             &__right {
                 &-item {
                     height: 500px;
@@ -195,6 +197,11 @@
             &-content {
                 span {
                     font-size: 36px;
+                }
+                &:hover {
+                    span {
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -743,9 +750,6 @@
         }
         &-scrolling {
             padding-bottom: 50px;
-            &__left {
-                padding: 80px 0 30px 0;
-            }
             &__right {
                 &-item {
                     height: 500px;
@@ -1031,6 +1035,15 @@
         &-thumbnail {
             height: 400px;
         }
+        &-scrolling {
+            background-color: $mainBlack;
+            &__left {
+                padding-top: 30px;
+            }
+            &__right {
+                padding: 30px 0;
+            }
+        }
     }
 }
 @media(max-width: 430px) {
@@ -1049,6 +1062,11 @@
             &-content {
                 span {
                     font-size: 21px;
+                }
+                &:hover {
+                    span {
+                        font-size: 16px;
+                    }
                 }
             }
         }

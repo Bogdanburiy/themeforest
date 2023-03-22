@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <!-- AOS Animation -->
     <link rel="stylesheet" href="css/aos.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="css/fancybox.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
@@ -81,7 +83,7 @@
                         Your personal website portfolio
                     </h1>
                     <!-- /.big-tittle -->
-                    <a data-aos="fade-down" data-aos-duration="1500" class="underline-btn" href="#">Get free consultation</a>
+                    <a data-aos="fade-down" data-aos-duration="1500" class="underline-btn" data-fancybox data-src="#dialog-popup">Get free consultation</a>
                 </div>
                 <!-- /.main-heading mb6 -->
                 <div data-aos="zoom-in" data-aos-duration="1500" class="big-image"></div>
@@ -369,7 +371,7 @@
             </div>
             <!-- /.banner-content -->
         </section>
-        <!-- /.banner section-p -->
+        <!-- /.banner -->
 
         <section class="offer mb-exsmall-5 mb-medium-5 mb11">
             <div class="container">
@@ -1037,16 +1039,24 @@
     </div>
     <!-- /.preloader-page -->
 
+    <div class="popup-window" id="dialog-popup">
+        <h3 class="normal-title">Fill out the form and we will contact you within 1 business day</h3>
+        <!-- /.normal-title -->
+    </div>
+    <!-- /#dialog-popup.popup-window -->
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- TweenMax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="js/gsap.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="js/aos.js"></script>
+    <!-- Fancybox JS -->
+    <script src="js/fancybox.umd.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
 

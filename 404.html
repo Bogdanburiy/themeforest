@@ -10,6 +10,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
@@ -22,7 +24,7 @@
 
     <div class="noise">
 
-        <header class="header">
+        <header data-aos="fade-down" data-aos-duration="1000" class="header">
             <div class="container d-flex justify-content-between">
                 <div class="header-logo">
                     <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
@@ -75,11 +77,11 @@
         <section class="notfound">
             <div class="container">
                 <h1>
-                    <span>Page</span>
-                    <span>not</span>
-                    <span>found</span>
+                    <span data-aos="fade-right" data-aos-duration="1000">Page</span>
+                    <span data-aos="fade-left" data-aos-duration="1000">not</span>
+                    <span data-aos="fade-up" data-aos-duration="1000">found</span>
                 </h1>
-                <a class="underline-btn" href="/index.html">Back to homepage</a>
+                <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="underline-btn" href="/index.html">Back to homepage</a>
             </div>
             <!-- /.container -->
         </section>
@@ -110,12 +112,16 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- TweenMax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="js/aos.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

@@ -62,7 +62,10 @@
     &-scrolling {
         background-color: $mainBlack;
         &__left {
-            padding: 250px 0;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            padding-top: 50px;
             h2 {
                 @extend .normal-title;
                 margin-bottom: 30px;
@@ -78,10 +81,14 @@
             }
         }
         &__right {
+            padding: 50px 0;
             overflow: hidden;
             &-item {
                 height: 700px;
                 margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -91,4 +98,8 @@
             }
         }
     }
+}
+
+.parallax-images {
+    overflow: hidden;
 }

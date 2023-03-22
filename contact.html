@@ -10,6 +10,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
@@ -22,7 +24,7 @@
 
     <div class="noise">
 
-        <header class="header">
+        <header data-aos="fade-down" data-aos-duration="1000" class="header">
             <div class="container d-flex justify-content-between">
                 <div class="header-logo">
                     <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
@@ -77,35 +79,35 @@
                 <div class="section-heading">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="section-slug">Let’s work together</div>
+                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">Let’s work together</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-lg-6 -->
                         <div class="col-lg-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title">Fill out the form and we will contact you to discuss our best project together!</h2>
+                                <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">Fill out the form and we will contact you to discuss our best project together!</h2>
                                 <!-- /.normal-title -->
                                 <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
                                     <form action="#" method="post">
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item">
+                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
                                             <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
                                             <span class="input-focus"></span>
                                             <!-- /.input-focus -->
                                         </div>
                                         <!-- /.discussion-form__item -->
-                                        <button class="submit-btn" type="submit">get free consultation</button>
+                                        <button class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1500">get free consultation</button>
                                     </form>
                                 </div>
                                 <!-- /.discussion-form -->
@@ -118,7 +120,7 @@
                 </div>
                 <!-- /.section-heading -->
                 <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-right" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -131,7 +133,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-down" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -144,7 +146,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-up" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -157,7 +159,7 @@
                         <!-- /.social-links__item-inner -->
                     </div>
                     <!-- /.social-links__item -->
-                    <div class="social-links__item">
+                    <div class="social-links__item" data-aos="fade-left" data-aos-duration="1500">
                         <div class="social-links__item-inner">
                             <div class="social-links__item-wrapper">
                                 <a href="#" class="social-links__item-content">
@@ -182,13 +184,13 @@
                 <div class="section-heading mb7">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="section-slug">Location</div>
+                            <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Location</div>
                             <!-- /.section-slug -->
                         </div>
                         <!-- /.col-md-6 -->
                         <div class="col-md-6">
                             <div class="section-heading__content">
-                                <h2 class="normal-title location-mark">9 Rue du 4 septembre, <br> 75002 Paris, France</h2>
+                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title location-mark">9 Rue du 4 septembre, <br> 75002 Paris, France</h2>
                                 <!-- /.normal-title -->
                             </div>
                             <!-- /.section-heading__content -->
@@ -198,7 +200,7 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.section-heading -->
-                <div class="location-map">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="location-map">
                     <img src="img/map.png" alt="Image">
                 </div>
                 <!-- /.location-map -->
@@ -274,12 +276,16 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- TweenMax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="js/aos.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
