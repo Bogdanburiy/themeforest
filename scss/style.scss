@@ -55,16 +55,16 @@ a {
     outline: none;
 }
 
-// .page-container {
-//     visibility: hidden;
-//     opacity: 0;
-//     transition:all 0.5s ease-out;
-//     &.show {
-//         visibility: visible;
-//         opacity: 1; 
-//         transition:all 0.5s ease-out;
-//     }
-// }
+.page-container {
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.5s ease-out;
+    &.show {
+        visibility: visible;
+        opacity: 1; 
+        transition:all 0.5s ease-out;
+    }
+}
 
 .noise {
     position: relative;
@@ -77,7 +77,7 @@ a {
         width: 500%;
         height: 500%;
         background: url(../img/noise.png);
-        // animation: noise 7s steps(10) infinite;
+        animation: noise 7s steps(10) infinite;
         z-index: -1;
     }
 }
@@ -126,7 +126,6 @@ a {
     font-size: 124px;
     line-height: 110%;
     letter-spacing: -0.02em;
-    perspective: 600px;
 }
 
 .normal-title {
@@ -408,37 +407,222 @@ a {
     }
 }
 
-.overlay-container {
-    position: fixed;
-    top: 0;
-    left: -100%;
+.hamburger-overlay {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    background: $mainWarm;
-    text-align: center;
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 150px 0;
+    position: fixed;
     z-index: 1;
-    .overlay-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-        &__item {
-            margin-bottom: 30px;
-            &:last-child {
-                margin-bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: $mainRed;
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+    a.close-btn {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 20px;
+        right: 11px;
+        top: -120px;
+        color: #fff;
+        span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            height: 2px;
+            width: 30px;
+            background: $mainWarm;
+            transition: .25s ease-in-out;
+            border-radius: 5px;
+            &:nth-of-type(1) {
+                transform: translate(-50%,-50%) rotate(45deg);
             }
-            a {
-                display: inline-block;
-                color: $mainBlack;  
-                font-size: 36px;
-                line-height: 50px;
-                transition: opacity 0.1s;
-                text-decoration: none;
-                cursor: pointer; 
-            }  
+            &:nth-of-type(2) {
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
         }
+    }
+    &__menu {
+        ul {
+            li {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: $mainWarm;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 55px;
+                    line-height: 77px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &__additional {
+        &-social {
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    text-align: right;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: $mainWarm;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 100%;
+                        text-align: right;
+                        letter-spacing: -0.02em;
+                    }
+                }
+            }
+        }
+        .underline-btn {
+            margin-left: auto;
+            color: $mainWarm;
+            &::before {
+                background-color: $mainWarm;
+            }
+            &::after {
+                filter: brightness(10);
+            }
+        }
+    }
+}
+
+.popup-window {
+    max-width: 650px;
+    width: 100%;
+    padding: 35px;
+    h3 {
+        @extend .normal-title;
+        margin-bottom: 40px;
+        font-size: 34px;
+    }
+    form {
+        button.submit-btn {
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                background-image: url(../img/arrow-red-angle.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 0.3s ease-out;
+                vertical-align: middle;
+                filter: brightness(0);
+            }
+            &:hover {
+                &::after {
+                    transform: rotate(45deg);
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+    .f-button.is-close-btn {
+        top: 15px;
+        right: 15px;
+        opacity: 1;
+        svg {
+            stroke: $mainBlack
+        }
+    }
+}
+
+.cursor {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cursor {
+        &-circle {
+            width: 40px;
+            height: 40px;
+            margin-top: -50%;
+            margin-left: -50%;
+            border-radius: 50%;
+            border: solid 1px $mainBlack;
+            transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        &.white-border {
+            .cursor-circle {
+                border: solid 1px $mainWarm;
+            }
+            &.arrow {
+                &::after {
+                    filter: brightness(0);
+                }
+                .cursor-circle {
+                    width: 80px;
+                    height: 80px;
+                    background-color: $mainWarm;
+                    border-color: $mainWarm;
+                }
+            }
+        }
+        &.arrow-flip {
+            &::after {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .cursor.arrow {
+        .cursor-circle {
+            width: 80px;
+            height: 80px;
+            background-color: $mainRed;
+            border-color: $mainRed;
+        }
+    }
+
+    .cursor.arrow::after {
+        content: '';
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/arrow-next.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cursor.subtle .cursor-circle {
+        opacity: 0.16;
+    }
+
+    .cursor.overlay .cursor-circle {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(227, 222, 193, 0.08);
+        border-color: transparent;
     }
 }
 

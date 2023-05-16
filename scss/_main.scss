@@ -1,14 +1,6 @@
 .main {
     &-heading {
         position: relative;
-        h1 {
-            max-width: calc(100% - 280px);
-        }
-        .underline-btn {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
     }
     .big-image {
         max-width: 100%;

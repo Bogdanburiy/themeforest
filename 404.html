@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <!-- AOS Animation -->
     <link rel="stylesheet" href="css/aos.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="css/fancybox.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
@@ -27,22 +29,22 @@
         <header data-aos="fade-down" data-aos-duration="1000" class="header">
             <div class="container d-flex justify-content-between">
                 <div class="header-logo">
-                    <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
+                    <a cursor-class="arrow" href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
                 </div>
                 <!-- /.header-logo -->
                 <div class="header-menu">
                     <nav>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="single-portfolio.html">Portfolio</a></li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li><a href="news.html">Blog</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                            <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                            <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                            <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                            <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
                 <!-- /.header-menu -->
-                <div class="header-mobile menu-open">
+                <div cursor-class="arrow" class="header-mobile menu-open" onclick="openNav()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -53,26 +55,48 @@
         </header>
         <!-- /.header -->
 
-        <div class="overlay-container">
-            <nav class="overlay-menu">
-                <div class="overlay-menu__item item-1">
-                    <a href="index.html" class="menu__item-link">Home</a>
+        <div id="hamburger-overlay" class="hamburger-overlay">
+            <div class="container position-relative h-100">
+                <a cursor-class="arrow" href="javascript:void(0)" class="close-btn" onclick="closeNav()">
+                    <span></span>
+                    <span></span>
+                </a>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-8">
+                        <nav class="hamburger-overlay__menu">
+                            <ul>
+                                <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        <!-- /.hamburger-overlay__menu -->
+                    </div>
+                    <!-- /.col-12 col-sm-6 col-md-8 -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="hamburger-overlay__additional d-flex justify-content-between flex-column h-100">
+                            <div class="hamburger-overlay__additional-social">
+                                <ul>
+                                    <li><a cursor-class="arrow" href="#">Linkedin</a></li>
+                                    <li><a cursor-class="arrow" href="#">Youtube</a></li>
+                                    <li><a cursor-class="arrow" href="#">Facebook</a></li>
+                                    <li><a cursor-class="arrow" href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.hamburger-overlay__additional-social -->
+                            <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" cursor-class="arrow" class="underline-btn mt-exsmall-3 mt-medium-6 mt6" data-fancybox data-src="#dialog-popup">Get free consultation</a>
+                        </div>
+                        <!-- /.hamburger-overlay__additional -->
+                    </div>
+                    <!-- /.col-12 col-sm-6 col-md-4 -->
                 </div>
-                <div class="overlay-menu__item item-2">
-                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
-                </div>
-                <div class="overlay-menu__item item-3">
-                    <a href="about-us.html" class="menu__item-link">About</a>
-                </div>
-                <div class="overlay-menu__item item-4">
-                    <a href="news.html" class="menu__item-link">Blog</a>
-                </div>
-                <div class="overlay-menu__item item-5">
-                    <a href="contact.html" class="menu__item-link">Contacts</a>
-                </div>
-            </nav>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
         </div>
-        <!-- /.overlay-container -->
+        <!-- /.hamburger-overlay -->
 
         <section class="notfound">
             <div class="container">
@@ -81,11 +105,17 @@
                     <span data-aos="fade-left" data-aos-duration="1000">not</span>
                     <span data-aos="fade-up" data-aos-duration="1000">found</span>
                 </h1>
-                <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="underline-btn" href="/index.html">Back to homepage</a>
+                <a cursor-class="arrow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="underline-btn" href="/index.html">Back to homepage</a>
             </div>
             <!-- /.container -->
         </section>
         <!-- /.notfound -->
+
+        <div class="cursor" id="cursor">
+            <div class="cursor-circle"></div>
+            <!-- /.cursor-circle -->
+        </div>
+        <!-- /.cursor -->
 
     </div>
     <!-- /.noise -->
@@ -107,21 +137,50 @@
         <!-- /.preloader-page__counter -->
     </div>
     <!-- /.preloader-page -->
+    
+    <div class="popup-window" id="dialog-popup" style="display:none;">
+        <h3 class="normal-title">Fill out the form and we will contact you within 1 business day</h3>
+        <!-- /.normal-title -->
+        <form action="#" method="post">
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <button cursor-class="arrow" class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- /.popup-window -->
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="js/gsap.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="js/aos.js"></script>
+    <!-- Fancybox JS -->
+    <script src="js/fancybox.umd.js"></script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 
 </body>
 </html>

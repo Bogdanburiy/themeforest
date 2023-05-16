@@ -24,1002 +24,1032 @@
 </head>
 <body>
 
-    <div class="noise">
+    <div class="page-container">
 
-        <header data-aos="fade-down" data-aos-duration="1000" class="header">
-            <div class="container d-flex justify-content-between">
-                <div class="header-logo">
-                    <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
-                </div>
-                <!-- /.header-logo -->
-                <div class="header-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="single-portfolio.html">Portfolio</a></li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li><a href="news.html">Blog</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- /.header-menu -->
-                <div class="header-mobile menu-open">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- /.header-mobile -->
-            </div>
-            <!-- /.container -->
-        </header>
-        <!-- /.header -->
+        <div class="noise">
 
-        <div class="overlay-container">
-            <nav class="overlay-menu">
-                <div class="overlay-menu__item item-1">
-                    <a href="index.html" class="menu__item-link">Home</a>
+            <header data-aos="fade-down" data-aos-duration="1000" class="header">
+                <div class="container d-flex justify-content-between">
+                    <div class="header-logo">
+                        <a cursor-class="arrow" href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
+                    </div>
+                    <!-- /.header-logo -->
+                    <div class="header-menu">
+                        <nav>
+                            <ul>
+                                <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /.header-menu -->
+                    <div cursor-class="arrow" class="header-mobile menu-open" onclick="openNav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- /.header-mobile -->
                 </div>
-                <div class="overlay-menu__item item-2">
-                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
-                </div>
-                <div class="overlay-menu__item item-3">
-                    <a href="about-us.html" class="menu__item-link">About</a>
-                </div>
-                <div class="overlay-menu__item item-4">
-                    <a href="news.html" class="menu__item-link">Blog</a>
-                </div>
-                <div class="overlay-menu__item item-5">
-                    <a href="contact.html" class="menu__item-link">Contacts</a>
-                </div>
-            </nav>
-        </div>
-        <!-- /.overlay-container -->
+                <!-- /.container -->
+            </header>
+            <!-- /.header -->
 
-        <section class="main mt-exsmall-6 mt-medium-6 mb-exsmall-8 mb-medium-8 mt8 mb16">
-            <div class="container">
-                <div class="main-heading mb-exsmall-3 mb-medium-3 mb6 d-flex justify-content-between align-items-sm-start align-items-lg-end">
-                    <h1 data-aos="fade-up" data-aos-duration="1500" class="big-tittle">
-                        Your personal website portfolio
-                    </h1>
-                    <!-- /.big-tittle -->
-                    <a data-aos="fade-down" data-aos-duration="1500" class="underline-btn" data-fancybox data-src="#dialog-popup">Get free consultation</a>
-                </div>
-                <!-- /.main-heading mb6 -->
-                <div data-aos="zoom-in" data-aos-duration="1500" class="big-image"></div>
-                <!-- /.big-image -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main -->
-
-        <section class="works mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+            <div id="hamburger-overlay" class="hamburger-overlay">
+                <div class="container position-relative h-100">
+                    <a cursor-class="arrow" href="javascript:void(0)" class="close-btn" onclick="closeNav()">
+                        <span></span>
+                        <span></span>
+                    </a>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                Latest works
-                            </div>
-                            <!-- /.section-slug -->
+                        <div class="col-12 col-sm-6 col-md-8">
+                            <nav class="hamburger-overlay__menu">
+                                <ul>
+                                    <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                    <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                    <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                    <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                    <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.hamburger-overlay__menu -->
                         </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    Digital solutions we've created for our clients, from website design and development to branding and digital marketing.
-                                </h2>
-                                <!-- /.normal-title -->
+                        <!-- /.col-12 col-sm-6 col-md-8 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="hamburger-overlay__additional d-flex justify-content-between flex-column h-100">
+                                <div class="hamburger-overlay__additional-social">
+                                    <ul>
+                                        <li><a cursor-class="arrow" href="#">Linkedin</a></li>
+                                        <li><a cursor-class="arrow" href="#">Youtube</a></li>
+                                        <li><a cursor-class="arrow" href="#">Facebook</a></li>
+                                        <li><a cursor-class="arrow" href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.hamburger-overlay__additional-social -->
+                                <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" cursor-class="arrow" class="underline-btn mt-exsmall-3 mt-medium-6 mt6" data-fancybox data-src="#dialog-popup">Get free consultation</a>
                             </div>
-                            <!-- /.section-heading__content only-heading -->
+                            <!-- /.hamburger-overlay__additional -->
                         </div>
-                        <!-- /.col-md-6 -->
+                        <!-- /.col-12 col-sm-6 col-md-4 -->
                     </div>
                     <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="row">
-                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card" data-aos="fade-right" data-aos-duration="1500">
-                            <div class="works-card__thumbnail">
-                                <img src="img/works-image1.jpeg" alt="Image">
-                            </div>
-                            <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info">
-                                <a class="d-flex justify-content-between align-items-center" href="#">
-                                    Plane on the sky
-                                    <i class="icon">
-                                        <img src="img/arrow-red.svg" alt="Arrow icon">
-                                    </i>
-                                    <!-- /.icon -->
-                                </a>
-                                <small>UX/UI design</small>
-                            </div>
-                            <!-- /.works-card__info -->
-                        </div>
-                        <!-- /.works-card -->
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card" data-aos="fade-left" data-aos-duration="1500">
-                            <div class="works-card__thumbnail">
-                                <img src="img/works-image2.jpeg" alt="Image">
-                            </div>
-                            <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info">
-                                <a class="d-flex justify-content-between align-items-center" href="#">
-                                    Green plant
-                                    <i class="icon">
-                                        <img src="img/arrow-red.svg" alt="Arrow icon">
-                                    </i>
-                                    <!-- /.icon -->
-                                </a>
-                                <small>UX/UI design</small>
-                            </div>
-                            <!-- /.works-card__info -->
-                        </div>
-                        <!-- /.works-card -->
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card" data-aos="fade-right" data-aos-duration="1500">
-                            <div class="works-card__thumbnail">
-                                <img src="img/works-image3.jpeg" alt="Image">
-                            </div>
-                            <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info">
-                                <a class="d-flex justify-content-between align-items-center" href="#">
-                                    Coffe shop
-                                    <i class="icon">
-                                        <img src="img/arrow-red.svg" alt="Arrow icon">
-                                    </i>
-                                    <!-- /.icon -->
-                                </a>
-                                <small>UX/UI design</small>
-                            </div>
-                            <!-- /.works-card__info -->
-                        </div>
-                        <!-- /.works-card -->
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="works-card" data-aos="fade-left" data-aos-duration="1500">
-                            <div class="works-card__thumbnail">
-                                <img src="img/works-image4.jpeg" alt="Image">
-                            </div>
-                            <!-- /.works-card__thumbnail -->
-                            <div class="works-card__info">
-                                <a class="d-flex justify-content-between align-items-center" href="#">
-                                    Horizon
-                                    <i class="icon">
-                                        <img src="img/arrow-red.svg" alt="Arrow icon">
-                                    </i>
-                                    <!-- /.icon -->
-                                </a>
-                                <small>UX/UI design</small>
-                            </div>
-                            <!-- /.works-card__info -->
-                        </div>
-                        <!-- /.works-card -->
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="offset-md-6 col-md-6">
-                        <a class="underline-btn" href="#" data-aos="fade-up" data-aos-duration="1500">Get free consultation</a>
-                    </div>
-                    <!-- /.offset-md-6 col-md-6 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.works -->
-
-        <section class="benefits mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                About us
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    Our team is dedicated to delivering results-driven solutions that help our clients achieve their goals
-                                </h2>
-                                <!-- /.normal-title -->
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="benefits-list d-flex justify-content-center">
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-right" data-aos-duration="1500">
-                        <div class="benefits-list__item-inner">
-                            <div class="benefits-list__item-wrapper">
-                                <div class="benefits-list__item-content">
-                                    <div class="strong">4</div>
-                                    <!-- /.strong -->
-                                    <p>years on the market</p>
-                                </div>
-                                <!-- /.benefits-list__item-content -->
-                            </div>
-                            <!-- /.benefits-list__item-wrapper -->
-                        </div>
-                        <!-- /.benefits-list__item-inner -->
-                    </div>
-                    <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="benefits-list__item-inner">
-                            <div class="benefits-list__item-wrapper">
-                                <div class="benefits-list__item-content">
-                                    <div class="strong">293</div>
-                                    <!-- /.strong -->
-                                    <p>satisfied famous clients</p>
-                                </div>
-                                <!-- /.benefits-list__item-content -->
-                            </div>
-                            <!-- /.benefits-list__item-wrapper -->
-                        </div>
-                        <!-- /.benefits-list__item-inner -->
-                    </div>
-                    <!-- /.benefits-list__item -->
-                    <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-left" data-aos-duration="1500">
-                        <div class="benefits-list__item-inner">
-                            <div class="benefits-list__item-wrapper">
-                                <div class="benefits-list__item-content">
-                                    <div class="strong">35+</div>
-                                    <!-- /.strong -->
-                                    <p>working hours of practice</p>
-                                </div>
-                                <!-- /.benefits-list__item-content -->
-                            </div>
-                            <!-- /.benefits-list__item-wrapper -->
-                        </div>
-                        <!-- /.benefits-list__item-inner -->
-                    </div>
-                    <!-- /.benefits-list__item -->
-                </div>
-                <!-- /.benefits-list -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.benefits -->
-
-        <section class="steps mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                How we works
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    At ABC. agency, we're committed to delivering high-quality digital solutions that help businesses succeed
-                                </h2>
-                                <!-- /.normal-title -->
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="steps-list">
-                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1500">
-                        <span>Step 1</span>
-                        <div class="strong">Discover</div>
-                        <!-- /.strong -->
-                        <p>We start by understanding your business and goals, and identifying the challenges and opportunities you face. We conduct research and analysis to gain insights into your market, competitors, and target audience.</p>
-                    </div>
-                    <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1500">
-                        <span>Step 2</span>
-                        <div class="strong">Plan</div>
-                        <!-- /.strong -->
-                        <p>We develop a customized digital strategy that aligns with your business goals and addresses your challenges and opportunities. Our plan includes a detailed roadmap of the activities and deliverables required to achieve your objectives.</p>
-                    </div>
-                    <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1500">
-                        <span>Step 3</span>
-                        <div class="strong">Design</div>
-                        <!-- /.strong -->
-                        <p>We design a custom digital solution that aligns with your brand identity and user needs. Our team of designers and developers work collaboratively to create a visually stunning and user-friendly digital experience.</p>
-                    </div>
-                    <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1500">
-                        <span>Step 4</span>
-                        <div class="strong">Develop</div>
-                        <!-- /.strong -->
-                        <p>Our developers build your digital solution using the latest technologies and best practices. We rigorously test your solution to ensure it meets your requirements and is ready for launch.</p>
-                    </div>
-                    <!-- /.steps-list__item -->
-                    <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1500">
-                        <span>Step 5</span>
-                        <div class="strong">Launch</div>
-                        <!-- /.strong -->
-                        <p>We launch your digital solution and provide ongoing support and maintenance to ensure it continues to perform at its best. We track and measure your solution's performance and provide insights and recommendations for continuous improvement.</p>
-                    </div>
-                    <!-- /.steps-list__item -->
-                </div>
-                <!-- /.steps-list -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.steps -->
-
-        <section class="banner mb-exsmall-8 mb-medium-8 mb16">
-            <div class="banner-content">
-                <div class="container">
-                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.</h2>
-                    <!-- /.normal-title -->
-                    <small data-aos="fade-up" data-aos-duration="1500">Antoine de Saint-Exupéry</small>
                 </div>
                 <!-- /.container -->
             </div>
-            <!-- /.banner-content -->
-        </section>
-        <!-- /.banner -->
+            <!-- /.hamburger-overlay -->
 
-        <section class="offer mb-exsmall-5 mb-medium-5 mb11">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                What we offer
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-8">
-                            <div class="section-heading__content">
-                                <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">
-                                    We offer a comprehensive range of digital services to help businesses thrive in today's digital landscape
-                                </h2>
-                                <!-- /.normal-title -->
-                                <div class="offer-collapse accordion">
-                                    <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="offer-collapse__item-head d-flex accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__01" aria-expanded="true">
-                                                <div class="count">01</div>
-                                                <!-- /.count -->
-                                                <div class="strong d-flex justify-content-between align-items-center">
-                                                    Website Design and Development
-                                                    <i class="icon">
-                                                        <img src="img/arrow-red.svg" alt="Red arrow">
-                                                    </i>
-                                                    <!-- /.icon -->
-                                                </div>
-                                                <!-- /.strong -->
-                                            </button>
-                                        </div>
-                                        <!-- /.head -->
-                                        <div id="accordion-item__01" class="accordion-collapse collapse">
-                                            <div class="offer-collapse__item-body accordion-body">
-                                                <p>Our team of designers and developers create visually stunning and user-friendly websites that drive traffic, engage visitors, and generate leads. We build websites using the latest technologies and best practices to ensure they perform at their best.</p>
-                                            </div>
-                                            <!-- /.body -->
-                                        </div>
-                                    </div>
-                                    <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="offer-collapse__item-head d-flex accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__02" aria-expanded="true">
-                                                <div class="count">02</div>
-                                                <!-- /.count -->
-                                                <div class="strong d-flex justify-content-between align-items-center">
-                                                    Digital Marketing
-                                                    <i class="icon">
-                                                        <img src="img/arrow-red.svg" alt="Red arrow">
-                                                    </i>
-                                                    <!-- /.icon -->
-                                                </div>
-                                                <!-- /.strong -->
-                                            </button>
-                                        </div>
-                                        <!-- /.head -->
-                                        <div id="accordion-item__02" class="accordion-collapse collapse">
-                                            <div class="offer-collapse__item-body accordion-body">
-                                                <p>We can help your website rank higher in search engine results pages by optimizing your website's content and structure, as well as building high-quality backlinks. This can lead to increased website traffic and more potential customers finding your business.</p>
-                                            </div>
-                                            <!-- /.body -->
-                                        </div>
-                                    </div>
-                                    <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="offer-collapse__item-head d-flex accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__03" aria-expanded="true">
-                                                <div class="count">03</div>
-                                                <!-- /.count -->
-                                                <div class="strong d-flex justify-content-between align-items-center">
-                                                    Social Media Marketing
-                                                    <i class="icon">
-                                                        <img src="img/arrow-red.svg" alt="Red arrow">
-                                                    </i>
-                                                    <!-- /.icon -->
-                                                </div>
-                                                <!-- /.strong -->
-                                            </button>
-                                        </div>
-                                        <!-- /.head -->
-                                        <div id="accordion-item__03" class="accordion-collapse collapse">
-                                            <div class="offer-collapse__item-body accordion-body">
-                                                <p>We can help you develop a strong social media presence by creating engaging content and managing your social media accounts. This can help you build brand awareness, drive traffic to your website, and engage with your customers.</p>
-                                            </div>
-                                            <!-- /.body -->
-                                        </div>
-                                    </div>
-                                    <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="offer-collapse__item-head d-flex accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__04" aria-expanded="true">
-                                                <div class="count">04</div>
-                                                <!-- /.count -->
-                                                <div class="strong d-flex justify-content-between align-items-center">
-                                                    Payment Gateway Integration
-                                                    <i class="icon">
-                                                        <img src="img/arrow-red.svg" alt="Red arrow">
-                                                    </i>
-                                                    <!-- /.icon -->
-                                                </div>
-                                                <!-- /.strong -->
-                                            </button>
-                                        </div>
-                                        <!-- /.head -->
-                                        <div id="accordion-item__04" class="accordion-collapse collapse">
-                                            <div class="offer-collapse__item-body accordion-body">
-                                                <p>We can integrate with a variety of payment gateways to ensure that your customers have a seamless checkout experience. This can include popular payment methods such as credit cards, PayPal, and Apple Pay.</p>
-                                            </div>
-                                            <!-- /.body -->
-                                        </div>
-                                    </div>
-                                    <!-- /.offer-collapse__item -->
-                                    <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="offer-collapse__item-head d-flex accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__05" aria-expanded="true">
-                                                <div class="count">05</div>
-                                                <!-- /.count -->
-                                                <div class="strong d-flex justify-content-between align-items-center">
-                                                    Search Engine Optimization (SEO)
-                                                    <i class="icon">
-                                                        <img src="img/arrow-red.svg" alt="Red arrow">
-                                                    </i>
-                                                    <!-- /.icon -->
-                                                </div>
-                                                <!-- /.strong -->
-                                            </button>
-                                        </div>
-                                        <!-- /.head -->
-                                        <div id="accordion-item__05" class="accordion-collapse collapse">
-                                            <div class="offer-collapse__item-body accordion-body">
-                                                <p>We can help you optimize your ecommerce website for search engines, including keyword research, on-page optimization, and link building. This can help your website rank higher in search engine results pages and drive more organic traffic to your site.</p>
-                                            </div>
-                                            <!-- /.body -->
-                                        </div>
-                                    </div>
-                                    <!-- /.offer-collapse__item -->
+            <section class="main mt-exsmall-6 mt-medium-6 mb-exsmall-8 mb-medium-8 mt8 mb16">
+                <div class="container">
+                    <div class="main-heading mb-exsmall-3 mb-medium-3 mb6 d-flex flex-column align-items-sm-start align-items-lg-start">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" class="big-tittle">
+                            Your personal website portfolio
+                        </h1>
+                        <!-- /.big-tittle -->
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" cursor-class="arrow" class="underline-btn mt-exsmall-3 mt-medium-6 mt6" data-fancybox data-src="#dialog-popup">Get free consultation</a>
+                    </div>
+                    <!-- /.main-heading mb6 -->
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="big-image"></div>
+                    <!-- /.big-image -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.main -->
+
+            <section class="works mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    Latest works
                                 </div>
-                                <!-- /.offer-collapse accordion -->
+                                <!-- /.section-slug -->
                             </div>
-                            <!-- /.section-heading__content-->
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        Digital solutions we've created for our clients, from website design and development to branding and digital marketing.
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="row">
+                        <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="works-card" data-aos="fade-right" data-aos-duration="1000">
+                                <a cursor-class="arrow" href="#" class="works-card__thumbnail">
+                                    <img src="img/works-image1.jpeg" alt="Image">
+                                </a>
+                                <!-- /.works-card__thumbnail -->
+                                <div class="works-card__info">
+                                    <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="#">
+                                        Plane on the sky
+                                        <i class="icon">
+                                            <img src="img/arrow-red.svg" alt="Arrow icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                    <small>UX/UI design</small>
+                                </div>
+                                <!-- /.works-card__info -->
+                            </div>
+                            <!-- /.works-card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="works-card" data-aos="fade-left" data-aos-duration="1000">
+                                <a cursor-class="arrow" href="#" class="works-card__thumbnail">
+                                    <img src="img/works-image2.jpeg" alt="Image">
+                                </a>
+                                <!-- /.works-card__thumbnail -->
+                                <div class="works-card__info">
+                                    <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="#">
+                                        Green plant
+                                        <i class="icon">
+                                            <img src="img/arrow-red.svg" alt="Arrow icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                    <small>UX/UI design</small>
+                                </div>
+                                <!-- /.works-card__info -->
+                            </div>
+                            <!-- /.works-card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="works-card" data-aos="fade-right" data-aos-duration="1000">
+                                <a cursor-class="arrow" href="#" class="works-card__thumbnail">
+                                    <img src="img/works-image3.jpeg" alt="Image">
+                                </a>
+                                <!-- /.works-card__thumbnail -->
+                                <div class="works-card__info">
+                                    <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="#">
+                                        Coffe shop
+                                        <i class="icon">
+                                            <img src="img/arrow-red.svg" alt="Arrow icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                    <small>UX/UI design</small>
+                                </div>
+                                <!-- /.works-card__info -->
+                            </div>
+                            <!-- /.works-card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="works-card" data-aos="fade-left" data-aos-duration="1000">
+                                <a cursor-class="arrow" href="#" class="works-card__thumbnail">
+                                    <img src="img/works-image4.jpeg" alt="Image">
+                                </a>
+                                <!-- /.works-card__thumbnail -->
+                                <div class="works-card__info">
+                                    <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="#">
+                                        Horizon
+                                        <i class="icon">
+                                            <img src="img/arrow-red.svg" alt="Arrow icon">
+                                        </i>
+                                        <!-- /.icon -->
+                                    </a>
+                                    <small>UX/UI design</small>
+                                </div>
+                                <!-- /.works-card__info -->
+                            </div>
+                            <!-- /.works-card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="offset-md-6 col-md-6">
+                            <a cursor-class="arrow" class="underline-btn" data-aos="fade-up" data-aos-duration="1000" data-fancybox data-src="#dialog-popup">Get free consultation</a>
+                        </div>
+                        <!-- /.offset-md-6 col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.works -->
+
+            <section class="benefits mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    About us
+                                </div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        Our team is dedicated to delivering results-driven solutions that help our clients achieve their goals
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="benefits-list d-flex justify-content-center">
+                        <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="benefits-list__item-inner">
+                                <div class="benefits-list__item-wrapper">
+                                    <div class="benefits-list__item-content">
+                                        <div class="strong">4</div>
+                                        <!-- /.strong -->
+                                        <p>years on the market</p>
+                                    </div>
+                                    <!-- /.benefits-list__item-content -->
+                                </div>
+                                <!-- /.benefits-list__item-wrapper -->
+                            </div>
+                            <!-- /.benefits-list__item-inner -->
+                        </div>
+                        <!-- /.benefits-list__item -->
+                        <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="benefits-list__item-inner">
+                                <div class="benefits-list__item-wrapper">
+                                    <div class="benefits-list__item-content">
+                                        <div class="strong">293</div>
+                                        <!-- /.strong -->
+                                        <p>satisfied famous clients</p>
+                                    </div>
+                                    <!-- /.benefits-list__item-content -->
+                                </div>
+                                <!-- /.benefits-list__item-wrapper -->
+                            </div>
+                            <!-- /.benefits-list__item-inner -->
+                        </div>
+                        <!-- /.benefits-list__item -->
+                        <div class="benefits-list__item d-flex justify-content-center align-items-center flex-column" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="benefits-list__item-inner">
+                                <div class="benefits-list__item-wrapper">
+                                    <div class="benefits-list__item-content">
+                                        <div class="strong">35+</div>
+                                        <!-- /.strong -->
+                                        <p>working hours of practice</p>
+                                    </div>
+                                    <!-- /.benefits-list__item-content -->
+                                </div>
+                                <!-- /.benefits-list__item-wrapper -->
+                            </div>
+                            <!-- /.benefits-list__item-inner -->
+                        </div>
+                        <!-- /.benefits-list__item -->
+                    </div>
+                    <!-- /.benefits-list -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.benefits -->
+
+            <section class="steps mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    How we works
+                                </div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        At ABC. agency, we're committed to delivering high-quality digital solutions that help businesses succeed
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="steps-list">
+                        <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <span>Step 1</span>
+                            <div class="strong">Discover</div>
+                            <!-- /.strong -->
+                            <p>We start by understanding your business and goals, and identifying the challenges and opportunities you face. We conduct research and analysis to gain insights into your market, competitors, and target audience.</p>
+                        </div>
+                        <!-- /.steps-list__item -->
+                        <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <span>Step 2</span>
+                            <div class="strong">Plan</div>
+                            <!-- /.strong -->
+                            <p>We develop a customized digital strategy that aligns with your business goals and addresses your challenges and opportunities. Our plan includes a detailed roadmap of the activities and deliverables required to achieve your objectives.</p>
+                        </div>
+                        <!-- /.steps-list__item -->
+                        <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <span>Step 3</span>
+                            <div class="strong">Design</div>
+                            <!-- /.strong -->
+                            <p>We design a custom digital solution that aligns with your brand identity and user needs. Our team of designers and developers work collaboratively to create a visually stunning and user-friendly digital experience.</p>
+                        </div>
+                        <!-- /.steps-list__item -->
+                        <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <span>Step 4</span>
+                            <div class="strong">Develop</div>
+                            <!-- /.strong -->
+                            <p>Our developers build your digital solution using the latest technologies and best practices. We rigorously test your solution to ensure it meets your requirements and is ready for launch.</p>
+                        </div>
+                        <!-- /.steps-list__item -->
+                        <div class="steps-list__item d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <span>Step 5</span>
+                            <div class="strong">Launch</div>
+                            <!-- /.strong -->
+                            <p>We launch your digital solution and provide ongoing support and maintenance to ensure it continues to perform at its best. We track and measure your solution's performance and provide insights and recommendations for continuous improvement.</p>
+                        </div>
+                        <!-- /.steps-list__item -->
+                    </div>
+                    <!-- /.steps-list -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.steps -->
+
+            <section class="banner mb-exsmall-8 mb-medium-8 mb16">
+                <div class="banner-content">
+                    <div class="container">
+                        <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.</h2>
+                        <!-- /.normal-title -->
+                        <small data-aos="fade-up" data-aos-duration="1000">Antoine de Saint-Exupéry</small>
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.banner-content -->
+            </section>
+            <!-- /.banner -->
+
+            <section class="offer mb-exsmall-5 mb-medium-5 mb11">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    What we offer
+                                </div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-8">
+                                <div class="section-heading__content">
+                                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">
+                                        We offer a comprehensive range of digital services to help businesses thrive in today's digital landscape
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                    <div class="offer-collapse accordion">
+                                        <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="offer-collapse__item-head d-flex accordion-header">
+                                                <button cursor-class="arrow" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__01" aria-expanded="true">
+                                                    <div class="count">01</div>
+                                                    <!-- /.count -->
+                                                    <div class="strong d-flex justify-content-between align-items-center">
+                                                        Website Design and Development
+                                                        <i class="icon">
+                                                            <img src="img/arrow-red.svg" alt="Red arrow">
+                                                        </i>
+                                                        <!-- /.icon -->
+                                                    </div>
+                                                    <!-- /.strong -->
+                                                </button>
+                                            </div>
+                                            <!-- /.head -->
+                                            <div id="accordion-item__01" class="accordion-collapse collapse">
+                                                <div class="offer-collapse__item-body accordion-body">
+                                                    <p>Our team of designers and developers create visually stunning and user-friendly websites that drive traffic, engage visitors, and generate leads. We build websites using the latest technologies and best practices to ensure they perform at their best.</p>
+                                                </div>
+                                                <!-- /.body -->
+                                            </div>
+                                        </div>
+                                        <!-- /.offer-collapse__item -->
+                                        <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="offer-collapse__item-head d-flex accordion-header">
+                                                <button cursor-class="arrow" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__02" aria-expanded="true">
+                                                    <div class="count">02</div>
+                                                    <!-- /.count -->
+                                                    <div class="strong d-flex justify-content-between align-items-center">
+                                                        Digital Marketing
+                                                        <i class="icon">
+                                                            <img src="img/arrow-red.svg" alt="Red arrow">
+                                                        </i>
+                                                        <!-- /.icon -->
+                                                    </div>
+                                                    <!-- /.strong -->
+                                                </button>
+                                            </div>
+                                            <!-- /.head -->
+                                            <div id="accordion-item__02" class="accordion-collapse collapse">
+                                                <div class="offer-collapse__item-body accordion-body">
+                                                    <p>We can help your website rank higher in search engine results pages by optimizing your website's content and structure, as well as building high-quality backlinks. This can lead to increased website traffic and more potential customers finding your business.</p>
+                                                </div>
+                                                <!-- /.body -->
+                                            </div>
+                                        </div>
+                                        <!-- /.offer-collapse__item -->
+                                        <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="offer-collapse__item-head d-flex accordion-header">
+                                                <button cursor-class="arrow" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__03" aria-expanded="true">
+                                                    <div class="count">03</div>
+                                                    <!-- /.count -->
+                                                    <div class="strong d-flex justify-content-between align-items-center">
+                                                        Social Media Marketing
+                                                        <i class="icon">
+                                                            <img src="img/arrow-red.svg" alt="Red arrow">
+                                                        </i>
+                                                        <!-- /.icon -->
+                                                    </div>
+                                                    <!-- /.strong -->
+                                                </button>
+                                            </div>
+                                            <!-- /.head -->
+                                            <div id="accordion-item__03" class="accordion-collapse collapse">
+                                                <div class="offer-collapse__item-body accordion-body">
+                                                    <p>We can help you develop a strong social media presence by creating engaging content and managing your social media accounts. This can help you build brand awareness, drive traffic to your website, and engage with your customers.</p>
+                                                </div>
+                                                <!-- /.body -->
+                                            </div>
+                                        </div>
+                                        <!-- /.offer-collapse__item -->
+                                        <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="offer-collapse__item-head d-flex accordion-header">
+                                                <button cursor-class="arrow" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__04" aria-expanded="true">
+                                                    <div class="count">04</div>
+                                                    <!-- /.count -->
+                                                    <div class="strong d-flex justify-content-between align-items-center">
+                                                        Payment Gateway Integration
+                                                        <i class="icon">
+                                                            <img src="img/arrow-red.svg" alt="Red arrow">
+                                                        </i>
+                                                        <!-- /.icon -->
+                                                    </div>
+                                                    <!-- /.strong -->
+                                                </button>
+                                            </div>
+                                            <!-- /.head -->
+                                            <div id="accordion-item__04" class="accordion-collapse collapse">
+                                                <div class="offer-collapse__item-body accordion-body">
+                                                    <p>We can integrate with a variety of payment gateways to ensure that your customers have a seamless checkout experience. This can include popular payment methods such as credit cards, PayPal, and Apple Pay.</p>
+                                                </div>
+                                                <!-- /.body -->
+                                            </div>
+                                        </div>
+                                        <!-- /.offer-collapse__item -->
+                                        <div class="offer-collapse__item accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="offer-collapse__item-head d-flex accordion-header">
+                                                <button cursor-class="arrow" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item__05" aria-expanded="true">
+                                                    <div class="count">05</div>
+                                                    <!-- /.count -->
+                                                    <div class="strong d-flex justify-content-between align-items-center">
+                                                        Search Engine Optimization (SEO)
+                                                        <i class="icon">
+                                                            <img src="img/arrow-red.svg" alt="Red arrow">
+                                                        </i>
+                                                        <!-- /.icon -->
+                                                    </div>
+                                                    <!-- /.strong -->
+                                                </button>
+                                            </div>
+                                            <!-- /.head -->
+                                            <div id="accordion-item__05" class="accordion-collapse collapse">
+                                                <div class="offer-collapse__item-body accordion-body">
+                                                    <p>We can help you optimize your ecommerce website for search engines, including keyword research, on-page optimization, and link building. This can help your website rank higher in search engine results pages and drive more organic traffic to your site.</p>
+                                                </div>
+                                                <!-- /.body -->
+                                            </div>
+                                        </div>
+                                        <!-- /.offer-collapse__item -->
+                                    </div>
+                                    <!-- /.offer-collapse accordion -->
+                                </div>
+                                <!-- /.section-heading__content-->
+                            </div>
+                            <!-- /.col-md-8 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.offer -->
+
+            <section class="testimonials pt-exsmall-3 pt-medium-3 pt5 mb-exsmall-8 mb-medium-8 mb16">
+                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="testimonials-heading__block" data-aos="fade-down" data-aos-duration="1000">
+                                    <div class="section-slug">Love from our clients</div>
+                                    <!-- /.section-slug -->
+                                    <div class="testimonials-carousel__nav">
+                                        <ul>
+                                            <li cursor-class="arrow" class="prev">
+                                                <i class="icon"><img src="img/arrow-prev.svg" alt="Arrow previous icon"></i>
+                                                <!-- /.icon -->
+                                            </li>
+                                            <li cursor-class="arrow" class="next">
+                                                <i class="icon"><img src="img/arrow-next.svg" alt="Arrow next icon"></i>
+                                                <!-- /.icon -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.testimonials-carousel__nav -->
+                                </div>
+                                <!-- /.testimonials-heading__block -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        Don’t trust our words - read what our clients have to say about working with our agency
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.section-heading -->
+                <div class="testimonials-carousel" data-aos="fade-right" data-aos-duration="1000">
+                    <div>
+                        <div class="testimonials-carousel__card">
+                            <div class="testimonials-carousel__card-top">
+                                <div class="surname">Fill Petrovski</div>
+                                <!-- /.surname -->
+                                <div class="status">AR Company</div>
+                                <!-- /.status -->
+                            </div>
+                            <!-- /.testimonials-carousel__card-top -->
+                            <div class="testimonials-carousel__card-bottom">
+                                <div class="strong">Great work!</div>
+                                <!-- /.strong -->
+                                <p>I was thoroughly impressed with ABC's professionalism and attention to detail. They took the time to understand our business needs and goals, and their digital strategy was spot-on. Their website design and development team created an engaging and responsive website that has significantly improved our online presence. Their SEO services have also driven a substantial increase in traffic to our site.</p>
+                            </div>
+                            <!-- /.testimonials-carousel__card-bottom -->
+                        </div>
+                        <!-- /.testimonials-carousel__card -->
+                    </div>
+                    <div>
+                        <div class="testimonials-carousel__card">
+                            <div class="testimonials-carousel__card-top">
+                                <div class="surname">Jane Doe</div>
+                                <!-- /.surname -->
+                                <div class="status">XYZ Company</div>
+                                <!-- /.status -->
+                            </div>
+                            <!-- /.testimonials-carousel__card-top -->
+                            <div class="testimonials-carousel__card-bottom">
+                                <div class="strong">Nice guys to work with!</div>
+                                <!-- /.strong -->
+                                <p>Working with ABC. agency has been an absolute pleasure. Their team of experts is knowledgeable, responsive, and creative. They helped us develop a customized digital strategy that has transformed our business. The website they designed for us is stunning, user-friendly, and has generated a significant increase in leads. I highly recommend these guys to anyone looking for a digital partner that delivers results.</p>
+                            </div>
+                            <!-- /.testimonials-carousel__card-bottom -->
+                        </div>
+                        <!-- /.testimonials-carousel__card -->
+                    </div>
+                    <div>
+                        <div class="testimonials-carousel__card">
+                            <div class="testimonials-carousel__card-top">
+                                <div class="surname">David Lee</div>
+                                <!-- /.surname -->
+                                <div class="status">Google</div>
+                                <!-- /.status -->
+                            </div>
+                            <!-- /.testimonials-carousel__card-top -->
+                            <div class="testimonials-carousel__card-bottom">
+                                <div class="strong">Great work!</div>
+                                <!-- /.strong -->
+                                <p>I had a great experience working with ABC. agency. Their team is highly skilled and knowledgeable, and they provided excellent support throughout the project. They were very responsive to our feedback and made sure that the final product was exactly what we wanted. The website they designed for us is visually stunning, user-friendly, and has helped us achieve our business objectives.</p>
+                            </div>
+                            <!-- /.testimonials-carousel__card-bottom -->
+                        </div>
+                        <!-- /.testimonials-carousel__card -->
+                    </div>
+                    <div>
+                        <div class="testimonials-carousel__card">
+                            <div class="testimonials-carousel__card-top">
+                                <div class="surname">Joe Brown</div>
+                                <!-- /.surname -->
+                                <div class="status">Helios</div>
+                                <!-- /.status -->
+                            </div>
+                            <!-- /.testimonials-carousel__card-top -->
+                            <div class="testimonials-carousel__card-bottom">
+                                <div class="strong">Great work!</div>
+                                <!-- /.strong -->
+                                <p>This agency has been instrumental in helping us improve our PPC campaigns. They provided detailed keyword research and created highly-targeted ad campaigns that have resulted in a significant increase in website traffic and sales. We appreciate their expertise and attention to detail.</p>
+                            </div>
+                            <!-- /.testimonials-carousel__card-bottom -->
+                        </div>
+                        <!-- /.testimonials-carousel__card -->
+                    </div>
+                </div>
+                <!-- /.testimonials-carousel -->
+            </section>
+            <!-- /.testimonials -->
+
+            <section class="clients mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    Our clients
+                                </div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-8">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        We are proud to have worked with a diverse range of clients, from small startups to large enterprises. Our clients come from various industries
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-8 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="row">
+                        <div class="d-none d-md-block col-md-4">
+                            <div class="clients-logo d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/clients-logo1.svg" alt="Inter">
+                            </div>
+                            <!-- /.clients-logo -->
+                        </div>
+                        <!-- /.d-none d-md-block col-md-4 -->
+                        <div class="col-md-8">
+                            <div class="clients-list">
+                                <div cursor-class="arrow" class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="strong" data-src="img/clients-logo1.svg">Microsoft</div>
+                                    <!-- /.strong -->
+                                    <div class="location">LA</div>
+                                    <!-- /.location -->
+                                </div>
+                                <!-- /.clients-list__item -->
+                                <div cursor-class="arrow" class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="strong" data-src="img/clients-logo2.svg">Nike</div>
+                                    <!-- /.strong -->
+                                    <div class="location">USA</div>
+                                    <!-- /.location -->
+                                </div>
+                                <!-- /.clients-list__item -->
+                                <div cursor-class="arrow" class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="strong" data-src="img/clients-logo3.svg">Intel</div>
+                                    <!-- /.strong -->
+                                    <div class="location">CA</div>
+                                    <!-- /.location -->
+                                </div>
+                                <!-- /.clients-list__item -->
+                                <div cursor-class="arrow" class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="strong" data-src="img/clients-logo4.svg">Netflix</div>
+                                    <!-- /.strong -->
+                                    <div class="location">CX</div>
+                                    <!-- /.location -->
+                                </div>
+                                <!-- /.clients-list__item -->
+                                <div cursor-class="arrow" class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="strong" data-src="img/clients-logo5.svg">Airbnb</div>
+                                    <!-- /.strong -->
+                                    <div class="location">LA</div>
+                                    <!-- /.location -->
+                                </div>
+                                <!-- /.clients-list__item -->
+                            </div>
+                            <!-- /.clients-list -->
                         </div>
                         <!-- /.col-md-8 -->
                     </div>
                     <!-- /.row -->
                 </div>
-                <!-- /.section-heading -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.offer -->
+                <!-- /.container -->
+            </section>
+            <!-- /.clients -->
 
-        <section class="testimonials pt-exsmall-3 pt-medium-3 pt5 mb-exsmall-8 mb-medium-8 mb16">
-            <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+            <section class="blog mb-exsmall-8 mb-medium-8 mb16">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="testimonials-heading__block" data-aos="fade-down" data-aos-duration="1500">
-                                <div class="section-slug">Love from our clients</div>
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    Our Blog
+                                </div>
                                 <!-- /.section-slug -->
-                                <div class="testimonials-carousel__nav">
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        We regularly publish articles on our blog, covering topics such as SEO, PPC advertising, SMM, website optimization, and more.
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                    <a cursor-class="arrow" class="underline-btn mt-exsmall-2 mt-medium-3 mt3" href="news.html">Read all articles</a>
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#" data-scrol>
+                                        <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">seo</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            10 SEO Tips to Improve Your Website's Ranking
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.col-md-6 col-lg-4 -->
+                        <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#">
+                                        <img src="img/blog-thumbnail-2.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">ux/ui design</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            The Importance of User Experience in Website Design
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.col-md-6 col-lg-4 -->
+                        <div class="d-none col-lg-4 d-lg-block mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#">
+                                        <img src="img/blog-thumbnail-3.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">smm</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            5 Social Media Marketing Strategies That Work
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.d-none col-lg-4 d-lg-block -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.blog -->
+
+            <section class="discussion mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">Let’s work together</div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="section-heading__content">
+                                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">Fill out the form and we will contact you to discuss our best project together!</h2>
+                                    <!-- /.normal-title -->
+                                    <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
+                                        <form action="#" method="post">
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <button cursor-class="arrow" class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1000">get free consultation</button>
+                                        </form>
+                                    </div>
+                                    <!-- /.discussion-form -->
+                                </div>
+                                <!-- /.section-heading__content -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
+                        <div class="social-links__item" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Linkedin</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-down" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Youtube</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Facebook</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Instagram</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                    </div>
+                    <!-- /.social-links -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.discussion -->
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-email__mob">
+                        <a href="#">sayhi@gmail.com</a>
+                    </div>
+                    <!-- /.footer-email__mob -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="footer-info">
+                                <div class="footer-info__email">
+                                    <a cursor-class="arrow" href="#">sayhi@gmail.com</a>
+                                </div>
+                                <!-- /.footer-info__email -->
+                                <div class="footer-info__additional">
                                     <ul>
-                                        <li class="prev">
-                                            <i class="icon"><img src="img/arrow-prev.svg" alt="Arrow previous icon"></i>
-                                            <!-- /.icon -->
+                                        <li>
+                                            <p>© 2023 ABC.</p>
                                         </li>
-                                        <li class="next">
-                                            <i class="icon"><img src="img/arrow-next.svg" alt="Arrow next icon"></i>
-                                            <!-- /.icon -->
+                                        <li  class="footer-info__additional-link">
+                                            <a cursor-class="arrow" href="#">Terms of use</a>
+                                            <a cursor-class="arrow" href="#">Privacy Policy</a>
+                                        </li>
+                                        <li  class="footer-info__additional-phone">
+                                            <a cursor-class="arrow" href="tel:+19999999999">+1 (999) 999-9999</a>
+                                        </li>
+                                        <li>
+                                            <address>
+                                                Your address: the street, the city, state, and ZIP code
+                                            </address>
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- /.testimonials-carousel__nav -->
+                                <!-- /.footer-info__additional -->
                             </div>
-                            <!-- /.testimonials-heading__block -->
+                            <!-- /.footer-info -->
                         </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    Don’t trust our words - read what our clients have to say about working with our agency
-                                </h2>
-                                <!-- /.normal-title -->
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
+                        <!-- /.col-md-6 col-lg-7 -->
+                        <div class="offset-md-1 col-md-5 offset-lg-1 col-lg-4">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                    <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                    <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                    <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                    <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.footer-nav -->
                         </div>
-                        <!-- /.col-md-6 -->
+                        <!-- /.offset-md-1 col-md-5 offset-lg-1 col-lg-4 -->
                     </div>
                     <!-- /.row -->
                 </div>
                 <!-- /.container -->
-            </div>
-            <!-- /.section-heading -->
-            <div class="testimonials-carousel" data-aos="fade-right" data-aos-duration="1500">
-                <div>
-                    <div class="testimonials-carousel__card">
-                        <div class="testimonials-carousel__card-top">
-                            <div class="surname">Fill Petrovski</div>
-                            <!-- /.surname -->
-                            <div class="status">AR Company</div>
-                            <!-- /.status -->
-                        </div>
-                        <!-- /.testimonials-carousel__card-top -->
-                        <div class="testimonials-carousel__card-bottom">
-                            <div class="strong">Great work!</div>
-                            <!-- /.strong -->
-                            <p>I was thoroughly impressed with ABC's professionalism and attention to detail. They took the time to understand our business needs and goals, and their digital strategy was spot-on. Their website design and development team created an engaging and responsive website that has significantly improved our online presence. Their SEO services have also driven a substantial increase in traffic to our site.</p>
-                        </div>
-                        <!-- /.testimonials-carousel__card-bottom -->
-                    </div>
-                    <!-- /.testimonials-carousel__card -->
-                </div>
-                <div>
-                    <div class="testimonials-carousel__card">
-                        <div class="testimonials-carousel__card-top">
-                            <div class="surname">Jane Doe</div>
-                            <!-- /.surname -->
-                            <div class="status">XYZ Company</div>
-                            <!-- /.status -->
-                        </div>
-                        <!-- /.testimonials-carousel__card-top -->
-                        <div class="testimonials-carousel__card-bottom">
-                            <div class="strong">Nice guys to work with!</div>
-                            <!-- /.strong -->
-                            <p>Working with ABC. agency has been an absolute pleasure. Their team of experts is knowledgeable, responsive, and creative. They helped us develop a customized digital strategy that has transformed our business. The website they designed for us is stunning, user-friendly, and has generated a significant increase in leads. I highly recommend these guys to anyone looking for a digital partner that delivers results.</p>
-                        </div>
-                        <!-- /.testimonials-carousel__card-bottom -->
-                    </div>
-                    <!-- /.testimonials-carousel__card -->
-                </div>
-                <div>
-                    <div class="testimonials-carousel__card">
-                        <div class="testimonials-carousel__card-top">
-                            <div class="surname">David Lee</div>
-                            <!-- /.surname -->
-                            <div class="status">Google</div>
-                            <!-- /.status -->
-                        </div>
-                        <!-- /.testimonials-carousel__card-top -->
-                        <div class="testimonials-carousel__card-bottom">
-                            <div class="strong">Great work!</div>
-                            <!-- /.strong -->
-                            <p>I had a great experience working with ABC. agency. Their team is highly skilled and knowledgeable, and they provided excellent support throughout the project. They were very responsive to our feedback and made sure that the final product was exactly what we wanted. The website they designed for us is visually stunning, user-friendly, and has helped us achieve our business objectives.</p>
-                        </div>
-                        <!-- /.testimonials-carousel__card-bottom -->
-                    </div>
-                    <!-- /.testimonials-carousel__card -->
-                </div>
-                <div>
-                    <div class="testimonials-carousel__card">
-                        <div class="testimonials-carousel__card-top">
-                            <div class="surname">Joe Brown</div>
-                            <!-- /.surname -->
-                            <div class="status">Helios</div>
-                            <!-- /.status -->
-                        </div>
-                        <!-- /.testimonials-carousel__card-top -->
-                        <div class="testimonials-carousel__card-bottom">
-                            <div class="strong">Great work!</div>
-                            <!-- /.strong -->
-                            <p>This agency has been instrumental in helping us improve our PPC campaigns. They provided detailed keyword research and created highly-targeted ad campaigns that have resulted in a significant increase in website traffic and sales. We appreciate their expertise and attention to detail.</p>
-                        </div>
-                        <!-- /.testimonials-carousel__card-bottom -->
-                    </div>
-                    <!-- /.testimonials-carousel__card -->
-                </div>
-            </div>
-            <!-- /.testimonials-carousel -->
-        </section>
-        <!-- /.testimonials -->
+            </footer>
+            <!-- /.footer -->
 
-        <section class="clients mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                Our clients
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-8">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    We are proud to have worked with a diverse range of clients, from small startups to large enterprises. Our clients come from various industries
-                                </h2>
-                                <!-- /.normal-title -->
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
-                        </div>
-                        <!-- /.col-md-8 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="row">
-                    <div class="d-none d-md-block col-md-4">
-                        <div class="clients-logo d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1500">
-                            <img src="img/clients-logo1.svg" alt="Inter">
-                        </div>
-                        <!-- /.clients-logo -->
-                    </div>
-                    <!-- /.d-none d-md-block col-md-4 -->
-                    <div class="col-md-8">
-                        <div class="clients-list">
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="strong" data-src="img/clients-logo1.svg">Microsoft</div>
-                                <!-- /.strong -->
-                                <div class="location">LA</div>
-                                <!-- /.location -->
-                            </div>
-                            <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="strong" data-src="img/clients-logo2.svg">Nike</div>
-                                <!-- /.strong -->
-                                <div class="location">USA</div>
-                                <!-- /.location -->
-                            </div>
-                            <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="strong" data-src="img/clients-logo3.svg">Intel</div>
-                                <!-- /.strong -->
-                                <div class="location">CA</div>
-                                <!-- /.location -->
-                            </div>
-                            <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="strong" data-src="img/clients-logo4.svg">Netflix</div>
-                                <!-- /.strong -->
-                                <div class="location">CX</div>
-                                <!-- /.location -->
-                            </div>
-                            <!-- /.clients-list__item -->
-                            <div class="clients-list__item d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="strong" data-src="img/clients-logo5.svg">Airbnb</div>
-                                <!-- /.strong -->
-                                <div class="location">LA</div>
-                                <!-- /.location -->
-                            </div>
-                            <!-- /.clients-list__item -->
-                        </div>
-                        <!-- /.clients-list -->
-                    </div>
-                    <!-- /.col-md-8 -->
-                </div>
-                <!-- /.row -->
+            <div class="cursor" id="cursor">
+                <div class="cursor-circle"></div>
+                <!-- /.cursor-circle -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.clients -->
+            <!-- /.cursor -->
 
-        <section class="blog mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                Our Blog
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    We regularly publish articles on our blog, covering topics such as SEO, PPC advertising, SMM, website optimization, and more.
-                                </h2>
-                                <!-- /.normal-title -->
-                                <a class="underline-btn mt-exsmall-2 mt-medium-3 mt3" href="news.html">Read all articles</a>
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#" data-scrol>
-                                    <img src="img/blog-thumbnail-1.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">seo</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        10 SEO Tips to Improve Your Website's Ranking
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-4 -->
-                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-2.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">ux/ui design</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        The Importance of User Experience in Website Design
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-4 -->
-                    <div class="d-none col-lg-4 d-lg-block mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-3.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">smm</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        5 Social Media Marketing Strategies That Work
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.d-none col-lg-4 d-lg-block -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.blog -->
-
-        <section class="discussion mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">Let’s work together</div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                        <div class="col-lg-6">
-                            <div class="section-heading__content">
-                                <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">Fill out the form and we will contact you to discuss our best project together!</h2>
-                                <!-- /.normal-title -->
-                                <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
-                                    <form action="#" method="post">
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <button class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1500">get free consultation</button>
-                                    </form>
-                                </div>
-                                <!-- /.discussion-form -->
-                            </div>
-                            <!-- /.section-heading__content -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
-                    <div class="social-links__item" data-aos="fade-right" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Linkedin</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Youtube</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Facebook</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-left" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Instagram</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                </div>
-                <!-- /.social-links -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.discussion -->
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-email__mob">
-                    <a href="#">sayhi@gmail.com</a>
-                </div>
-                <!-- /.footer-email__mob -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <div class="footer-info">
-                            <div class="footer-info__email">
-                                <a href="#">sayhi@gmail.com</a>
-                            </div>
-                            <!-- /.footer-info__email -->
-                            <div class="footer-info__additional">
-                                <ul>
-                                    <li>
-                                        <p>© 2021 Name of the Company</p>
-                                    </li>
-                                    <li  class="footer-info__additional-link">
-                                        <a href="#">Terms of use</a>
-                                        <a href="#">Privacy Policy</a>
-                                    </li>
-                                    <li  class="footer-info__additional-phone">
-                                        <a href="tel:+19999999999">+1 (999) 999-9999</a>
-                                    </li>
-                                    <li>
-                                        <address>
-                                            Your address: the street, the city, state, and ZIP code
-                                        </address>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.footer-info__additional -->
-                        </div>
-                        <!-- /.footer-info -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-7 -->
-                    <div class="offset-md-1 col-md-5 offset-lg-1 col-lg-4">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">How we work</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">BLog</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </nav>
-                        <!-- /.footer-nav -->
-                    </div>
-                    <!-- /.offset-md-1 col-md-5 offset-lg-1 col-lg-4 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </footer>
-        <!-- /.footer -->
+        </div>
+        <!-- /.noise -->
 
     </div>
-    <!-- /.noise -->
+    <!-- /.page-container -->
 
     <div class="preloader-page">
         <div class="preloader-page__letters p5">
@@ -1039,14 +1069,35 @@
     </div>
     <!-- /.preloader-page -->
 
-    <div class="popup-window" id="dialog-popup">
+    <div class="popup-window" id="dialog-popup" style="display:none;">
         <h3 class="normal-title">Fill out the form and we will contact you within 1 business day</h3>
         <!-- /.normal-title -->
+        <form action="#" method="post">
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <button cursor-class="arrow" class="submit-btn" type="submit">Submit</button>
+        </form>
     </div>
-    <!-- /#dialog-popup.popup-window -->
+    <!-- /.popup-window -->
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
     <!-- GSAP JS -->
@@ -1057,39 +1108,10 @@
     <script src="js/aos.js"></script>
     <!-- Fancybox JS -->
     <script src="js/fancybox.umd.js"></script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
-
-    <script>
-
-        AOS.init();
-
-        $('.testimonials-carousel').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            prevArrow: $('.prev'),
-            nextArrow: $('.next'),
-            centerMode: true,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-        });
-    </script>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 .works {
     &-card {
         &__thumbnail {
+            display: block;
             max-width: 100%;
             height: 700px;
             margin-bottom: 15px;

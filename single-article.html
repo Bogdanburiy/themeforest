@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <!-- AOS Animation -->
     <link rel="stylesheet" href="css/aos.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="css/fancybox.css">
     <!-- Spaces -->
     <link rel="stylesheet" href="scss/spaces.css">
     <!-- Link CSS -->
@@ -22,461 +24,491 @@
 </head>
 <body>
 
-    <div class="noise">
+    <div class="page-container">
 
-        <header data-aos="fade-down" data-aos-duration="1000" class="header">
-            <div class="container d-flex justify-content-between">
-                <div class="header-logo">
-                    <a href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
-                </div>
-                <!-- /.header-logo -->
-                <div class="header-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="single-portfolio.html">Portfolio</a></li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li><a href="news.html">Blog</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- /.header-menu -->
-                <div class="header-mobile menu-open">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- /.header-mobile -->
-            </div>
-            <!-- /.container -->
-        </header>
-        <!-- /.header -->
+        <div class="noise">
 
-        <div class="overlay-container">
-            <nav class="overlay-menu">
-                <div class="overlay-menu__item item-1">
-                    <a href="index.html" class="menu__item-link">Home</a>
-                </div>
-                <div class="overlay-menu__item item-2">
-                    <a href="single-portfolio.html" class="menu__item-link">Portfolio</a>
-                </div>
-                <div class="overlay-menu__item item-3">
-                    <a href="about-us.html" class="menu__item-link">About</a>
-                </div>
-                <div class="overlay-menu__item item-4">
-                    <a href="news.html" class="menu__item-link">Blog</a>
-                </div>
-                <div class="overlay-menu__item item-5">
-                    <a href="contact.html" class="menu__item-link">Contacts</a>
-                </div>
-            </nav>
-        </div>
-        <!-- /.overlay-container -->
-
-        <section class="article mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
-            <div class="container">
-                <div class="article-heading main-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" class="article-heading__info">
-                        <ul>
-                            <li><a href="#">SMM</a></li>
-                            <li><a href="#">Strategies</a></li>
-                        </ul>
-                        <small>05/04/2022</small>
+            <header data-aos="fade-down" data-aos-duration="1000" class="header">
+                <div class="container d-flex justify-content-between">
+                    <div class="header-logo">
+                        <a cursor-class="arrow" href="index.html"><img src="img/brand-logo.svg" alt="Logo"></a>
                     </div>
-                    <!-- /.article-heading__info -->
-                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="big-tittle">
-                        5 Social Media Marketing Strategies That Work
-                    </h1>
-                    <!-- /.big-tittle -->
+                    <!-- /.header-logo -->
+                    <div class="header-menu">
+                        <nav>
+                            <ul>
+                                <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /.header-menu -->
+                    <div cursor-class="arrow" class="header-mobile menu-open" onclick="openNav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- /.header-mobile -->
                 </div>
-                <!-- /.main-heading -->
-                <div data-aos="zoom-in" data-aos-duration="1500" class="article-thumbnail big-image"></div>
-                <!-- /.article-thumbnail -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.article -->
+                <!-- /.container -->
+            </header>
+            <!-- /.header -->
 
-        <section class="article-description mb-exsmall-6 mb-medium-6 mb8">
-            <div class="container">
-                <div class="section-heading">
+            <div id="hamburger-overlay" class="hamburger-overlay">
+                <div class="container position-relative h-100">
+                    <a cursor-class="arrow" href="javascript:void(0)" class="close-btn" onclick="closeNav()">
+                        <span></span>
+                        <span></span>
+                    </a>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Article description</div>
-                            <!-- /.section-slug -->
+                        <div class="col-12 col-sm-6 col-md-8">
+                            <nav class="hamburger-overlay__menu">
+                                <ul>
+                                    <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                    <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                    <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                    <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                    <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.hamburger-overlay__menu -->
                         </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-8">
-                            <div class="section-heading__content">
-                                <p data-aos="fade-up" data-aos-duration="1000">Media marketing strategies are essential for businesses that want to connect with their target audience and build their brand presence. In today's digital age, consumers are constantly bombarded with advertisements and marketing messages, making it increasingly challenging for businesses to stand out from the crowd. That's why it's essential to develop effective media marketing strategies that cut through the noise and resonate with your target audience.</p>
-                                <div data-aos="fade-up" data-aos-duration="1000" class="block-image mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
-                                    <img src="img/project-image01.jpeg" alt="Image">
+                        <!-- /.col-12 col-sm-6 col-md-8 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="hamburger-overlay__additional d-flex justify-content-between flex-column h-100">
+                                <div class="hamburger-overlay__additional-social">
+                                    <ul>
+                                        <li><a cursor-class="arrow" href="#">Linkedin</a></li>
+                                        <li><a cursor-class="arrow" href="#">Youtube</a></li>
+                                        <li><a cursor-class="arrow" href="#">Facebook</a></li>
+                                        <li><a cursor-class="arrow" href="#">Instagram</a></li>
+                                    </ul>
                                 </div>
-                                <!-- /.block-image -->
-                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Develop a Strong Brand Identity:</h2>
-                                <!-- /.normal-title -->
-                                <p data-aos="fade-up" data-aos-duration="1000">A strong brand identity is crucial for building brand awareness and recognition. This includes developing a unique brand voice, visual identity, and messaging that aligns with your business values and resonates with your target audience. Consistency is key, so make sure that your brand identity is reflected across all of your marketing channels.</p>
-                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Create Engaging Content</h2>
-                                <p data-aos="fade-up" data-aos-duration="1000">Content marketing is an effective way to build your brand and connect with your target audience. This includes creating blog posts, social media content, videos, infographics, and other types of content that are informative, entertaining, and relevant to your target audience. Make sure that your content is shareable and encourages engagement with your audience.</p>
+                                <!-- /.hamburger-overlay__additional-social -->
+                                <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" cursor-class="arrow" class="underline-btn mt-exsmall-3 mt-medium-6 mt6" data-fancybox data-src="#dialog-popup">Get free consultation</a>
                             </div>
-                            <!-- /.section-heading__content -->
+                            <!-- /.hamburger-overlay__additional -->
                         </div>
-                        <!-- /.col-md-8 -->
+                        <!-- /.col-12 col-sm-6 col-md-4 -->
                     </div>
                     <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.article-description -->
-
-        <section class="banner mb-exsmall-6 mb-medium-6 mb8">
-            <div class="banner-content">
-                <div class="container">
-                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.</h2>
-                    <!-- /.normal-title -->
-                    <small data-aos="fade-up" data-aos-duration="1500">Antoine de Saint-Exupéry</small>
                 </div>
                 <!-- /.container -->
             </div>
-            <!-- /.banner-content -->
-        </section>
-        <!-- /.banner section-p -->
+            <!-- /.hamburger-overlay -->
 
-        <section class="article-description mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Article description</div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-8">
-                            <div class="section-heading__content">
-                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Leverage Social Media</h2>
-                                <!-- /.normal-title -->
-                                <p data-aos="fade-up" data-aos-duration="1000">Social media is a powerful tool for connecting with your target audience and building your brand presence. This includes creating and sharing engaging content, engaging with your followers, and leveraging social media advertising to reach a wider audience. Make sure that you are active on the social media channels that are most relevant to your target audience.</p>
-                                <p data-aos="fade-up" data-aos-duration="1000">In conclusion, media marketing strategies are essential for businesses that want to build their brand presence and connect with their target audience.</p>
-                                <div class="block-image block-image__group mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
-                                    <img data-aos="fade-right" data-aos-duration="1000" src="img/images-ex-1.jpeg" alt="Image">
-                                    <img data-aos="fade-left" data-aos-duration="1000" src="img/images-ex-2.jpeg" alt="Image">
-                                </div>
-                                <!-- /.block-image -->
-                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Utilize Influencer Marketing</h2>
-                                <!-- /.normal-title -->
-                                <p data-aos="fade-up" data-aos-duration="1000">Influencer marketing is a popular marketing strategy that involves partnering with influencers to promote your brand or products. This can be an effective way to reach a wider audience and build credibility with your target audience. Make sure that you choose influencers who align with your brand values and have a following that is relevant to your target audience.</p>
-                                <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Leverage Email Marketing</h2>
-                                <p data-aos="fade-up" data-aos-duration="1000">Email marketing is a highly effective way to reach your target audience and build customer relationships. This includes creating personalized and targeted email campaigns, segmenting your email list, and tracking your email marketing metrics to measure the effectiveness of your campaigns.</p>
-                            </div>
-                            <!-- /.section-heading__content -->
-                        </div>
-                        <!-- /.col-md-8 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.article-description -->
-
-        <section class="blog mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">
-                                Our Blog
-                            </div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1500">
-                                <h2 class="normal-title">
-                                    We regularly publish articles on our blog, covering topics such as SEO, PPC advertising, SMM, website optimization, and more.
-                                </h2>
-                                <!-- /.normal-title -->
-                                <a class="underline-btn mt-exsmall-2 mt-medium-3 mt3" href="news.html">Read all articles</a>
-                            </div>
-                            <!-- /.section-heading__content only-heading -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#" data-scrol>
-                                    <img src="img/blog-thumbnail-1.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">seo</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        10 SEO Tips to Improve Your Website's Ranking
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-4 -->
-                    <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-2.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">ux/ui design</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        The Importance of User Experience in Website Design
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-4 -->
-                    <div class="d-none col-lg-4 d-lg-block mb-exsmall-3 mb-medium-3 mb5">
-                        <div class="blog-card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1500">
-                            <div class="blog-card__thumbnail">
-                                <a href="#">
-                                    <img src="img/blog-thumbnail-3.jpeg" alt="Image">
-                                </a>
-                            </div>
-                            <!-- /.blog-card__thumbnail -->
-                            <div class="blog-card__info">
-                                <div class="blog-card__info-date">05/06/2022</div>
-                                <!-- /.blog-card__info-date -->
-                                <div class="blog-card__info-cat">smm</div>
-                                <!-- /.blog-card__info-cat -->
-                            </div>
-                            <!-- /.blog-card__info -->
-                            <div class="blog-card__title">
-                                <h3>
-                                    <a href="#">
-                                        5 Social Media Marketing Strategies That Work
-                                        <i class="icon">
-                                            <img src="img/arrow-red-angle.svg" alt="Icon">
-                                        </i>
-                                        <!-- /.icon -->
-                                    </a>
-                                </h3>
-                            </div>
-                            <!-- /.blog-card__title -->
-                        </div>
-                        <!-- /.blog-card -->
-                    </div>
-                    <!-- /.d-none col-lg-4 d-lg-block -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.blog -->
-
-        <section class="discussion mb-exsmall-8 mb-medium-8 mb16">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="section-slug" data-aos="fade-down" data-aos-duration="1500">Let’s work together</div>
-                            <!-- /.section-slug -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                        <div class="col-lg-6">
-                            <div class="section-heading__content">
-                                <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1500">Fill out the form and we will contact you to discuss our best project together!</h2>
-                                <!-- /.normal-title -->
-                                <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
-                                    <form action="#" method="post">
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1500">
-                                            <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
-                                            <span class="input-focus"></span>
-                                            <!-- /.input-focus -->
-                                        </div>
-                                        <!-- /.discussion-form__item -->
-                                        <button class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1500">get free consultation</button>
-                                    </form>
-                                </div>
-                                <!-- /.discussion-form -->
-                            </div>
-                            <!-- /.section-heading__content -->
-                        </div>
-                        <!-- /.col-lg-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.section-heading -->
-                <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
-                    <div class="social-links__item" data-aos="fade-right" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Linkedin</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Youtube</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Facebook</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                    <div class="social-links__item" data-aos="fade-left" data-aos-duration="1500">
-                        <div class="social-links__item-inner">
-                            <div class="social-links__item-wrapper">
-                                <a href="#" class="social-links__item-content">
-                                    <span>Instagram</span>
-                                </a>
-                                <!-- /.social-links__item-content -->
-                            </div>
-                            <!-- /.social-links__item-wrapper -->
-                        </div>
-                        <!-- /.social-links__item-inner -->
-                    </div>
-                    <!-- /.social-links__item -->
-                </div>
-                <!-- /.social-links -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.discussion -->
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-email__mob">
-                    <a href="#">sayhi@gmail.com</a>
-                </div>
-                <!-- /.footer-email__mob -->
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <div class="footer-info">
-                            <div class="footer-info__email">
-                                <a href="#">sayhi@gmail.com</a>
-                            </div>
-                            <!-- /.footer-info__email -->
-                            <div class="footer-info__additional">
-                                <ul>
-                                    <li>
-                                        <p>© 2021 Name of the Company</p>
-                                    </li>
-                                    <li  class="footer-info__additional-link">
-                                        <a href="#">Terms of use</a>
-                                        <a href="#">Privacy Policy</a>
-                                    </li>
-                                    <li  class="footer-info__additional-phone">
-                                        <a href="tel:+19999999999">+1 (999) 999-9999</a>
-                                    </li>
-                                    <li>
-                                        <address>
-                                            Your address: the street, the city, state, and ZIP code
-                                        </address>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.footer-info__additional -->
-                        </div>
-                        <!-- /.footer-info -->
-                    </div>
-                    <!-- /.col-md-6 col-lg-7 -->
-                    <div class="offset-md-1 col-md-5 offset-lg-1 col-lg-4">
-                        <nav class="footer-nav">
+            <section class="article mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
+                <div class="container">
+                    <div class="article-heading main-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" class="article-heading__info">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">How we work</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">BLog</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a cursor-class="arrow" href="#">SMM</a></li>
+                                <li><a cursor-class="arrow" href="#">Strategies</a></li>
                             </ul>
-                        </nav>
-                        <!-- /.footer-nav -->
+                            <small>05/04/2022</small>
+                        </div>
+                        <!-- /.article-heading__info -->
+                        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="big-tittle">
+                            5 Social Media Marketing Strategies That Work
+                        </h1>
+                        <!-- /.big-tittle -->
                     </div>
-                    <!-- /.offset-md-1 col-md-5 offset-lg-1 col-lg-4 -->
+                    <!-- /.main-heading -->
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="article-thumbnail big-image"></div>
+                    <!-- /.article-thumbnail -->
                 </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </footer>
-        <!-- /.footer -->
+                <!-- /.container -->
+            </section>
+            <!-- /.article -->
 
+            <section class="article-description mb-exsmall-6 mb-medium-6 mb8">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Article description</div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-8">
+                                <div class="section-heading__content">
+                                    <p data-aos="fade-up" data-aos-duration="1000">Media marketing strategies are essential for businesses that want to connect with their target audience and build their brand presence. In today's digital age, consumers are constantly bombarded with advertisements and marketing messages, making it increasingly challenging for businesses to stand out from the crowd. That's why it's essential to develop effective media marketing strategies that cut through the noise and resonate with your target audience.</p>
+                                    <div data-aos="fade-up" data-aos-duration="1000" class="block-image mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
+                                        <img src="img/project-image01.jpeg" alt="Image">
+                                    </div>
+                                    <!-- /.block-image -->
+                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Develop a Strong Brand Identity:</h2>
+                                    <!-- /.normal-title -->
+                                    <p data-aos="fade-up" data-aos-duration="1000">A strong brand identity is crucial for building brand awareness and recognition. This includes developing a unique brand voice, visual identity, and messaging that aligns with your business values and resonates with your target audience. Consistency is key, so make sure that your brand identity is reflected across all of your marketing channels.</p>
+                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Create Engaging Content</h2>
+                                    <p data-aos="fade-up" data-aos-duration="1000">Content marketing is an effective way to build your brand and connect with your target audience. This includes creating blog posts, social media content, videos, infographics, and other types of content that are informative, entertaining, and relevant to your target audience. Make sure that your content is shareable and encourages engagement with your audience.</p>
+                                </div>
+                                <!-- /.section-heading__content -->
+                            </div>
+                            <!-- /.col-md-8 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.article-description -->
+
+            <section class="banner mb-exsmall-6 mb-medium-6 mb8">
+                <div class="banner-content">
+                    <div class="container">
+                        <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.</h2>
+                        <!-- /.normal-title -->
+                        <small data-aos="fade-up" data-aos-duration="1000">Antoine de Saint-Exupéry</small>
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.banner-content -->
+            </section>
+            <!-- /.banner section-p -->
+
+            <section class="article-description mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Article description</div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-4 -->
+                            <div class="col-md-8">
+                                <div class="section-heading__content">
+                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Leverage Social Media</h2>
+                                    <!-- /.normal-title -->
+                                    <p data-aos="fade-up" data-aos-duration="1000">Social media is a powerful tool for connecting with your target audience and building your brand presence. This includes creating and sharing engaging content, engaging with your followers, and leveraging social media advertising to reach a wider audience. Make sure that you are active on the social media channels that are most relevant to your target audience.</p>
+                                    <p data-aos="fade-up" data-aos-duration="1000">In conclusion, media marketing strategies are essential for businesses that want to build their brand presence and connect with their target audience.</p>
+                                    <div class="block-image block-image__group mb-exsmall-6 mb-medium-6 mb8 mt-exsmall-6 mt-medium-6 mt8">
+                                        <img data-aos="fade-right" data-aos-duration="1000" src="img/images-ex-1.jpeg" alt="Image">
+                                        <img data-aos="fade-left" data-aos-duration="1000" src="img/images-ex-2.jpeg" alt="Image">
+                                    </div>
+                                    <!-- /.block-image -->
+                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Utilize Influencer Marketing</h2>
+                                    <!-- /.normal-title -->
+                                    <p data-aos="fade-up" data-aos-duration="1000">Influencer marketing is a popular marketing strategy that involves partnering with influencers to promote your brand or products. This can be an effective way to reach a wider audience and build credibility with your target audience. Make sure that you choose influencers who align with your brand values and have a following that is relevant to your target audience.</p>
+                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title">Leverage Email Marketing</h2>
+                                    <p data-aos="fade-up" data-aos-duration="1000">Email marketing is a highly effective way to reach your target audience and build customer relationships. This includes creating personalized and targeted email campaigns, segmenting your email list, and tracking your email marketing metrics to measure the effectiveness of your campaigns.</p>
+                                </div>
+                                <!-- /.section-heading__content -->
+                            </div>
+                            <!-- /.col-md-8 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.article-description -->
+
+            <section class="blog mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading mb-exsmall-3 mb-medium-5 mb7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">
+                                    Our Blog
+                                </div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="section-heading__content only-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="normal-title">
+                                        We regularly publish articles on our blog, covering topics such as SEO, PPC advertising, SMM, website optimization, and more.
+                                    </h2>
+                                    <!-- /.normal-title -->
+                                    <a cursor-class="arrow" class="underline-btn mt-exsmall-2 mt-medium-3 mt3" href="news.html">Read all articles</a>
+                                </div>
+                                <!-- /.section-heading__content only-heading -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#" data-scrol>
+                                        <img src="img/blog-thumbnail-1.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">seo</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            10 SEO Tips to Improve Your Website's Ranking
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.col-md-6 col-lg-4 -->
+                        <div class="col-md-6 col-lg-4 mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#">
+                                        <img src="img/blog-thumbnail-2.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">ux/ui design</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            The Importance of User Experience in Website Design
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.col-md-6 col-lg-4 -->
+                        <div class="d-none col-lg-4 d-lg-block mb-exsmall-3 mb-medium-3 mb5">
+                            <div class="blog-card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                                <div class="blog-card__thumbnail">
+                                    <a cursor-class="arrow" href="#">
+                                        <img src="img/blog-thumbnail-3.jpeg" alt="Image">
+                                    </a>
+                                </div>
+                                <!-- /.blog-card__thumbnail -->
+                                <div class="blog-card__info">
+                                    <div class="blog-card__info-date">05/06/2022</div>
+                                    <!-- /.blog-card__info-date -->
+                                    <div class="blog-card__info-cat">smm</div>
+                                    <!-- /.blog-card__info-cat -->
+                                </div>
+                                <!-- /.blog-card__info -->
+                                <div class="blog-card__title">
+                                    <h3>
+                                        <a cursor-class="arrow" href="#">
+                                            5 Social Media Marketing Strategies That Work
+                                            <i class="icon">
+                                                <img src="img/arrow-red-angle.svg" alt="Icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- /.blog-card__title -->
+                            </div>
+                            <!-- /.blog-card -->
+                        </div>
+                        <!-- /.d-none col-lg-4 d-lg-block -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.blog -->
+
+            <section class="discussion mb-exsmall-8 mb-medium-8 mb16">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">Let’s work together</div>
+                                <!-- /.section-slug -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="section-heading__content">
+                                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">Fill out the form and we will contact you to discuss our best project together!</h2>
+                                    <!-- /.normal-title -->
+                                    <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
+                                        <form action="#" method="post">
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
+                                                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                                                <span class="input-focus"></span>
+                                                <!-- /.input-focus -->
+                                            </div>
+                                            <!-- /.discussion-form__item -->
+                                            <button cursor-class="arrow" class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1000">get free consultation</button>
+                                        </form>
+                                    </div>
+                                    <!-- /.discussion-form -->
+                                </div>
+                                <!-- /.section-heading__content -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.section-heading -->
+                    <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
+                        <div class="social-links__item" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Linkedin</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-down" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Youtube</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Facebook</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                        <div class="social-links__item" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="social-links__item-inner">
+                                <div class="social-links__item-wrapper">
+                                    <a href="#" class="social-links__item-content">
+                                        <span>Instagram</span>
+                                    </a>
+                                    <!-- /.social-links__item-content -->
+                                </div>
+                                <!-- /.social-links__item-wrapper -->
+                            </div>
+                            <!-- /.social-links__item-inner -->
+                        </div>
+                        <!-- /.social-links__item -->
+                    </div>
+                    <!-- /.social-links -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.discussion -->
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-email__mob">
+                        <a href="#">sayhi@gmail.com</a>
+                    </div>
+                    <!-- /.footer-email__mob -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="footer-info">
+                                <div class="footer-info__email">
+                                    <a cursor-class="arrow" href="#">sayhi@gmail.com</a>
+                                </div>
+                                <!-- /.footer-info__email -->
+                                <div class="footer-info__additional">
+                                    <ul>
+                                        <li>
+                                            <p>© 2023 ABC.</p>
+                                        </li>
+                                        <li  class="footer-info__additional-link">
+                                            <a cursor-class="arrow" href="#">Terms of use</a>
+                                            <a cursor-class="arrow" href="#">Privacy Policy</a>
+                                        </li>
+                                        <li  class="footer-info__additional-phone">
+                                            <a cursor-class="arrow" href="tel:+19999999999">+1 (999) 999-9999</a>
+                                        </li>
+                                        <li>
+                                            <address>
+                                                Your address: the street, the city, state, and ZIP code
+                                            </address>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.footer-info__additional -->
+                            </div>
+                            <!-- /.footer-info -->
+                        </div>
+                        <!-- /.col-md-6 col-lg-7 -->
+                        <div class="offset-md-1 col-md-5 offset-lg-1 col-lg-4">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a cursor-class="arrow" href="index.html">Home</a></li>
+                                    <li><a cursor-class="arrow" href="single-portfolio.html">Portfolio</a></li>
+                                    <li><a cursor-class="arrow" href="about-us.html">About</a></li>
+                                    <li><a cursor-class="arrow" href="news.html">Blog</a></li>
+                                    <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.footer-nav -->
+                        </div>
+                        <!-- /.offset-md-1 col-md-5 offset-lg-1 col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </footer>
+            <!-- /.footer -->
+
+            <div class="cursor" id="cursor">
+                <div class="cursor-circle"></div>
+                <!-- /.cursor-circle -->
+            </div>
+            <!-- /.cursor -->
+
+        </div>
+        <!-- /.noise -->
+        
     </div>
-    <!-- /.noise -->
+    <!-- /.page-container -->
 
     <div class="preloader-page">
         <div class="preloader-page__letters p5">
@@ -495,21 +527,50 @@
         <!-- /.preloader-page__counter -->
     </div>
     <!-- /.preloader-page -->
+    
+    <div class="popup-window" id="dialog-popup" style="display:none;">
+        <h3 class="normal-title">Fill out the form and we will contact you within 1 business day</h3>
+        <!-- /.normal-title -->
+        <form action="#" method="post">
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <div class="discussion-form__item">
+                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
+                <span class="input-focus"></span>
+                <!-- /.input-focus -->
+            </div>
+            <!-- /.discussion-form__item -->
+            <button cursor-class="arrow" class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- /.popup-window -->
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap 5 -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="js/gsap.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="js/slick.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="js/aos.js"></script>
+    <!-- Fancybox JS -->
+    <script src="js/fancybox.umd.js"></script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <!-- Link all JS sripts -->
     <script src="js/main.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 
 </body>
 </html>
