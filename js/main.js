@@ -1,20 +1,32 @@
 "use strict";
 
 // 1.1 Sticky Header
-let header = document.querySelector(".header");
+$(function () {
+  var $window = $(window);
+  var lastScrollTop = 0;
+  var $header = $(".header");
+  var headerHeight = $header.outerHeight();
 
-if (header) {
-  function stickyHeader() {
-    if (window.pageYOffset > 20) {
-      header.classList.add("sticky-active");
+  $window.scroll(function () {
+    var windowTop = $window.scrollTop();
+
+    if (windowTop >= headerHeight) {
+      $header.addClass("sticky-hidden");
     } else {
-      header.classList.remove("sticky-active");
+      $header.removeClass("sticky-hidden");
+      $header.removeClass("sticky-show");
     }
-  }
 
-  window.addEventListener("load", stickyHeader);
-  window.addEventListener("scroll", stickyHeader);
-}
+    if ($header.hasClass("sticky-hidden")) {
+      if (windowTop < lastScrollTop) {
+        $header.addClass("sticky-show");
+      } else {
+        $header.removeClass("sticky-show");
+      }
+    }
+    lastScrollTop = windowTop;
+  });
+});
 
 // 1.2 Anchor Prevent default
 let anchor = document.querySelectorAll('a[href="#"]');
@@ -28,7 +40,7 @@ if (anchorLength > 0) {
   }
 }
 
-// 1.4 Change logo on hover block "Our clients"
+// 1.3 Change logo on hover block "Our clients"
 let imageGet = Array.from(
   document.querySelectorAll(".clients-list__item .strong")
 );
@@ -41,12 +53,12 @@ for (let item of imageGet) {
   });
 }
 
-// 1.5 Add class after load web document
+// 1.4 Add class after load web document
 window.addEventListener("load", function () {
   document.documentElement.classList.add("is-ready");
 });
 
-// 1.6 Preloader page
+// 1.5 Preloader page
 preloader();
 
 function preloader (done) {
@@ -75,17 +87,17 @@ function preloader (done) {
     }, 20)
 }
 
-// 1.7 Init AOS animation
+// 1.6 Init AOS animation
 AOS.init({
   once: true,
 });
 
-// 1.8 Init Fancybox pop-up
+// 1.7 Init Fancybox pop-up
 if ($("[data-fancybox]").length) {
   Fancybox.bind("[data-fancybox]");
 }
 
-// 1.9 Init Testimonials carousel
+// 1.8 Init Testimonials carousel
 $(".testimonials-carousel").slick({
   infinite: true,
   slidesToShow: 3,
@@ -112,7 +124,7 @@ $(".testimonials-carousel").slick({
   ],
 });
 
-// 10 Custom Cursor - https://codepen.io/gabrielcojea/pen/jOWRBrL
+// 9 Custom Cursor - https://codepen.io/gabrielcojea/pen/jOWRBrL
 const cursor = document.querySelector("#cursor");
 const cursorCircle = cursor.querySelector(".cursor-circle");
 
@@ -177,7 +189,7 @@ cursorModifiers.forEach((curosrModifier) => {
   });
 });
 
-// 11 Change cursor color footer hovering
+// 10 Change cursor color footer hovering
 $(".footer").hover(
   function () {
     $("#cursor").addClass("white-border");
@@ -192,7 +204,7 @@ $(".footer").hover(
   }
 );
 
-// 12 Change cursor color footer hovering
+// 11 Change cursor color footer hovering
 $(".hamburger-overlay").hover(
     function () {
       $("#cursor").addClass("white-border");
@@ -207,7 +219,7 @@ $(".hamburger-overlay").hover(
     }
   );
 
-// 13 Change cursor arrow feedback navs hovering
+// 12 Change cursor arrow feedback navs hovering
 $(".testimonials-carousel__nav ul li.prev").hover(
   function () {
     $("#cursor").addClass("arrow-flip");
@@ -222,7 +234,7 @@ $(".testimonials-carousel__nav ul li.prev").hover(
   }
 );
 
-// 14 Open overlay menu by click
+// 13 Open overlay menu by click
 function openNav() {
   document.getElementById("hamburger-overlay").classList.add("is-open");
 }

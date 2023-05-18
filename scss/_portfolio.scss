@@ -62,10 +62,10 @@
     &-scrolling {
         background-color: $mainBlack;
         &__left {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            padding-top: 50px;
+            position:-webkit-sticky;
+            position:sticky;
+            top:10px;
+            padding: 50px;
             h2 {
                 @extend .normal-title;
                 margin-bottom: 30px;
