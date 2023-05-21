@@ -1,0 +1,11 @@
+.preview {
+    &-card {
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        background-color: $mainRed;
+        &__black {
+            background-color: $mainBlack;
+        }
+    }
+}

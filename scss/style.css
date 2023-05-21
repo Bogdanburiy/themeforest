@@ -727,10 +727,13 @@ a:hover {
 .works {
   overflow: hidden;
 }
+.works .row > div:nth-child(odd) .works-card .works-card__thumbnail {
+  height: 550px;
+}
 .works-card__thumbnail {
   display: block;
   max-width: 100%;
-  height: 700px;
+  height: 600px;
   margin-bottom: 15px;
   overflow: hidden;
 }
@@ -1143,8 +1146,11 @@ a:hover {
   color: #FC4005;
 }
 
+.blog .row > div:nth-child(odd) .blog-card .blog-card__thumbnail {
+  height: 400px;
+}
 .blog-card__thumbnail {
-  height: 420px;
+  height: 500px;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -1846,6 +1852,16 @@ a:hover {
   color: #FC4005;
 }
 
+.preview-card {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  background-color: #FC4005;
+}
+.preview-card__black {
+  background-color: #131313;
+}
+
 @media (max-width: 1440px) {
   .big-tittle {
     font-size: 80px;
@@ -1930,6 +1946,16 @@ a:hover {
   }
   .portfolio-scrolling__right-item {
     height: 500px;
+  }
+  .blog .row > div:nth-child(odd) .blog-card .blog-card__thumbnail {
+    height: 350px;
+  }
+  .blog-card__thumbnail {
+    height: 400px;
+  }
+  .blog-card__title h3 a {
+    font-size: 21px;
+    line-height: 28px;
   }
 }
 @media (max-width: 992px) {

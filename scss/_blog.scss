@@ -1,7 +1,18 @@
 .blog {
+    .row {
+        > div {
+            &:nth-child(odd) {
+                .blog-card {
+                    .blog-card__thumbnail {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
     &-card {
         &__thumbnail {
-            height: 420px;
+            height: 500px;
             margin-bottom: 20px;
             overflow: hidden;
             img {

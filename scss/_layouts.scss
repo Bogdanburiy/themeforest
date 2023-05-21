@@ -139,6 +139,32 @@
             }
         }
     }
+    .blog {
+        .row {
+            > div {
+                &:nth-child(odd) {
+                    .blog-card {
+                        .blog-card__thumbnail {
+                            height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+        &-card {
+            &__thumbnail {
+                height: 400px;
+            }
+            &__title {
+                h3 {
+                    a {
+                        font-size: 21px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width: 992px) {
     .big-tittle {
