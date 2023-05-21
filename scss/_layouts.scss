@@ -473,6 +473,26 @@
     .hamburger-overlay__additional .underline-btn {
         font-size: 15px;
     }
+    .portfolio-gallery {
+        &__grid {
+            .row {
+                > div {
+                    &:nth-child(odd) {
+                        .portfolio-gallery__card {
+                            .portfolio-gallery__card-thumbnail {
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__card {
+            &-thumbnail {
+                height: 400px;
+            }
+        }
+    }
 }
 @media(max-width: 768px) {
     .big-tittle {
@@ -791,6 +811,27 @@
     }
     .hamburger-overlay__additional-social ul li a {
         font-size: 16px;
+    }
+    .portfolio-gallery {
+        &__heading {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    .preloader-page {
+        &__letters {
+            font-size: 120px;
+        }
+        &__counter {
+            right: 30px;
+            bottom: 30px;
+            &-line {
+                width: 170px;
+            }
+        }
     }
 }
 @media(max-width: 576px) {

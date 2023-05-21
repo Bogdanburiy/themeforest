@@ -137,6 +137,14 @@ a:hover {
   background-size: contain;
 }
 
+.title-subdesc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(19, 19, 19, 0.7);
+}
+
 .section-slug {
   width: -moz-fit-content;
   width: fit-content;
@@ -390,7 +398,7 @@ a:hover {
   width: 100%;
   padding: 150px 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: #FC4005;
@@ -1510,6 +1518,62 @@ a:hover {
   overflow: hidden;
 }
 
+.portfolio-gallery__grid .row > div:nth-child(odd) .portfolio-gallery__card .portfolio-gallery__card-thumbnail {
+  height: 550px;
+}
+.portfolio-gallery__card-thumbnail {
+  display: block;
+  max-width: 100%;
+  height: 600px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.portfolio-gallery__card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio-gallery__card-info {
+  position: relative;
+  padding-bottom: 15px;
+}
+.portfolio-gallery__card-info::after {
+  background-color: #131313;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition-delay: 0.4s;
+}
+.portfolio-gallery__card-info a {
+  color: #131313;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  transition-delay: 0.1s;
+}
+.portfolio-gallery__card-info a i.icon {
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-out;
+}
+.portfolio-gallery__card-info a:hover i.icon {
+  transform: rotate(0deg);
+  transition: all 0.3s ease-out;
+}
+.portfolio-gallery__card-info small {
+  display: block;
+  color: #131313;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  transition-delay: 0.2s;
+}
+
 .location-map {
   height: 550px;
 }
@@ -2124,6 +2188,12 @@ a:hover {
   .hamburger-overlay__additional .underline-btn {
     font-size: 15px;
   }
+  .portfolio-gallery__grid .row > div:nth-child(odd) .portfolio-gallery__card .portfolio-gallery__card-thumbnail {
+    height: 300px;
+  }
+  .portfolio-gallery__card-thumbnail {
+    height: 400px;
+  }
 }
 @media (max-width: 768px) {
   .big-tittle {
@@ -2350,6 +2420,19 @@ a:hover {
   }
   .hamburger-overlay__additional-social ul li a {
     font-size: 16px;
+  }
+  .portfolio-gallery__heading p br {
+    display: none;
+  }
+  .preloader-page__letters {
+    font-size: 120px;
+  }
+  .preloader-page__counter {
+    right: 30px;
+    bottom: 30px;
+  }
+  .preloader-page__counter-line {
+    width: 170px;
   }
 }
 @media (max-width: 576px) {

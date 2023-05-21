@@ -85,6 +85,8 @@ function preloader (done) {
             }
         }
     }, 20)
+
+    
 }
 
 // 1.6 Init AOS animation

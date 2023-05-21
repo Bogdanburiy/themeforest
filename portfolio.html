@@ -19,7 +19,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="scss/style.css">
 
-    <title>Contact page</title>
+    <title>Portfolio</title>
 
 </head>
 <body>
@@ -38,10 +38,10 @@
                         <nav>
                             <ul>
                                 <li><a cursor-class="arrow" href="index.html">Home</a></li>
-                                <li><a cursor-class="arrow" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="active" cursor-class="arrow" href="portfolio.html">Portfolio</a></li>
                                 <li><a cursor-class="arrow" href="about-us.html">About</a></li>
                                 <li><a cursor-class="arrow" href="news.html">Blog</a></li>
-                                <li><a class="active" cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -100,140 +100,155 @@
             </div>
             <!-- /.hamburger-overlay -->
 
-            <section class="discussion mb-exsmall-8 mb-medium-8 mb16 mt-exsmall-6 mt-medium-6 mt8">
+            <section class="portfolio-gallery mt-exsmall-6 mt-medium-6 mt8 mb-exsmall-8 mb-medium-6 mb6">
                 <div class="container">
-                    <div class="section-heading">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="section-slug" data-aos="fade-down" data-aos-duration="1000">Let’s work together</div>
-                                <!-- /.section-slug -->
-                            </div>
-                            <!-- /.col-lg-6 -->
-                            <div class="col-lg-6">
-                                <div class="section-heading__content">
-                                    <h2 class="normal-title" data-aos="fade-up" data-aos-duration="1000">Fill out the form and we will contact you to discuss our best project together!</h2>
-                                    <!-- /.normal-title -->
-                                    <div class="discussion-form mt-exsmall-3 mt-medium-5 mt7">
-                                        <form action="#" method="post">
-                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
-                                                <input class="discussion-form__item-input" id="name" type="text" placeholder="Name" value="" name="name">
-                                                <span class="input-focus"></span>
-                                                <!-- /.input-focus -->
-                                            </div>
-                                            <!-- /.discussion-form__item -->
-                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
-                                                <input class="discussion-form__item-input" id="email" type="email" placeholder="Email" name="email" value="" required>
-                                                <span class="input-focus"></span>
-                                                <!-- /.input-focus -->
-                                            </div>
-                                            <!-- /.discussion-form__item -->
-                                            <div class="discussion-form__item" data-aos="fade-up" data-aos-duration="1000">
-                                                <textarea class="discussion-form__item-input" id="message" name="message" placeholder="Comments" rows="5"></textarea>
-                                                <span class="input-focus"></span>
-                                                <!-- /.input-focus -->
-                                            </div>
-                                            <!-- /.discussion-form__item -->
-                                            <button cursor-class="arrow" class="submit-btn" type="submit" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-100">get free consultation</button>
-                                        </form>
+                    <div class="portfolio-gallery__heading mb-exsmall-3 mb-medium-3 mb6 d-flex flex-column align-items-sm-start align-items-lg-start">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" class="big-tittle">
+                            Check out our portfolio
+                        </h1>
+                        <!-- /.big-tittle -->
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="title-subdesc mt-exsmall-3 mt-medium-3 mt3">
+                            Digital solutions we've created for our clients, from website design <br> and development to branding and digital marketing. 
+                        </p>
+                        <a cursor-class="arrow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="underline-btn mt-exsmall-3 mt-medium-3 mt3" data-fancybox data-src="#dialog-popup">Get free consultation</a>
+                    </div>
+                    <!-- /.portfolio-gallery__heading -->
+                    <div class="portfolio-gallery__grid">
+                        <div class="row" data-masonry='{"percentPosition": true }'>
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image1.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Plane on the sky
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>UX/UI design</small>
                                     </div>
-                                    <!-- /.discussion-form -->
+                                    <!-- /.portfolio-gallery__card-info -->
                                 </div>
-                                <!-- /.section-heading__content -->
+                                <!-- /.portfolio-gallery__card -->
                             </div>
-                            <!-- /.col-lg-6 -->
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image2.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Green plant
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>UX/UI design</small>
+                                    </div>
+                                    <!-- /.portfolio-gallery__card-info -->
+                                </div>
+                                <!-- /.portfolio-gallery__card -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image3.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Coffe shop
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>UX/UI design</small>
+                                    </div>
+                                    <!-- /.portfolio-gallery__card-info -->
+                                </div>
+                                <!-- /.portfolio-gallery__card -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image4.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Horizon
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>UX/UI design</small>
+                                    </div>
+                                    <!-- /.portfolio-gallery__card-info -->
+                                </div>
+                                <!-- /.portfolio-gallery__card -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image5.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Read and Write
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>Instagram Content Design</small>
+                                    </div>
+                                    <!-- /.portfolio-gallery__card-info -->
+                                </div>
+                                <!-- /.portfolio-gallery__card -->
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6 mb-exsmall-3 mb-medium-3 mb5">
+                                <div class="portfolio-gallery__card" data-aos="fade-up" data-aos-duration="1000">
+                                    <a cursor-class="arrow" href="single-portfolio.html" class="portfolio-gallery__card-thumbnail">
+                                        <img src="img/works-image6.jpeg" alt="Image">
+                                    </a>
+                                    <!-- /.portfolio-gallery__card-thumbnail -->
+                                    <div class="portfolio-gallery__card-info">
+                                        <a cursor-class="arrow" class="d-flex justify-content-between align-items-center" href="single-portfolio.html">
+                                            Paper Ship
+                                            <i class="icon">
+                                                <img src="img/arrow-red.svg" alt="Arrow icon">
+                                            </i>
+                                            <!-- /.icon -->
+                                        </a>
+                                        <small>Website Development</small>
+                                    </div>
+                                    <!-- /.portfolio-gallery__card-info -->
+                                </div>
+                                <!-- /.portfolio-gallery__card -->
+                            </div>
+                            <!-- /.col-md-6 -->
                         </div>
                         <!-- /.row -->
                     </div>
-                    <!-- /.section-heading -->
-                    <div class="social-links mt-exsmall-3 mt-medium-5 mt8">
-                        <div class="social-links__item" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="social-links__item-inner">
-                                <div class="social-links__item-wrapper">
-                                    <a href="#" class="social-links__item-content">
-                                        <span>Linkedin</span>
-                                    </a>
-                                    <!-- /.social-links__item-content -->
-                                </div>
-                                <!-- /.social-links__item-wrapper -->
-                            </div>
-                            <!-- /.social-links__item-inner -->
-                        </div>
-                        <!-- /.social-links__item -->
-                        <div class="social-links__item" data-aos="fade-down" data-aos-duration="1000">
-                            <div class="social-links__item-inner">
-                                <div class="social-links__item-wrapper">
-                                    <a href="#" class="social-links__item-content">
-                                        <span>Youtube</span>
-                                    </a>
-                                    <!-- /.social-links__item-content -->
-                                </div>
-                                <!-- /.social-links__item-wrapper -->
-                            </div>
-                            <!-- /.social-links__item-inner -->
-                        </div>
-                        <!-- /.social-links__item -->
-                        <div class="social-links__item" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="social-links__item-inner">
-                                <div class="social-links__item-wrapper">
-                                    <a href="#" class="social-links__item-content">
-                                        <span>Facebook</span>
-                                    </a>
-                                    <!-- /.social-links__item-content -->
-                                </div>
-                                <!-- /.social-links__item-wrapper -->
-                            </div>
-                            <!-- /.social-links__item-inner -->
-                        </div>
-                        <!-- /.social-links__item -->
-                        <div class="social-links__item" data-aos="fade-left" data-aos-duration="1000">
-                            <div class="social-links__item-inner">
-                                <div class="social-links__item-wrapper">
-                                    <a href="#" class="social-links__item-content">
-                                        <span>Instagram</span>
-                                    </a>
-                                    <!-- /.social-links__item-content -->
-                                </div>
-                                <!-- /.social-links__item-wrapper -->
-                            </div>
-                            <!-- /.social-links__item-inner -->
-                        </div>
-                        <!-- /.social-links__item -->
-                    </div>
-                    <!-- /.social-links -->
+                    <!-- /.portfolio-gallery__grid -->
                 </div>
                 <!-- /.container -->
             </section>
-            <!-- /.discussion -->
-
-            <section class="location mb-exsmall-8 mb-medium-8 mb16">
-                <div class="container">
-                    <div class="section-heading mb7">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div data-aos="fade-down" data-aos-duration="1000" class="section-slug">Location</div>
-                                <!-- /.section-slug -->
-                            </div>
-                            <!-- /.col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="section-heading__content">
-                                    <h2 data-aos="fade-up" data-aos-duration="1000" class="normal-title location-mark">9 Rue du 4 septembre, <br> 75002 Paris, France</h2>
-                                    <!-- /.normal-title -->
-                                </div>
-                                <!-- /.section-heading__content -->
-                            </div>
-                            <!-- /.col-md-6 -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /.section-heading -->
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="location-map">
-                        <img src="img/map.png" alt="Image">
-                    </div>
-                    <!-- /.location-map -->
-                </div>
-                <!-- /.container -->
-            </section>
-            <!-- /.location -->
+            <!-- /.portfolio-gallery -->
 
             <footer class="footer">
                 <div class="container">
@@ -279,7 +294,7 @@
                                     <li><a cursor-class="arrow" href="portfolio.html">Portfolio</a></li>
                                     <li><a cursor-class="arrow" href="about-us.html">About</a></li>
                                     <li><a cursor-class="arrow" href="news.html">Blog</a></li>
-                                    <li><a class="active" cursor-class="arrow" href="contact.html">Contacts</a></li>
+                                    <li><a cursor-class="arrow" href="contact.html">Contacts</a></li>
                                 </ul>
                             </nav>
                             <!-- /.footer-nav -->
